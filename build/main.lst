@@ -1,0 +1,184 @@
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"main.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text.startup.main,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	main
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	main:
+  27              	.LFB5554:
+  28              		.file 1 "main.cpp"
+   1:main.cpp      **** /*
+   2:main.cpp      **** GNU General Public License v3.0
+   3:main.cpp      **** Author: Jack Payne
+   4:main.cpp      **** 
+   5:main.cpp      ****  _______             __                                __                                  __ 
+   6:main.cpp      **** /       \           /  |                              /  |                                /  |
+   7:main.cpp      **** BBBBBBB  |  ______  BB/  ________   ______    _______ BB |____    ______    ______    ____BB |
+   8:main.cpp      **** BB |__BB | /      \ /  |/        | /      \  /       |BB      \  /      \  /      \  /    BB |
+   9:main.cpp      **** BB    BB< /BBBBBB  |BB |BBBBBBBB/  BBBBBB  |/BBBBBBB/ BBBBBBB  |/BBBBBB  |/BBBBBB  |/BBBBBBB |
+  10:main.cpp      **** BBBBBBB  |BB |  BB/ BB |  /  BB/   /    BB |BB |      BB |  BB |BB |  BB |BB |  BB/ BB |  BB |
+  11:main.cpp      **** BB |__BB |BB |      BB | /BBBB/__ /BBBBBBB |BB \_____ BB |  BB |BB \__BB |BB |      BB \__BB |
+  12:main.cpp      **** BB    BB/ BB |      BB |/BB      |BB    BB |BB       |BB |  BB |BB    BB/ BB |      BB    BB |
+  13:main.cpp      **** BBBBBBB/  BB/       BB/ BBBBBBBB/  BBBBBBB/  BBBBBBB/ BB/   BB/  BBBBBB/  BB/        BBBBBBB/	v1.0
+  14:main.cpp      **** */
+  15:main.cpp      **** 
+  16:main.cpp      **** #include "Brizachord.h"
+  17:main.cpp      **** 
+  18:main.cpp      **** int main(void) {
+  29              		.loc 1 18 16 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 1936
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  19:main.cpp      **** 	Brizachord brizachord{};
+  33              		.loc 1 19 2 view .LVU1
+  18:main.cpp      **** 	Brizachord brizachord{};
+  34              		.loc 1 18 16 is_stmt 0 view .LVU2
+  35 0000 00B5     		push	{lr}
+  36              		.cfi_def_cfa_offset 4
+  37              		.cfi_offset 14, -4
+  38 0002 ADF2947D 		subw	sp, sp, #1940
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 2
+
+
+  39              		.cfi_def_cfa_offset 1944
+  40              		.loc 1 19 24 view .LVU3
+  41 0006 01A8     		add	r0, sp, #4
+  42 0008 FFF7FEFF 		bl	_ZN10BrizachordC1Ev
+  43              	.LVL0:
+  20:main.cpp      **** 	brizachord.main_loop();
+  44              		.loc 1 20 2 is_stmt 1 view .LVU4
+  45              		.loc 1 20 22 is_stmt 0 view .LVU5
+  46 000c 01A8     		add	r0, sp, #4
+  47 000e FFF7FEFF 		bl	_ZN10Brizachord9main_loopEv
+  48              	.LVL1:
+  19:main.cpp      **** 	Brizachord brizachord{};
+  49              		.loc 1 19 24 view .LVU6
+  50 0012 01A8     		add	r0, sp, #4
+  51 0014 FFF7FEFF 		bl	_ZN10BrizachordD1Ev
+  52              	.LVL2:
+  21:main.cpp      **** }...
+  53              		.loc 1 21 1 view .LVU7
+  54 0018 0020     		movs	r0, #0
+  55 001a 0DF2947D 		addw	sp, sp, #1940
+  56              		.cfi_def_cfa_offset 4
+  57              		@ sp needed
+  58 001e 5DF804FB 		ldr	pc, [sp], #4
+  59              		.cfi_endproc
+  60              	.LFE5554:
+  62 0022 00BF     		.text
+  63              	.Letext0:
+  64              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+  65              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+  66              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+  67              		.file 5 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+  68              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_strin
+  69              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+  70              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+  71              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+  72              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+  73              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+  74              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+  75              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+  76              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_iterat
+  77              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+  78              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+  79              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+  80              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+  81              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+  82              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+  83              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+  84              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\char_trait
+  85              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\allocator.
+  86              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+  87              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\alloc_trai
+  88              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\initializer_list
+  89              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stringfwd.
+  90              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_bvecto
+  91              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_iterat
+  92              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+  93              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\uses_alloc
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 3
+
+
+  94              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\tuple"
+  95              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_vector
+  96              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\vector.tcc
+  97              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+  98              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\ext\\new_allocat
+  99              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\ext\\alloc_trait
+ 100              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 101              		.file 39 "<built-in>"
+ 102              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 103              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 104              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 105              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 106              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 107              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 108              		.file 46 "../../libDaisy//src/daisy_core.h"
+ 109              		.file 47 "../../libDaisy//src/per/tim.h"
+ 110              		.file 48 "../../libDaisy//src/sys/system.h"
+ 111              		.file 49 "../../libDaisy//src/per/qspi.h"
+ 112              		.file 50 "../../libDaisy//src/per/dac.h"
+ 113              		.file 51 "../../libDaisy//src/per/gpio.h"
+ 114              		.file 52 "../../libDaisy//src/per/sai.h"
+ 115              		.file 53 "../../libDaisy//src/hid/audio.h"
+ 116              		.file 54 "../../libDaisy//src/per/adc.h"
+ 117              		.file 55 "../../libDaisy//src/hid/usb.h"
+ 118              		.file 56 "../../libDaisy//src/hid/switch.h"
+ 119              		.file 57 "../../libDaisy//src/util/wav_format.h"
+ 120              		.file 58 "../../libDaisy//src/dev/sr_595.h"
+ 121              		.file 59 "../../libDaisy//src/dev/codec_ak4556.h"
+ 122              		.file 60 "../../libDaisy//src/dev/max11300.h"
+ 123              		.file 61 "../../libDaisy//src/daisy_seed.h"
+ 124              		.file 62 "../../libDaisy//src/dev/sdram.h"
+ 125              		.file 63 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 126              		.file 64 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 127              		.file 65 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 128              		.file 66 "../../DaisySP//Source/Control/adenv.h"
+ 129              		.file 67 "../../DaisySP//Source/Control/adsr.h"
+ 130              		.file 68 "../../DaisySP//Source/Utility/dsp.h"
+ 131              		.file 69 "../../DaisySP//Source/Synthesis/oscillator.h"
+ 132              		.file 70 "../../DaisySP//Source/Filters/svf.h"
+ 133              		.file 71 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 134              		.file 72 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\time.h"
+ 135              		.file 73 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 136              		.file 74 "InstrumentState.h"
+ 137              		.file 75 "GPIOState.h"
+ 138              		.file 76 "DrumSynth.h"
+ 139              		.file 77 "ChordSynth.h"
+ 140              		.file 78 "Sequencer.h"
+ 141              		.file 79 "StrumSynth.h"
+ 142              		.file 80 "Brizachord.h"
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+C:\Users\theja\AppData\Local\Temp\cc4YrX98.s:17     .text.startup.main:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cc4YrX98.s:26     .text.startup.main:00000000 main
+
+UNDEFINED SYMBOLS
+_ZN10BrizachordC1Ev
+_ZN10Brizachord9main_loopEv
+_ZN10BrizachordD1Ev
