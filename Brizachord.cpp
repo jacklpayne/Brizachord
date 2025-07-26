@@ -25,6 +25,12 @@ Brizachord::Brizachord() {
 	hw.SetAudioBlockSize(4);
 	hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
 
+	// Analog inputs init
+	adc_config[0].InitSingle(hw.GetPin(21)); // A0 (Strum vol)
+    adc_config[1].InitSingle(hw.GetPin(22)); // A1 (Chord vol)
+    adc_config[2].InitSingle(hw.GetPin(23)); // A2 (Drums vol)
+    adc_config[3].InitSingle(hw.GetPin(24)); // A3 (BPM)
+
 	// Instrument state and oscillators init
 	instrument_state.chord = Chord{"C", ChordQuality::MAJOR, ChordExtension::TRIAD};
 	instrument_state.queued_extension = ChordExtension::TRIAD;
@@ -78,6 +84,8 @@ This callback is called every sample and:
 void Brizachord::audio_callback(AudioHandle::InputBuffer  in,
                                 AudioHandle::OutputBuffer out,
                                 size_t                    size) {
+	
+									
 	for (size_t i = 0; i < size; i++)
 	{	
 		instance->sequencer->tick();
@@ -203,7 +211,7 @@ void Brizachord::poll_chord_ext() {
 
 void Brizachord::poll_pattern_controls() {
     if (gpio_state.groove.FallingEdge()) {
-		instrument_state.groove = !instrument_state.groove;
+		sequencer->toggle_groove();
 	}
 	if (gpio_state.drum_left.FallingEdge()) {
 
@@ -236,4 +244,19 @@ void Brizachord::poll_trill_bar() {
     else {
         hw.SetLed(false);
     }
+}
+
+void Brizachord::poll_pots() {
+	// The pots used are linear, so this lambda applies 
+	// a logarithmic conversion for the sake of audio amplitude perception
+    auto log_curve = [](float x) {
+        x = fclamp(x, 0.f, 1.f);
+        return log10f(9.f * x + 1.f);
+    };
+
+    strum_vol = log_curve(hw.adc.GetFloat(0));
+    chord_vol = log_curve(hw.adc.GetFloat(1));
+    drum_vol  = log_curve(hw.adc.GetFloat(2));
+
+    instrument_state.bpm = fmap(hw.adc.GetFloat(3), 50.f, 140.f); // linear map 0–1 to 50–140
 }
