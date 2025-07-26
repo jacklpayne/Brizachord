@@ -26,10 +26,13 @@ Brizachord::Brizachord() {
 	hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
 
 	// Analog inputs init
-	adc_config[0].InitSingle(hw.GetPin(21)); // A0 (Strum vol)
-    adc_config[1].InitSingle(hw.GetPin(22)); // A1 (Chord vol)
-    adc_config[2].InitSingle(hw.GetPin(23)); // A2 (Drums vol)
-    adc_config[3].InitSingle(hw.GetPin(24)); // A3 (BPM)
+	AdcChannelConfig adc_config[4];
+	adc_config[0].InitSingle(hw.GetPin(15)); // A0 (Strum vol)
+    adc_config[1].InitSingle(hw.GetPin(16)); // A1 (Chord vol)
+    adc_config[2].InitSingle(hw.GetPin(17)); // A2 (Drums vol)
+    adc_config[3].InitSingle(hw.GetPin(18)); // A3 (BPM)
+	hw.adc.Init(adc_config, 4);
+	hw.adc.Start();
 
 	// Instrument state and oscillators init
 	instrument_state.chord = Chord{"C", ChordQuality::MAJOR, ChordExtension::TRIAD};
@@ -67,7 +70,7 @@ void Brizachord::main_loop() {
 		poll_chord_qual();
 		poll_chord_ext();
 		poll_chord_root();
-	
+		poll_pots();
 	}    
 }
 
@@ -85,7 +88,6 @@ void Brizachord::audio_callback(AudioHandle::InputBuffer  in,
                                 AudioHandle::OutputBuffer out,
                                 size_t                    size) {
 	
-									
 	for (size_t i = 0; i < size; i++)
 	{	
 		instance->sequencer->tick();
@@ -95,9 +97,13 @@ void Brizachord::audio_callback(AudioHandle::InputBuffer  in,
 		float drums_sample = instance->drum_synth.process();
 		float strum_sample = instance->strum_synth->process();
 
-		sample += drums_sample * 0.2f;
-		sample += chord_sample * 0.2f;
-		sample += strum_sample * 0.6f;
+		//sample += drums_sample * 0.2f;
+		//sample += chord_sample * 0.2f;
+		//sample += strum_sample * 0.6f;
+
+		sample += drums_sample * 0.2f * instance->drum_vol;
+		sample += chord_sample * 0.2f * instance->chord_vol;
+		sample += strum_sample * 0.6f * instance->strum_vol;
 
 		out[0][i] = sample;
 		out[1][i] = sample;
@@ -211,7 +217,7 @@ void Brizachord::poll_chord_ext() {
 
 void Brizachord::poll_pattern_controls() {
     if (gpio_state.groove.FallingEdge()) {
-		sequencer->toggle_groove();
+		//sequencer->toggle_groove();
 	}
 	if (gpio_state.drum_left.FallingEdge()) {
 
@@ -246,17 +252,30 @@ void Brizachord::poll_trill_bar() {
     }
 }
 
+
 void Brizachord::poll_pots() {
-	// The pots used are linear, so this lambda applies 
-	// a logarithmic conversion for the sake of audio amplitude perception
     auto log_curve = [](float x) {
-        x = fclamp(x, 0.f, 1.f);
+        constexpr float min_valid = 0.1f / 3.3f;
+        if (x < min_valid || x > 1.f)
+            return -1.f;
+		/*
+		Hardware annoyance: pots are wired in reverse with 3v3 on left, but
+		they have an off-click on the far left, so we discard a true ground value
+		*/
+        x = (x - min_valid) / (1.f - min_valid); // remap 0.1V → 0.f, 3.3V → 1.f
+        x = 1.f - x; // invert
         return log10f(9.f * x + 1.f);
     };
 
-    strum_vol = log_curve(hw.adc.GetFloat(0));
-    chord_vol = log_curve(hw.adc.GetFloat(1));
-    drum_vol  = log_curve(hw.adc.GetFloat(2));
+    float v;
 
-    instrument_state.bpm = fmap(hw.adc.GetFloat(3), 50.f, 140.f); // linear map 0–1 to 50–140
+    if ((v = log_curve(hw.adc.GetFloat(0))) >= 0.f) strum_vol = v;
+    if ((v = log_curve(hw.adc.GetFloat(1))) >= 0.f) chord_vol = v;
+    if ((v = log_curve(hw.adc.GetFloat(2))) >= 0.f) drum_vol  = v;
+
+    v = hw.adc.GetFloat(3);
+    if (v >= 0.1f / 3.3f && v <= 1.f) {
+        v = (v - 0.1f / 3.3f) / (1.f - 0.1f / 3.3f);
+        instrument_state.bpm = fmap(1.f - v, 50.f, 140.f);
+    }
 }

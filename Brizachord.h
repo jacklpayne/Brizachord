@@ -23,6 +23,10 @@ public:
 
     void main_loop();
 private:
+    float strum_vol{};
+	float chord_vol{};
+	float drum_vol{};
+
     // The audio_callback has to be a static function to be registered with libdaisy.
     // Since it needs to call functions of class members, they are accessed through
     // a static self reference
@@ -37,11 +41,6 @@ private:
     ChordSynth chord_synth{48000.f};
     StrumSynth* strum_synth;
     Sequencer* sequencer;
-
-    float strum_vol{};
-	float chord_vol{};
-	float drum_vol{};
-    AdcChannelConfig adc_config[4];
 
     static void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size);
 

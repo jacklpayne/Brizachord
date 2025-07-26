@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -48,7 +48,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
   18:main.cpp      **** int main(void) {
   29              		.loc 1 18 16 view -0
   30              		.cfi_startproc
-  31              		@ args = 0, pretend = 0, frame = 1936
+  31              		@ args = 0, pretend = 0, frame = 1944
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   19:main.cpp      **** 	Brizachord brizachord{};
   33              		.loc 1 19 2 view .LVU1
@@ -57,30 +57,30 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
   35 0000 00B5     		push	{lr}
   36              		.cfi_def_cfa_offset 4
   37              		.cfi_offset 14, -4
-  38 0002 ADF2947D 		subw	sp, sp, #1940
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 2
+  38 0002 ADF29C7D 		subw	sp, sp, #1948
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s 			page 2
 
 
-  39              		.cfi_def_cfa_offset 1944
+  39              		.cfi_def_cfa_offset 1952
   40              		.loc 1 19 24 view .LVU3
-  41 0006 01A8     		add	r0, sp, #4
+  41 0006 6846     		mov	r0, sp
   42 0008 FFF7FEFF 		bl	_ZN10BrizachordC1Ev
   43              	.LVL0:
   20:main.cpp      **** 	brizachord.main_loop();
   44              		.loc 1 20 2 is_stmt 1 view .LVU4
   45              		.loc 1 20 22 is_stmt 0 view .LVU5
-  46 000c 01A8     		add	r0, sp, #4
+  46 000c 6846     		mov	r0, sp
   47 000e FFF7FEFF 		bl	_ZN10Brizachord9main_loopEv
   48              	.LVL1:
   19:main.cpp      **** 	Brizachord brizachord{};
   49              		.loc 1 19 24 view .LVU6
-  50 0012 01A8     		add	r0, sp, #4
+  50 0012 6846     		mov	r0, sp
   51 0014 FFF7FEFF 		bl	_ZN10BrizachordD1Ev
   52              	.LVL2:
   21:main.cpp      **** }...
   53              		.loc 1 21 1 view .LVU7
   54 0018 0020     		movs	r0, #0
-  55 001a 0DF2947D 		addw	sp, sp, #1940
+  55 001a 0DF29C7D 		addw	sp, sp, #1948
   56              		.cfi_def_cfa_offset 4
   57              		@ sp needed
   58 001e 5DF804FB 		ldr	pc, [sp], #4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
   91              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_iterat
   92              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
   93              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\uses_alloc
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 3
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s 			page 3
 
 
   94              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\tuple"
@@ -170,13 +170,13 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 1
  140              		.file 78 "Sequencer.h"
  141              		.file 79 "StrumSynth.h"
  142              		.file 80 "Brizachord.h"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc4YrX98.s 			page 4
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-C:\Users\theja\AppData\Local\Temp\cc4YrX98.s:17     .text.startup.main:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc4YrX98.s:26     .text.startup.main:00000000 main
+C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s:17     .text.startup.main:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccSK5r2W.s:26     .text.startup.main:00000000 main
 
 UNDEFINED SYMBOLS
 _ZN10BrizachordC1Ev

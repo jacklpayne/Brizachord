@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   27:StrumSynth.cpp ****         filter_LFO.SetFreq(instrument_state.bpm / 15.f); // 1/4 note triangle LFO modulates low pas
   28:StrumSynth.cpp **** 
   29:StrumSynth.cpp **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 2
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 2
 
 
   30:StrumSynth.cpp ****         // Init voices
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   61              		.loc 1 50 41 view .LVU8
   62 001a 07EE903A 		vmov	s15, r3	@ int
   51:StrumSynth.cpp ****     float filter_freq = (filter_LFO.Process() * 2350.f) + 2650.f; // Vary cutoff between 1k and 18k
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 3
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 3
 
 
   52:StrumSynth.cpp ****     low_pass.SetFreq(filter_freq);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   49:../../DaisySP//Source/Synthesis/oscillator.h ****     */
   50:../../DaisySP//Source/Synthesis/oscillator.h ****     void Init(float sample_rate)
   51:../../DaisySP//Source/Synthesis/oscillator.h ****     {
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 4
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 4
 
 
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_        = sample_rate;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   98              	.LBE647:
   99              	.LBE649:
   51:StrumSynth.cpp ****     low_pass.SetFreq(filter_freq);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 5
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 5
 
 
  100              		.loc 1 51 5 is_stmt 1 view .LVU21
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   24:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
   25:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** /*
   26:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****  *
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 6
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 6
 
 
   27:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****  * Copyright (c) 1994
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   81:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
   82:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****   /// See bits/stl_deque.h's _Deque_base for an explanation.
   83:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****   template<typename _Tp, typename _Alloc>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 7
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 7
 
 
   84:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****     struct _Vector_base
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  138:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	{ }
  139:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
  140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #if __cplusplus >= 201103L
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 8
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 8
 
 
  141:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	// Not defaulted, to enforce noexcept(true) even when
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  195:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    static void
  196:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    _S_shrink(_Vector_impl& __impl, size_type __n)
  197:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    { _S_adjust(__impl, __impl._M_finish + __n, __impl._M_finish); }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 9
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 9
 
 
  198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  252:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #define _GLIBCXX_ASAN_ANNOTATE_REINIT \
  253:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****   typename _Base::_Vector_impl::template _Asan<>::_Reinit const \
  254:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	__attribute__((__unused__)) __reinit_guard(this->_M_impl)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 10
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 10
 
 
  255:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #define _GLIBCXX_ASAN_ANNOTATE_GROW(n) \
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  309:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
  310:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       // Kept for ABI compatibility.
  311:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** # if !_GLIBCXX_INLINE_VERSION
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 11
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 11
 
 
  312:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       _Vector_base(_Tp_alloc_type&& __a) noexcept
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  366:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
  367:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****   /**
  368:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****    *  @brief A standard container which offers fixed time access to
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 12
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 12
 
 
  369:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****    *  individual elements in any order.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  423:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       typedef std::reverse_iterator<iterator>		reverse_iterator;
  424:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       typedef size_t					size_type;
  425:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       typedef ptrdiff_t					difference_type;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 13
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 13
 
 
  426:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       typedef _Alloc					allocator_type;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  480:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       // [23.2.4.1] construct/copy/destroy
  481:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       // (assign() and get_allocator() are also listed in this section)
  482:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 14
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 14
 
 
  483:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  537:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	     const allocator_type& __a = allocator_type())
  538:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       : _Base(_S_check_init_len(__n, __a), __a)
  539:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       { _M_fill_initialize(__n, __value); }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 15
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 15
 
 
  540:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #endif
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  594:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	else if (!__rv.empty())
  595:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  {
  596:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    this->_M_create_storage(__rv.size());
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 16
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 16
 
 
  597:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    this->_M_impl._M_finish =
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  651:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       template<typename _InputIterator,
  652:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	       typename = std::_RequireInputIter<_InputIterator>>
  653:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	vector(_InputIterator __first, _InputIterator __last,
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 17
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 17
 
 
  654:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	       const allocator_type& __a = allocator_type())
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  708:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       vector&
  709:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
  710:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 18
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 18
 
 
  711:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	constexpr bool __move_storage =
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  765:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       template<typename _InputIterator,
  766:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	       typename = std::_RequireInputIter<_InputIterator>>
  767:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	void
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 19
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 19
 
 
  768:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	assign(_InputIterator __first, _InputIterator __last)
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
    7:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** // terms of the GNU General Public License as published by the
    8:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** // Free Software Foundation; either version 3, or (at your option)
    9:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** // any later version.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 20
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 20
 
 
   10:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   64:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #include <ext/type_traits.h>
   65:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #include <bits/move.h>
   66:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #include <bits/ptr_traits.h>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 21
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 21
 
 
   67:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  121:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  semantics make sense, however, and the trickiness is a side effect of
  122:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  the requirement that the iterators must be safe.
  123:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   */
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 22
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 22
 
 
  124:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _Iterator>
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  178:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #endif
  179:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
  180:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       /**
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 23
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 23
 
 
  181:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  A %reverse_iterator across other types can be copied if the
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  235:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  Decrements the underlying iterator.
  236:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       */
  237:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       _GLIBCXX17_CONSTEXPR reverse_iterator&
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 24
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 24
 
 
  238:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       operator++()
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  292:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  @return  *this
  293:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *
  294:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  Moves the underlying iterator backwards @a __n steps.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 25
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 25
 
 
  295:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  The underlying iterator must be a Random Access Iterator.
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  349:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 	noexcept(is_nothrow_copy_constructible_v<_Iterator>
  350:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 		 && is_nothrow_copy_constructible_v<_Iter2>
  351:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 		 && noexcept(ranges::iter_swap(--std::declval<_Iterator&>(),
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 26
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 26
 
 
  352:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 					       --std::declval<_Iter2&>())))
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  406:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
  407:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _Iterator>
  408:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     inline _GLIBCXX17_CONSTEXPR bool
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 27
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 27
 
 
  409:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     operator<=(const reverse_iterator<_Iterator>& __x,
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  463:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
  464:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _IteratorL, typename _IteratorR>
  465:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     constexpr bool
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 28
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 28
 
 
  466:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     operator!=(const reverse_iterator<_IteratorL>& __x,
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  520:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #else
  521:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   // _GLIBCXX_RESOLVE_LIB_DEFECTS
  522:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   // DR 685. reverse_iterator/move_iterator difference has invalid signatures
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 29
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 29
 
 
  523:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _IteratorL, typename _IteratorR>
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  577:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     _GLIBCXX20_CONSTEXPR
  578:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     auto
  579:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     __miter_base(reverse_iterator<_Iterator> __it)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 30
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 30
 
 
  580:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     -> decltype(__make_reverse_iterator(__miter_base(__it.base())))
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  634:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #else
  635:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       _GLIBCXX20_CONSTEXPR
  636:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       back_insert_iterator&
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 31
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 31
 
 
  637:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       operator=(const typename _Container::value_type& __value)
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  691:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  These are output iterators, constructed from a container-of-T.
  692:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  Assigning a T to the iterator prepends it to the container using
  693:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  push_front.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 32
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 32
 
 
  694:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  748:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       operator=(typename _Container::value_type&& __value)
  749:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       {
  750:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 	container->push_front(std::move(__value));
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 33
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 33
 
 
  751:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 	return *this;
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  805:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _Container>
  806:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     class insert_iterator
  807:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     : public iterator<output_iterator_tag, void, void, void, void>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 34
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 34
 
 
  808:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     {
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  862:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****        *  @endcode
  863:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       */
  864:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** #if __cplusplus < 201103L
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 35
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 35
 
 
  865:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       insert_iterator&
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  919:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  programming.  Using this function lets you take advantage of automatic
  920:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  template parameter deduction, making the compiler match the correct
  921:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****    *  types for you.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 36
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 36
 
 
  922:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  976:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
  977:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       explicit _GLIBCXX20_CONSTEXPR
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 37
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 37
 
 
  128              		.loc 4 978 7 view .LVU31
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   59:StrumSynth.cpp ****         voice.gate = false;
  171              		.loc 1 59 20 is_stmt 0 view .LVU44
  172 0080 0023     		movs	r3, #0
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 38
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 38
 
 
  173              	.LBE656:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   40:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\std_abs.h **** # include_next <math.h>
   41:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\std_abs.h **** #endif
   42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\std_abs.h **** #undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 39
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 39
 
 
   43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\std_abs.h **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  203              		.loc 1 63 13 is_stmt 0 view .LVU54
  204              	.LBE659:
   57:StrumSynth.cpp ****         float s = voice.osc.Process() * voice.env.Process(voice.gate);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 40
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 40
 
 
  205              		.loc 1 57 5 is_stmt 1 discriminator 3 view .LVU55
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   19:../../DaisySP//Source/Filters/svf.h **** This is his "State Variable Filter (Double Sampled, Stable)"
   20:../../DaisySP//Source/Filters/svf.h **** 
   21:../../DaisySP//Source/Filters/svf.h **** Additional thanks to Laurent de Soras for stability limit, and 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 41
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 41
 
 
   22:../../DaisySP//Source/Filters/svf.h **** Stefan Diedrichsen for the correct notch output
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  246              		@ sp needed
  247 00be BDEC028B 		vldm	sp!, {d8}
  248              		.cfi_restore 80
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 42
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 42
 
 
  249              		.cfi_restore 81
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   41:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/c++config.h>
   42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/cpp_type_traits.h>
   43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <ext/type_traits.h>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 43
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 43
 
 
   44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #define _GLIBCXX_INCLUDE_NEXT_C_HEADERS
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   98:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
   99:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     acos(_Tp __x)
  100:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_acos(__x); }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 44
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 44
 
 
  101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  155:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan2(_Tp __y, _Up __x)
  156:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
  157:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 45
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 45
 
 
  158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       return atan2(__type(__y), __type(__x));
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  212:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
  213:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
  214:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 46
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 46
 
 
  215:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     cosh(_Tp __x)
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  269:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
  270:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
  271:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 47
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 47
 
 
  272:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     floor(_Tp __x)
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  326:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
  327:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
  328:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 48
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 48
 
 
  329:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  383:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
  384:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::pow;
  385:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 49
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 49
 
 
  386:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  440:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::sinh;
  441:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
  442:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 50
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 50
 
 
  443:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  290              	.LBE666:
  291              	.LBB667:
  292              	.LBB665:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 51
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 51
 
 
  293              		.loc 7 464 27 discriminator 1 view .LVU80
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  814:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**
  815:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  Returns a read-only (constant) iterator that points to the
  816:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  first element in the %vector.  Iteration is done in ordinary
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 52
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 52
 
 
  817:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  element order.
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  871:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  is done in reverse element order.
  872:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        */
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       const_reverse_iterator
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 53
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 53
 
 
  874:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       rend() const _GLIBCXX_NOEXCEPT
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  928:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @brief  Resizes the %vector to the specified number of elements.
  929:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @param  __new_size  Number of elements the %vector should contain.
  930:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 54
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 54
 
 
  931:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  This function will %resize the %vector to the specified
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  985:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
  986:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #if __cplusplus >= 201103L
  987:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**  A non-binding request to reduce capacity() to size().  */
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 55
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 55
 
 
  988:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       void
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1042:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       reference
 1043:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       operator[](size_type __n) _GLIBCXX_NOEXCEPT
  342              		.loc 3 1043 7 is_stmt 1 view .LVU86
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 56
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 56
 
 
  343              	.LBB669:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  390      6F723A3A 
  390      5F4D5F72 
  390      65616C6C 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 57
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 57
 
 
  390      6F635F69 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****  * Permission to use, copy, modify, distribute and sell this software
   43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****  * and its documentation for any purpose is hereby granted without fee,
   44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****  * provided that the above copyright notice appear in all copies and
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 58
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 58
 
 
   45:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****  * that both that copyright notice and this permission notice appear
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   99:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****     }
  100:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 
  101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** #if __cplusplus >= 201103L
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 59
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 59
 
 
  102:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****   template<typename _Tp, typename _Alloc>
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  156:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    _M_insert_aux(__position, __x);
  157:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** #endif
  158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	  }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 60
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 60
 
 
  159:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****       else
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  213:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 				this->_M_impl._M_end_of_storage
  214:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 				- this->_M_impl._M_start);
  215:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 		  this->_M_impl._M_start = nullptr;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 61
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 61
 
 
  216:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 		  this->_M_impl._M_finish = nullptr;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  270:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	  this->_M_impl._M_finish =
  271:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    std::__uninitialized_fill_n_a(this->_M_impl._M_finish,
  272:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 					  __add, __val, _M_get_Tp_allocator());
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 62
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 62
 
 
  273:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	  _GLIBCXX_ASAN_ANNOTATE_GREW(__add);
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  327:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    const size_type __attribute__((__unused__)) __n = __len - size();
  328:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    _GLIBCXX_ASAN_ANNOTATE_GROW(__n);
  329:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    this->_M_impl._M_finish =
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 63
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 63
 
 
  330:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	      std::__uninitialized_copy_a(__mid, __last,
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  384:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	      _M_insert_aux(begin() + __n, std::move(__tmp._M_val()));
  385:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    }
  386:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	else
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 64
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 64
 
 
  387:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	  _M_realloc_insert(begin() + __n, std::forward<_Args>(__args)...);
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  418              		.cfi_offset 11, -8
  419              		.cfi_offset 14, -4
  420 0004 D0E900A6 		ldrd	r10, r6, [r0]
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 65
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 65
 
 
  421 0008 8146     		mov	r9, r0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1080:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**
 1081:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @brief  Provides access to the data contained in the %vector.
 1082:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @param __n The index of the element for which data should be
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 66
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 66
 
 
 1083:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  accessed.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1137:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
 1138:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**
 1139:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  Returns a read/write reference to the data at the last
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 67
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 67
 
 
 1140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  element of the %vector.
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1194:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    ++this->_M_impl._M_finish;
 1195:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
 1196:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 68
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 68
 
 
 1197:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	else
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1251:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       /**
 1252:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @brief  Inserts given value into %vector before specified iterator.
 1253:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @param  __position  A const_iterator into the %vector.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 69
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 69
 
 
 1254:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @param  __x  Data to be inserted.
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1308:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        */
 1309:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       iterator
 1310:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       insert(const_iterator __position, initializer_list<value_type> __l)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 70
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 70
 
 
 1311:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1365:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @param  __last   An input iterator.
 1366:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  @return  An iterator that points to the inserted data.
 1367:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 71
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 71
 
 
 1368:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  This function will insert copies of the data in the range
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1422:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  frequently used the user should consider using std::list.
 1423:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  The user is also cautioned that this function only erases
 1424:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  the element, and that if the element is itself a pointer,
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 72
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 72
 
 
 1425:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****        *  the pointed-to memory is not touched in any way.  Managing
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1479:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       void
 1480:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       swap(vector& __x) _GLIBCXX_NOEXCEPT
 1481:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 73
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 73
 
 
 1482:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #if __cplusplus >= 201103L
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1536:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	{
 1537:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  this->_M_impl._M_start = _M_allocate(_S_check_init_len(
 1538:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 		static_cast<size_type>(__n), _M_get_Tp_allocator()));
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 74
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 74
 
 
 1539:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  this->_M_impl._M_end_of_storage =
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1593:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       _M_fill_initialize(size_type __n, const value_type& __value)
 1594:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
 1595:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	this->_M_impl._M_finish =
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 75
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 75
 
 
 1596:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  std::__uninitialized_fill_n_a(this->_M_impl._M_start, __n, __value,
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1650:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 
 1651:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       // _GLIBCXX_RESOLVE_LIB_DEFECTS
 1652:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       // 438. Ambiguity in the "do the right thing" clause
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 76
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 76
 
 
 1653:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       template<typename _Integer>
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1707:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	template<typename... _Args>
 1708:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  explicit
 1709:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  _Temporary_value(vector* __vec, _Args&&... __args) : _M_this(__vec)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 77
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 77
 
 
 1710:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  {
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  446              	.LBE741:
  447              	.LBE745:
  448              		.loc 8 426 7 is_stmt 0 view .LVU108
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 78
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 78
 
 
  449 0012 1146     		mov	r1, r2
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  994:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       { return *_M_current; }
  995:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
  996:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       _GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 79
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 79
 
 
  997:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       pointer
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1051:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
 1052:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       { return __normal_iterator(_M_current - __n); }
 1053:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 80
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 80
 
 
 1054:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       _GLIBCXX20_CONSTEXPR
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1108:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     { return __lhs.base() != __rhs.base(); }
 1109:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 
 1110:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****   template<typename _Iterator, typename _Container>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 81
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 81
 
 
 1111:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     _GLIBCXX20_CONSTEXPR
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1165:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     inline bool
 1166:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     operator>=(const __normal_iterator<_IteratorL, _Container>& __lhs,
 1167:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h **** 	       const __normal_iterator<_IteratorR, _Container>& __rhs)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 82
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 82
 
 
 1168:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****     _GLIBCXX_NOEXCEPT
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
  499              		.loc 4 978 7 view .LVU118
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 83
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 83
 
 
  500              		.loc 4 978 7 is_stmt 0 view .LVU119
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   24:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
   25:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** /** @file bits/alloc_traits.h
   26:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****  *  This is an internal header file, included by other library headers.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 84
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 84
 
 
   27:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****  *  Do not attempt to use it directly. @headername{memory}
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   81:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****   /**
   82:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****    * @brief  Uniform interface to all allocator types.
   83:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****    * @ingroup allocators
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 85
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 85
 
 
   84:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****   */
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  138:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       using const_pointer = typename _Ptr<__c_pointer, const value_type>::type;
  139:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
  140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       /**
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 86
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 86
 
 
  141:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        * @brief   The allocator's void pointer type.
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  195:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       */
  196:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       using propagate_on_container_swap
  197:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 	= __detected_or_t<false_type, __pocs, _Alloc>;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 87
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 87
 
 
  198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  252:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 			       is_constructible<_Tp, _Args...>>>
  253:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 	_S_construct(_Alloc&, _Tp* __p, _Args&&... __args)
  254:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 	noexcept(std::is_nothrow_constructible<_Tp, _Args...>::value)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 88
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 88
 
 
  255:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 	{
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  309:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *
  310:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  Calls @c a.allocate(n)
  311:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       */
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 89
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 89
 
 
  312:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       _GLIBCXX_NODISCARD static _GLIBCXX20_CONSTEXPR pointer
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  366:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *
  367:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  Calls @c __a.destroy(__p) if that expression is well-formed,
  368:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  otherwise calls @c __p->~_Tp()
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 90
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 90
 
 
  369:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       */
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  423:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
  424:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       /// The allocator's const void pointer type.
  425:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       using const_void_pointer = const void*;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 91
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 91
 
 
  426:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  480:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       }
  481:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
  482:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       /**
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 92
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 92
 
 
  483:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  @brief  Deallocate memory.
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   26:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****  *  This file is a GNU extension to the Standard C++ Library.
   27:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****  */
   28:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 93
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 93
 
 
   29:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** #ifndef _NEW_ALLOCATOR_H
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   83:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 
   84:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       template<typename _Tp1>
   85:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 	_GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 94
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 94
 
 
   86:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 	new_allocator(const new_allocator<_Tp1>&) _GLIBCXX_USE_NOEXCEPT { }
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** #if __cplusplus <= 201703L
  141:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       size_type
  142:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       max_size() const _GLIBCXX_USE_NOEXCEPT
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 95
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 95
 
 
  143:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       { return _M_max_size(); }
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** 
   45:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** extern "C++" {
   46:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 96
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 96
 
 
   47:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** namespace std 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new ****   /** If you write your own error handler to be called by @c new, it must
  102:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new ****    *  be of this type.  */
  103:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new ****   typedef void (*new_handler)();
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 97
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 97
 
 
  104:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new ****   __attribute__((__externally_visible__));
  159:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** _GLIBCXX_NODISCARD void* operator new[](std::size_t, std::align_val_t, const std::nothrow_t&)
  160:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new ****   _GLIBCXX_USE_NOEXCEPT __attribute__((__externally_visible__, __malloc__));
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 98
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 98
 
 
  161:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\new **** void operator delete[](void*, std::align_val_t)
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   13:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   14:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** // GNU General Public License for more details.
   15:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 99
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 99
 
 
   16:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** // Under Section 7 of GPL version 3, you are granted additional
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   70:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** {
   71:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
   72:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 100
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 100
 
 
   73:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   /** @addtogroup memory
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  127:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     {
  128:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       typedef typename iterator_traits<_InputIterator>::value_type
  129:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	_ValueType1;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 101
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 101
 
 
  130:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       typedef typename iterator_traits<_ForwardIterator>::value_type
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  184:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****         { std::fill(__first, __last, __x); }
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     };
  186:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 102
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 102
 
 
  187:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   /// @endcond
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  241:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	      std::_Destroy(__first, __cur);
  242:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	      __throw_exception_again;
  243:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	    }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 103
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 103
 
 
  244:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	}
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  298:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   //  any of the POD optimizations.
  299:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
  300:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   template<typename _InputIterator, typename _ForwardIterator,
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 104
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 104
 
 
  301:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	   typename _Allocator>
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  355:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     {
  356:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       _ForwardIterator __cur = __first;
  357:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       __try
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 105
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 105
 
 
  358:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	{
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  412:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   //  move [first2, last2) into
  413:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   //  [result, result + (last1 - first1) + (last2 - first2)).
  414:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   template<typename _InputIterator1, typename _InputIterator2,
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 106
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 106
 
 
  415:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	   typename _ForwardIterator, typename _Allocator>
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  469:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   template<typename _ForwardIterator, typename _Tp, typename _InputIterator,
  470:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	   typename _Allocator>
  471:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     inline _ForwardIterator
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 107
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 107
 
 
  472:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     __uninitialized_fill_move(_ForwardIterator __result, _ForwardIterator __mid,
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  526:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****         __uninit_default(_ForwardIterator __first, _ForwardIterator __last)
  527:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****         {
  528:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	  _ForwardIterator __cur = __first;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 108
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 108
 
 
  529:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	  __try
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  583:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****         __uninit_default_n(_ForwardIterator __first, _Size __n)
  584:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****         {
  585:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	  typedef typename iterator_traits<_ForwardIterator>::value_type
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 109
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 109
 
 
  586:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	    _ValueType;
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  640:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	  for (; __cur != __last; ++__cur)
  641:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	    __traits::construct(__alloc, std::__addressof(*__cur));
  642:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	}
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 110
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 110
 
 
  643:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       __catch(...)
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  697:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	    {
  698:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	      for (; __cur != __last; ++__cur)
  699:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 		std::_Construct_novalue(std::__addressof(*__cur));
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 111
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 111
 
 
  700:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	    }
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  754:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   template<typename _ForwardIterator>
  755:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     inline void
  756:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     __uninitialized_default_novalue(_ForwardIterator __first,
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 112
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 112
 
 
  757:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 				    _ForwardIterator __last)
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  811:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     pair<_InputIterator, _ForwardIterator>
  812:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     __uninitialized_copy_n_pair(_InputIterator __first, _Size __n,
  813:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 			   _ForwardIterator __result, input_iterator_tag)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 113
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 113
 
 
  814:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     {
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  868:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     }
  869:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   /// @endcond
  870:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** #endif
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 114
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 114
 
 
  871:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  925:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     }
  926:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
  927:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   /**
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 115
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 115
 
 
  928:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****    *  @brief Move-construct from the range [first,last) into result.
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  982:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****   template<typename _Tp, typename = void>
  983:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     struct __is_bitwise_relocatable
  984:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     : is_trivial<_Tp> { };
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 116
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 116
 
 
  985:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  581              	.LBE778:
  582              	.LBE777:
  583              	.LBE776:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 117
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 117
 
 
  584              	.LBE775:
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  521:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  @param  __p  Pointer to the object to destroy
  522:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *
  523:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****        *  Calls @c __a.destroy(__p).
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 118
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 118
 
 
  524:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       */
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   15:../../DaisySP//Source/Control/adsr.h **** 
   16:../../DaisySP//Source/Control/adsr.h **** namespace daisysp
   17:../../DaisySP//Source/Control/adsr.h **** {
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 119
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 119
 
 
   18:../../DaisySP//Source/Control/adsr.h **** /** Distinct stages that the phase of the envelope can be located in.
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  427:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****       _M_realloc_insert(iterator __position, _Args&&... __args)
  428:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** #else
  429:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****   template<typename _Tp, typename _Alloc>
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 120
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 120
 
 
  430:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****     void
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  678              	.LBB811:
  679              	.LBB812:
  680              	.LBB813:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 121
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 121
 
 
  681              	.LBB814:
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  350:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
  732              		.loc 3 350 7 is_stmt 1 view .LVU160
  733              	.LBB826:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 122
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 122
 
 
  353:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  _Tr::deallocate(_M_impl, __p, __n);
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  500:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc ****       _M_deallocate(__old_start,
  501:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 		    this->_M_impl._M_end_of_storage - __old_start);
  750              		.loc 8 501 39 is_stmt 0 view .LVU164
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 123
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 123
 
 
  751 00b4 D9F80810 		ldr	r1, [r9, #8]
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  796              	.LVL53:
  115:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       }
  797              		.loc 10 115 41 view .LVU172
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 124
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 124
 
 
  798 00da 4FEA4814 		lsl	r4, r8, #5
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  844              	.LBB799:
  845              		.loc 12 1013 44 view .LVU181
  846 00ee 00F16004 		add	r4, r0, #96
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 125
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 125
 
 
  847              	.LBE799:
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  894              	.L42:
  895 0100 ABAAAAAA 		.word	-1431655765
  896 0104 55555501 		.word	22369621
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 126
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 126
 
 
  897 0108 ABAAAA02 		.word	44739243
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  948              	.LBE914:
  949              	.LBE895:
   18:StrumSynth.cpp **** : sample_rate{sample_rate}, instrument_state{instrument_state} {
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 127
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 127
 
 
  950              		.loc 1 18 1 view .LVU198
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   11:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** // This library is distributed in the hope that it will be useful,
   12:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
   13:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 128
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 128
 
 
   14:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** // GNU General Public License for more details.
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   68:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       typedef void        value_type;
   69:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       typedef size_t      size_type;
   70:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       typedef ptrdiff_t   difference_type;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 129
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 129
 
 
   71:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** #if __cplusplus <= 201703L
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  125:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       typedef _Tp&       reference;
  126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       typedef const _Tp& const_reference;
  127:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 130
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 130
 
 
  128:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       template<typename _Tp1>
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1017              	.LBE906:
  1018              	.LBE909:
  1019              	.LBE912:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 131
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 131
 
 
  1020              	.LBE1019:
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1063              	.LVL66:
   22:StrumSynth.cpp **** 
  1064              		.loc 1 22 9 is_stmt 1 view .LVU225
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 132
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 132
 
 
   22:StrumSynth.cpp **** 
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
  1101              		.loc 2 56 9 view .LVU244
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 133
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 133
 
 
  1102              		.loc 2 57 9 view .LVU245
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1135              	.LBE924:
  1136              	.LBB928:
  1137              	.LBB929:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 134
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 134
 
 
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1182              		.loc 1 26 9 is_stmt 1 view .LVU269
  1183              	.LBB939:
  1184              	.LBI932:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 135
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 135
 
 
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1224              		.loc 10 150 4 is_stmt 0 view .LVU284
  1225 00a8 FFF7FEFF 		bl	memcpy
  1226              	.LVL76:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 136
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 136
 
 
  150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1272              	.L47:
  1273              	.LBB1016:
   32:StrumSynth.cpp **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 137
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 137
 
 
  1274              		.loc 1 32 13 is_stmt 1 view .LVU297
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1319 00c6 0392     		str	r2, [sp, #12]	@ float
  1320              	.LBE981:
  1321              	.LBE987:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 138
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 138
 
 
  1322              	.LBB988:
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1369              	.LBE978:
  1370              	.LBE994:
  1371              	.LBB995:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 139
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 139
 
 
  1372              	.LBB984:
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1410              	.LBE999:
  1411              	.LBB1003:
  1412              	.LBB985:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 140
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 140
 
 
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1452              	.LBB1001:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
  1453              		.loc 2 69 9 view .LVU350
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 141
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 141
 
 
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1494              	.LVL90:
   42:StrumSynth.cpp ****             new_voice.env.SetReleaseTime(0.8f);     
  1495              		.loc 1 42 13 is_stmt 1 view .LVU365
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 142
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 142
 
 
  1496              	.LBB1008:
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1515              	.LBE1010:
  1516              	.LBE1011:
   43:StrumSynth.cpp ****             
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 143
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 143
 
 
  1517              		.loc 1 43 13 is_stmt 1 view .LVU373
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       }
  1560              		.loc 3 1198 21 view .LVU385
  1561 017a 02AA     		add	r2, sp, #8
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 144
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 144
 
 
  1562 017c 2146     		mov	r1, r4
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1605              		.cfi_restore 80
  1606              		.cfi_restore 81
  1607              		.cfi_def_cfa_offset 20
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 145
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 145
 
 
  1608 0190 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1660              	.LBI1065:
 1756:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
  1661              		.loc 3 1756 7 is_stmt 1 view .LVU402
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 146
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 146
 
 
  1662              	.LBB1066:
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
  1709              		.loc 4 978 7 view .LVU412
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 147
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 147
 
 
  1710              		.loc 4 978 7 is_stmt 0 view .LVU413
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  992:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
  1755              		.loc 12 992 7 view .LVU424
  1756 0038 002D     		cmp	r5, #0
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 148
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 148
 
 
  1757              	.LBE1101:
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1795              	.LBE1114:
  1796              	.LBE1118:
  1797              	.LBB1119:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 149
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 149
 
 
  1798              	.LBB1120:
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  988:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 		   _Tp* __result, allocator<_Up>&) noexcept
  1845              		.loc 12 988 5 view .LVU441
  1846              	.LBB1126:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 150
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 150
 
 
  992:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h **** 	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1891              	.LBI1166:
  120:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       {
  1892              		.loc 10 120 7 view .LVU453
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 151
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 151
 
 
  1893              	.LBB1167:
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  1938              	.LBB1169:
  353:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  _Tr::deallocate(_M_impl, __p, __n);
  1939              		.loc 3 353 2 is_stmt 0 view .LVU464
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 152
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 152
 
 
  1940 0082 B8F1000F 		cmp	r8, #0
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  993:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       return __result + __count;
  1989              		.loc 12 993 19 view .LVU470
  1990 0096 FFF7FEFF 		bl	memmove
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 153
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 153
 
 
  1991              	.LVL122:
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2037              	.LBB1159:
  2038              	.LBB1152:
  2039              	.LBB1145:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 154
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 154
 
 
  2040              	.LBB1138:
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2084              	.LBB1085:
  115:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       }
  2085              		.loc 10 115 41 is_stmt 0 view .LVU490
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 155
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 155
 
 
  2086 00b4 2046     		mov	r0, r4
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2130              		.loc 4 1205 27 view .LVU502
  2131              	.LBE1075:
  2132              	.LBE1185:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 156
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 156
 
 
  2133              	.LBB1186:
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1756:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
  2186              		.loc 3 1756 7 is_stmt 1 view .LVU508
  2187              	.LBB1225:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 157
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 157
 
 
  2188              	.LBB1226:
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2234              		.loc 4 978 7 view .LVU518
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
  2235              		.loc 4 978 7 is_stmt 0 view .LVU519
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 158
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 158
 
 
  2236              	.LBE1236:
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2280              		.loc 12 992 7 view .LVU530
  2281 0038 002D     		cmp	r5, #0
  2282              	.LBE1260:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 159
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 159
 
 
  2283              	.LBE1259:
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2329 0040 A9EB0709 		sub	r9, r9, r7
  2330              	.LVL143:
  991:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****       if (__count > 0)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 160
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 160
 
 
  2331              		.loc 12 991 34 view .LVU540
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  994:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_uninitialized.h ****     }
  2377              		.loc 12 994 25 view .LVU550
  2378              	.LBE1285:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 161
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 161
 
 
  2379              	.LBE1292:
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2423              		.loc 10 133 19 view .LVU561
  2424              	.LBE1326:
  2425              	.LBE1325:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 162
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 162
 
 
  2426              	.LBE1324:
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2471              	.LBE1328:
  2472              	.LBE1331:
  2473              	.LBB1332:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 163
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 163
 
 
  2474              	.LBB1315:
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2522              	.LBE1275:
  2523              	.LBE1334:
  2524              	.LBB1335:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 164
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 164
 
 
  2525              	.LBB1316:
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2570              		.loc 12 994 25 view .LVU587
  2571              	.LBE1290:
  2572              	.LBE1297:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 165
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 165
 
 
  2573              	.LBE1304:
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2617              	.LVL166:
  115:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h ****       }
  2618              		.loc 10 115 41 view .LVU598
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 166
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 166
 
 
  2619              	.LBE1244:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2665              	.LVL170:
  2666              	.L107:
  2667 00ca 00BF     		.align	2
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 167
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 167
 
 
  2668              	.L106:
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2718 000c 86B0     		sub	sp, sp, #24
  2719              		.cfi_def_cfa_offset 48
  2720              	.LVL172:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 168
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 168
 
 
  2721              	.LBB1464:
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2765              	.LBE1459:
  2766              	.LBE1461:
  2767              	.LBE1463:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 169
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 169
 
 
  2768              	.LBE1465:
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2815              	.LBB1489:
  2816              	.LBB1484:
  117:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** 	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 170
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 170
 
 
  2817              		.loc 8 117 6 view .LVU638
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2863              	.LBB1481:
  2864              	.LBB1479:
  2865              	.LBB1477:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 171
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 171
 
 
  150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2910              		.loc 8 121 21 view .LVU661
  2911 004a FFF7FEFF 		bl	_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
  2912              	.LVL183:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 172
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 172
 
 
  121:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\vector.tcc **** #if __cplusplus > 201402L
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2950              	.LBB1505:
  2951              	.LBI1505:
  288:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** #else
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 173
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 173
 
 
  2952              		.loc 3 288 7 view .LVU675
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  2998              	.LVL188:
   98:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	{ }
  2999              		.loc 3 98 47 view .LVU685
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 174
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 174
 
 
  3000              	.LBE1512:
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3046              		.loc 10 150 4 view .LVU695
  3047              	.LBE1532:
  3048              	.LBE1531:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 175
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 175
 
 
  3049              	.LBE1530:
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3094              		.loc 3 1043 7 view .LVU705
 1043:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
  3095              		.loc 3 1043 7 is_stmt 0 view .LVU706
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 176
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 176
 
 
  3096              	.LBE1564:
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3141              	.LBE1551:
  3142              	.LBE1555:
  3143              	.LBE1572:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 177
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 177
 
 
  3144              	.LBB1573:
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3186 009a C259     		ldr	r2, [r0, r7]
  3187              	.LVL198:
  150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\ext\new_allocator.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 178
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 178
 
 
  3188              		.loc 10 150 4 view .LVU729
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1189:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  {
  3233              		.loc 3 1189 47 view .LVU740
  3234 00ae 2746     		mov	r7, r4
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 179
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 179
 
 
  3235 00b0 DDE90431 		ldrd	r3, r1, [sp, #16]
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       }
  3277              		.loc 3 1198 21 view .LVU753
  3278 00c0 03A8     		add	r0, sp, #12
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 180
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 180
 
 
  3279              	.LVL205:
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3321              		.loc 4 978 7 view .LVU765
  978:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_iterator.h ****       : _M_current(__i) { }
  3322              		.loc 4 978 7 is_stmt 0 view .LVU766
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 181
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 181
 
 
  3323              	.LBE1553:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3366              		.loc 3 1046 39 view .LVU778
  3367              	.LBE1571:
  3368              	.LBE1606:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 182
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 182
 
 
  3369              	.LBB1607:
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3412              	.LBB1616:
   93:StrumSynth.cpp ****     }
   94:StrumSynth.cpp **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 183
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 183
 
 
   95:StrumSynth.cpp ****     // Populate the voices with first 16 arpeggio notes
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   40:../../DaisySP//Source/Utility/dsp.h **** inline float fmax(float a, float b)
   41:../../DaisySP//Source/Utility/dsp.h **** {
   42:../../DaisySP//Source/Utility/dsp.h ****     float r;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 184
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 184
 
 
   43:../../DaisySP//Source/Utility/dsp.h **** #ifdef __arm__
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
   97:../../DaisySP//Source/Utility/dsp.h **** /** Significantly more efficient than fmodf(x, 1.0f) for calculating
   98:../../DaisySP//Source/Utility/dsp.h ****  *  the decimal part of a floating point value.
   99:../../DaisySP//Source/Utility/dsp.h ****  */
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 185
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 185
 
 
  100:../../DaisySP//Source/Utility/dsp.h **** inline float fastmod1f(float x)
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
 1046:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       }
  3436              		.loc 3 1046 39 discriminator 2 view .LVU797
  3437 0108 6C68     		ldr	r4, [r5, #4]
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 186
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 186
 
 
  3438              	.LBE1618:
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3484              	.LBE1631:
  3485              	.LBE1630:
  3486              	.LBB1634:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 187
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 187
 
 
  3487              	.LBB1624:
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3528              	.LBB1639:
  3529              	.LBI1639:
  276:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       { return this->_M_impl; }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 188
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 188
 
 
  3530              		.loc 3 276 7 view .LVU827
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  576:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     __alloc_on_copy(_Alloc& __one, const _Alloc& __two)
  577:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     {
  578:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       typedef allocator_traits<_Alloc> __traits;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 189
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 189
 
 
  579:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****       typedef typename __traits::propagate_on_container_copy_assignment __pocca;
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  633:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****   template<typename _Alloc>
  634:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     _GLIBCXX14_CONSTEXPR inline void
  635:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     __alloc_on_swap(_Alloc& __one, _Alloc& __two)
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 190
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 190
 
 
  636:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     {
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  690:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     struct __is_move_insertable<allocator<_Tp>>
  691:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     : is_move_constructible<_Tp>
  692:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h ****     { };
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 191
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 191
 
 
  693:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\alloc_traits.h **** 
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3544              	.LVL226:
  3545              	.LBB1643:
  3546              	.LBI1643:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 192
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 192
 
 
  350:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h ****       {
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  149:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** 
  150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h **** #if __cplusplus >= 201103L
  151:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       // Avoid implicit deprecation.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 193
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 193
 
 
  152:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\allocator.h ****       allocator& operator=(const allocator&) = default;
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3624              		.loc 3 350 7 is_stmt 1 view .LVU851
  3625              	.LBB1664:
  353:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_vector.h **** 	  _Tr::deallocate(_M_impl, __p, __n);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 194
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 194
 
 
  3626              		.loc 3 353 2 is_stmt 0 view .LVU852
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3672              	.LBE1675:
  3673              	.LBE1674:
  3674              	.LBE1662:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 195
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 195
 
 
  3675              	.LBE1661:
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3728              		.file 50 "../../DaisySP//Source/Control/adenv.h"
  3729              		.file 51 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
  3730              		.file 52 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 196
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 196
 
 
  3731              		.file 53 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
@@ -11708,33 +11708,33 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 1
  3735              		.file 57 "InstrumentState.h"
  3736              		.file 58 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\functexcep
  3737              		.file 59 "<built-in>"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s 			page 197
+ARM GAS  C:\Users\theja\AppData\Local\Temp\cclojb12.s 			page 197
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 StrumSynth.cpp
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:17     .text._ZN10StrumSynth7processEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:26     .text._ZN10StrumSynth7processEv:00000000 _ZN10StrumSynth7processEv
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:302    .text._ZN10StrumSynth7processEv:000000fc $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:313    .text._ZN10StrumSynth12trigger_noteEi:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:321    .text._ZN10StrumSynth12trigger_noteEi:00000000 _ZN10StrumSynth12trigger_noteEi
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:388    .rodata._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_.str1.4:00000000 $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:392    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:400    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000000 _ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:895    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000100 $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:906    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:914    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 _ZN10StrumSynthC2EfRK15InstrumentState
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:1614   .text._ZN10StrumSynthC2EfRK15InstrumentState:00000194 $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:914    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 _ZN10StrumSynthC1EfRK15InstrumentState
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:1627   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:1635   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2144   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:000000cc $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2152   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2160   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2669   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:000000cc $d
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2677   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:2685   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:00000000 _ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE
-C:\Users\theja\AppData\Local\Temp\ccW4VLVp.s:3688   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:0000015c $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:17     .text._ZN10StrumSynth7processEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:26     .text._ZN10StrumSynth7processEv:00000000 _ZN10StrumSynth7processEv
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:302    .text._ZN10StrumSynth7processEv:000000fc $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:313    .text._ZN10StrumSynth12trigger_noteEi:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:321    .text._ZN10StrumSynth12trigger_noteEi:00000000 _ZN10StrumSynth12trigger_noteEi
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:388    .rodata._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_.str1.4:00000000 $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:392    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:400    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000000 _ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:895    .text._ZNSt6vectorIN10StrumSynth10StrumVoiceESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_:00000100 $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:906    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:914    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 _ZN10StrumSynthC2EfRK15InstrumentState
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:1614   .text._ZN10StrumSynthC2EfRK15InstrumentState:00000194 $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:914    .text._ZN10StrumSynthC2EfRK15InstrumentState:00000000 _ZN10StrumSynthC1EfRK15InstrumentState
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:1627   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:1635   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2144   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:000000cc $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2152   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2160   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:00000000 _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2669   .text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:000000cc $d
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2677   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:00000000 $t
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:2685   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:00000000 _ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE
+C:\Users\theja\AppData\Local\Temp\cclojb12.s:3688   .text._ZN10StrumSynth12set_arpeggioESt6vectorIiSaIiEE:0000015c $d
 
 UNDEFINED SYMBOLS
 _ZN7daisysp10Oscillator12CalcPhaseIncEf
