@@ -62,9 +62,9 @@ struct GPIOState {
             button_11th.Init    (D29, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
             button_13th.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
 
-            groove.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            drum_left.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            drum_right.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            groove.Init         (D23, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            drum_left.Init      (D24, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            drum_right.Init     (D25, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
     
    }
 
@@ -93,5 +93,9 @@ struct GPIOState {
         button_min.Debounce();
         button_aug.Debounce();
         button_dim.Debounce();
+
+        groove.Debounce();
+        drum_left.Debounce();
+        drum_right.Debounce();
     }
 };

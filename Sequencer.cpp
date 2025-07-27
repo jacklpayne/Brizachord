@@ -17,25 +17,7 @@ BBBBBBB/  BB/       BB/ BBBBBBBB/  BBBBBBB/  BBBBBBB/ BB/   BB/  BBBBBB/  BB/   
 
 Sequencer::Sequencer(float sample_rate, DrumSynth& drum_synth, ChordSynth& chord_synth) 
     : sample_rate(sample_rate), drum_synth(drum_synth), chord_synth(chord_synth), bpm(105) {
-        DrumPatternBeat pat{};
-        drum_patterns.clear();
-        pat.kick_steps = {  true, false, false, false, 
-                            true, false, false, false, 
-                            true, false, false, false, 
-                            true, false, false, false, };
-
-        pat.snare_steps = {false, false, false, false, 
-                            true, false, false, false, 
-                            false, false, false, false, 
-                            true, false, false, false, };
-
-        pat.hat_steps = {true, false, true, false, 
-                        true, false, true, false, 
-                        true, false, true, false, 
-                        true, false, true, false, };
-        drum_patterns.push_back(pat);
-
-        chord_patterns.push_back({true, true, true, false, true, false, true, false, true, true, true, false, true, false, true, false, });
+        init_sequences();
     }
 
 void Sequencer::tick() {
@@ -45,16 +27,58 @@ void Sequencer::tick() {
 
     // If at a 16th note
     if (current_tick % step_duration == 0 && current_step < 16) {
-        if (drum_patterns[pattern_idx].kick_steps[current_step])    drum_synth.trigger_kick();
-        if (drum_patterns[pattern_idx].snare_steps[current_step])   drum_synth.trigger_snare();
-        if (drum_patterns[pattern_idx].hat_steps[current_step])     drum_synth.trigger_hat();
+        if (sequences[sequence_idx].drum_sequence.kick_steps[current_step])    drum_synth.trigger_kick();
+        if (sequences[sequence_idx].drum_sequence.snare_steps[current_step])   drum_synth.trigger_snare();
+        if (sequences[sequence_idx].drum_sequence.hat_steps[current_step])     drum_synth.trigger_hat();
 
-        chord_synth.disable();
-        if (chord_patterns[pattern_idx][current_step])
-            chord_synth.enable();
+        chord_synth.enable();
+        if (!groove && sequences[sequence_idx].chord_sequence[current_step])
+            chord_synth.disable();
     }
 
     current_tick++;
     if (current_tick >= SAMPLES_IN_BAR)
         current_tick = 0;
+}
+
+void Sequencer::scroll_pattern(bool direction) {
+    if (direction) {
+        sequence_idx++;
+        if (sequence_idx >= sequences.size())
+            sequence_idx = 0;
+    } else {
+        if (sequence_idx == 0)
+            sequence_idx = sequences.size() - 1;
+        else
+            sequence_idx--;
+    }
+
+    // Reset the current tick to the start of the new pattern
+    current_tick = 0;
+}
+
+void Sequencer::init_sequences() {
+    Sequence seq;
+    DrumSequence drum_seq;
+
+    // ROCK 1 
+    drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, };
+    drum_seq.snare_steps = {false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, };
+    drum_seq.hat_steps   = {true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, };
+
+    seq.drum_sequence = drum_seq;
+    seq.chord_sequence = {true, true, true, false, true, false, true, false, true, true, true, false, true, false, true, false};
+    sequences.push_back(seq);
+
+
+    
+    // LATIN
+    drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, true, false, false, true, false, false, false, };
+    drum_seq.snare_steps = {false, false, false, true, false, false, true, false, false, false, false, true, false, false, true, false, };
+    drum_seq.hat_steps   = {true, false, true, false, true, false, true, false, true, true, true, false, true, false, true, false, };
+
+    seq.drum_sequence = drum_seq;
+    //seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
+    seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
+    sequences.push_back(seq);
 }

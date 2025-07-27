@@ -71,6 +71,7 @@ void Brizachord::main_loop() {
 		poll_chord_ext();
 		poll_chord_root();
 		poll_pots();
+		poll_pattern_controls();
 
 		sequencer->set_bpm(instrument_state.bpm);
 	}    
@@ -219,13 +220,13 @@ void Brizachord::poll_chord_ext() {
 
 void Brizachord::poll_pattern_controls() {
     if (gpio_state.groove.FallingEdge()) {
-		//sequencer->toggle_groove();
+		sequencer->toggle_groove();
 	}
 	if (gpio_state.drum_left.FallingEdge()) {
-
+		sequencer->scroll_pattern(false); // Scroll left
 	}
 	if (gpio_state.drum_right.FallingEdge()) {
-		
+		sequencer->scroll_pattern(true); // Scroll right
 	}
 }
 
