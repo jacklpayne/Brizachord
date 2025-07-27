@@ -71,6 +71,8 @@ void Brizachord::main_loop() {
 		poll_chord_ext();
 		poll_chord_root();
 		poll_pots();
+
+		sequencer->set_bpm(instrument_state.bpm);
 	}    
 }
 
@@ -252,20 +254,23 @@ void Brizachord::poll_trill_bar() {
     }
 }
 
-
+/*
+Hardware annoyance: pots are wired in reverse with 3v3 on left, but
+they have an off-click on the far left, so we reverse and shrink the range to [0.2f, 3.1f]
+*/
 void Brizachord::poll_pots() {
-    auto log_curve = [](float x) {
-        constexpr float min_valid = 0.1f / 3.3f;
-        if (x < min_valid || x > 1.f)
-            return -1.f;
-		/*
-		Hardware annoyance: pots are wired in reverse with 3v3 on left, but
-		they have an off-click on the far left, so we discard a true ground value
-		*/
-        x = (x - min_valid) / (1.f - min_valid); // remap 0.1V → 0.f, 3.3V → 1.f
-        x = 1.f - x; // invert
-        return log10f(9.f * x + 1.f);
-    };
+	auto log_curve = [](float x) {
+		constexpr float min_v = 0.2f / 3.3f;
+		constexpr float max_v = 3.1f / 3.3f;
+		if (x < min_v || x > max_v)
+			return -1.f;
+		x = (x - min_v) / (max_v - min_v);
+		x = 1.f - x;
+
+		float y = log10f(9.f * x + 1.f);
+		return y / log10f(10.f); // normalize to 0–1
+	};
+
 
     float v;
 

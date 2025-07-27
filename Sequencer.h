@@ -14,6 +14,7 @@ public:
     void tick();
 
     void scroll_pattern(bool direction); // Pattern select switches call this function with 0,1 for left, right
+    void set_bpm(uint8_t new_bpm) { bpm = new_bpm; }
 
 private:
     uint8_t bpm{80};
