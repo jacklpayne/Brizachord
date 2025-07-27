@@ -100,9 +100,6 @@ void Brizachord::audio_callback(AudioHandle::InputBuffer  in,
 		float drums_sample = instance->drum_synth.process();
 		float strum_sample = instance->strum_synth->process();
 
-		//sample += drums_sample * 0.2f;
-		//sample += chord_sample * 0.2f;
-		//sample += strum_sample * 0.6f;
 
 		sample += drums_sample * 0.2f * instance->drum_vol;
 		sample += chord_sample * 0.2f * instance->chord_vol;

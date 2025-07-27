@@ -23,7 +23,7 @@ DrumSynth::DrumSynth(float sample_rate) {
     kick_osc.Init(sample_rate);
     kick_osc.SetWaveform(Oscillator::WAVE_SIN);
     kick_osc.SetAmp(1.0f);
-    kick_osc.SetFreq(65.f);
+    kick_osc.SetFreq(100.f);
 
     // Initialize the snare osc and bandpass filter
     //===============================================
@@ -123,13 +123,9 @@ float DrumSynth::process_hat() {
     }
 }
 
-bool DrumSynth::hat_active() const {
-    return hat_timer > 0.f;
-}
-
 float DrumSynth::process() {
-    float kick_sample = process_kick();
+    float kick_sample = process_kick() * 1.5f;
     float snare_sample = process_snare();
-    float hat_sample = process_hat();
+    float hat_sample = process_hat() * 0.4f;
     return (kick_sample + snare_sample + hat_sample);
 }

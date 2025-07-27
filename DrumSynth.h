@@ -17,7 +17,6 @@ public:
 
     void trigger_hat();
     float process_hat();
-    bool hat_active() const;
 
     float process();
 
@@ -29,7 +28,7 @@ private:
     float sample_rate{};
 
     bool kick_playing{};
-    float kick_duration_s{0.3f};
+    float kick_duration_s{0.2f};
     float kick_timer{};
     float kick_amp{};
 
@@ -43,7 +42,7 @@ private:
     Svf snare_lowpass;
 
     bool hat_playing{};
-    float hat_duration_s{0.09f};
+    float hat_duration_s{0.05f};
     float hat_timer{};
     float hat_amp{};
 

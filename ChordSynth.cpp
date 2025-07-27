@@ -20,19 +20,20 @@ void ChordSynth::set_chord(std::vector<int> midi_notes) {
 	for (int i = 0; i < midi_notes.size(); i++) {
 		daisysp::Oscillator osc;
 		osc.Init(sample_rate);
-		osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SQUARE);
+		osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SAW);
 		osc.SetFreq(mtof(midi_notes[i]));
 		osc.SetAmp(1.f / (midi_notes.size() + 1));
 
 		chord_oscs.push_back(osc);
 	}
 
-	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SQUARE);
-	bass_osc.SetFreq(mtof(midi_notes[0])/2.f);
+	bass_osc.Init(sample_rate);
+	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SAW);
+	bass_osc.SetFreq(mtof(midi_notes[0])/4.f);
 	bass_osc.SetAmp(1.f / (midi_notes.size() + 1));
 
 	high_pass.Init(sample_rate);
-	high_pass.SetFreq(100.f);
+	high_pass.SetFreq(400.f);
 	high_pass.SetRes(0.1f);
 
 	low_pass.Init(sample_rate);
@@ -48,8 +49,8 @@ float ChordSynth::process() {
 	}
 	
 	float bass_sample = bass_osc.Process();
-	high_pass.Process(chord_sample + bass_sample);
+	high_pass.Process(chord_sample);
 	float hp = high_pass.High();
-	low_pass.Process(hp);
+	low_pass.Process(hp + (bass_sample * 0.8f));
 	return low_pass.Low();
 }

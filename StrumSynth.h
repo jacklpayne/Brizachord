@@ -26,6 +26,7 @@ private:
     std::vector<StrumVoice> voices;
 
     Svf low_pass;
+    Svf high_pass;
     Oscillator filter_LFO;
 
     const InstrumentState& instrument_state;

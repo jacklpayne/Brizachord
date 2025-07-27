@@ -21,6 +21,10 @@ StrumSynth::StrumSynth(float sample_rate, const InstrumentState& instrument_stat
         low_pass.SetFreq(3000.f);
         low_pass.SetRes(0.5f);
 
+        high_pass.Init(sample_rate);
+        high_pass.SetFreq(200.f);
+        high_pass.SetRes(0.0f);
+
         filter_LFO.Init(sample_rate);
         filter_LFO.SetWaveform(Oscillator::WAVE_TRI);
         filter_LFO.SetAmp(1.0f);
@@ -38,9 +42,9 @@ StrumSynth::StrumSynth(float sample_rate, const InstrumentState& instrument_stat
 
             new_voice.env.Init(sample_rate);
             new_voice.env.SetAttackTime(0.005f);
-            new_voice.env.SetDecayTime(0.3f);
-            new_voice.env.SetSustainLevel(0.3f);
-            new_voice.env.SetReleaseTime(0.8f);     
+            new_voice.env.SetDecayTime(0.2f);
+            new_voice.env.SetSustainLevel(0.5f);
+            new_voice.env.SetReleaseTime(0.55f);     
             
             voices.push_back(new_voice);
         }
@@ -48,7 +52,7 @@ StrumSynth::StrumSynth(float sample_rate, const InstrumentState& instrument_stat
     
 float StrumSynth::process() {
     filter_LFO.SetFreq(instrument_state.bpm / 15.f); // Call every sample in case bpm changes
-    float filter_freq = (filter_LFO.Process() * 2350.f) + 2650.f; // Vary cutoff between 1k and 18k
+    float filter_freq = (filter_LFO.Process() * 1500.f) + 2000.f; // Vary cutoff from 2000 to 3500 Hz
     low_pass.SetFreq(filter_freq);
     
     float sum = 0.f;
@@ -67,7 +71,8 @@ float StrumSynth::process() {
     float sample = sum * scale;
 
     low_pass.Process(sample);
-    return low_pass.Low() * 0.85f;
+    high_pass.Process(low_pass.Low());
+    return high_pass.High() * 0.85f;
 }
 
 void StrumSynth::trigger_note(int arpeggio_idx) {

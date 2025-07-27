@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -52,28 +52,27 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   32              		@ args = 0, pretend = 0, frame = 8
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		.loc 1 18 1 is_stmt 0 view .LVU1
-  35 0000 F0B5     		push	{r4, r5, r6, r7, lr}
-  36              		.cfi_def_cfa_offset 20
-  37              		.cfi_offset 4, -20
-  38              		.cfi_offset 5, -16
-  39              		.cfi_offset 6, -12
-  40              		.cfi_offset 7, -8
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 2
+  35 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+  36              		.cfi_def_cfa_offset 24
+  37              		.cfi_offset 4, -24
+  38              		.cfi_offset 5, -20
+  39              		.cfi_offset 6, -16
+  40              		.cfi_offset 7, -12
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 2
 
 
-  41              		.cfi_offset 14, -4
-  42 0002 2DED068B 		vpush.64	{d8, d9, d10}
-  43              		.cfi_def_cfa_offset 44
-  44              		.cfi_offset 80, -44
-  45              		.cfi_offset 81, -40
-  46              		.cfi_offset 82, -36
-  47              		.cfi_offset 83, -32
-  48              		.cfi_offset 84, -28
-  49              		.cfi_offset 85, -24
-  50              	.LBB76:
-  51              	.LBB77:
-  52              	.LBB78:
-  53              		.file 2 "../../DaisySP//Source/Synthesis/oscillator.h"
+  41              		.cfi_offset 8, -8
+  42              		.cfi_offset 14, -4
+  43 0004 2DED048B 		vpush.64	{d8, d9}
+  44              		.cfi_def_cfa_offset 40
+  45              		.cfi_offset 80, -40
+  46              		.cfi_offset 81, -36
+  47              		.cfi_offset 82, -32
+  48              		.cfi_offset 83, -28
+  49              	.LBB76:
+  50              	.LBB77:
+  51              	.LBB78:
+  52              		.file 2 "../../DaisySP//Source/Synthesis/oscillator.h"
    1:../../DaisySP//Source/Synthesis/oscillator.h **** /*
    2:../../DaisySP//Source/Synthesis/oscillator.h **** Copyright (c) 2020 Electrosmith, Corp
    3:../../DaisySP//Source/Synthesis/oscillator.h **** 
@@ -118,10 +117,10 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   42:../../DaisySP//Source/Synthesis/oscillator.h **** 
   43:../../DaisySP//Source/Synthesis/oscillator.h ****         \param sample_rate - sample rate of the audio engine being run, and the frequency that the 
   44:../../DaisySP//Source/Synthesis/oscillator.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 3
-
-
   45:../../DaisySP//Source/Synthesis/oscillator.h ****         Defaults:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 3
+
+
   46:../../DaisySP//Source/Synthesis/oscillator.h ****         - freq_ = 100 Hz
   47:../../DaisySP//Source/Synthesis/oscillator.h ****         - amp_ = 0.5
   48:../../DaisySP//Source/Synthesis/oscillator.h ****         - waveform_ = sine wave.
@@ -130,67 +129,65 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   51:../../DaisySP//Source/Synthesis/oscillator.h ****     {
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_        = sample_rate;
   53:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
-  54              		.loc 2 53 27 view .LVU2
-  55 0006 F7EE009A 		vmov.f32	s19, #1.0e+0
-  56              	.LBE78:
-  57              	.LBE77:
-  58              		.loc 1 18 39 view .LVU3
-  59 000a 5F4B     		ldr	r3, .L4
-  60              	.LBE76:
-  61              		.loc 1 18 1 view .LVU4
-  62 000c B0EE408A 		vmov.f32	s16, s0
-  63              	.LBB141:
-  64              		.loc 1 18 39 view .LVU5
-  65 0010 0025     		movs	r5, #0
-  66 0012 C0F8A430 		str	r3, [r0, #164]	@ float
+  53              		.loc 2 53 27 view .LVU2
+  54 0008 B7EE009A 		vmov.f32	s18, #1.0e+0
+  55              	.LBE78:
+  56              	.LBE77:
+  57              		.loc 1 18 39 view .LVU3
+  58 000c 5E4B     		ldr	r3, .L4
+  59              	.LBE76:
+  60              		.loc 1 18 1 view .LVU4
+  61 000e B0EE408A 		vmov.f32	s16, s0
+  62              	.LBB139:
+  63              		.loc 1 18 39 view .LVU5
+  64 0012 0025     		movs	r5, #0
+  65 0014 C0F8A430 		str	r3, [r0, #164]	@ float
+  66 0018 0026     		movs	r6, #0
   67              	.LBB87:
   68              	.LBB79:
+  69              		.loc 2 53 27 view .LVU6
+  70 001a C9EE009A 		vdiv.f32	s19, s18, s0
+  71              	.LBE79:
+  72              	.LBE87:
+  73              		.loc 1 18 39 view .LVU7
+  74 001e 5B4B     		ldr	r3, .L4+4
+  75              	.LBB88:
+  76              	.LBB80:
   54:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+  77              		.loc 2 54 20 view .LVU8
+  78 0020 DFED5B8A 		vldr.32	s17, .L4+8
   55:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
-  69              		.loc 2 55 20 view .LVU6
-  70 0016 F6EE008A 		vmov.f32	s17, #5.0e-1
-  53:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
-  71              		.loc 2 53 27 view .LVU7
-  72 001a 89EE80AA 		vdiv.f32	s20, s19, s0
-  73              	.LBE79:
-  74              	.LBE87:
-  75              		.loc 1 18 39 view .LVU8
-  76 001e 5B4B     		ldr	r3, .L4+4
-  77 0020 0026     		movs	r6, #0
-  78              	.LBB88:
-  79              	.LBB80:
-  54:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
-  80              		.loc 2 54 20 view .LVU9
-  81 0022 9FED5B9A 		vldr.32	s18, .L4+8
-  82              	.LBE80:
-  83              	.LBE88:
-  84              		.loc 1 18 39 view .LVU10
-  85 0026 C0F8E030 		str	r3, [r0, #224]	@ float
-  86              	.LBE141:
-  87              		.loc 1 18 1 view .LVU11
-  88 002a 83B0     		sub	sp, sp, #12
-  89              		.cfi_def_cfa_offset 56
-  90              	.LBB142:
-  91              		.loc 1 18 39 view .LVU12
-  92 002c 594B     		ldr	r3, .L4+12
-  93              	.LBE142:
-  94              		.loc 1 18 1 view .LVU13
-  95 002e 0446     		mov	r4, r0
-  96              	.LVL1:
-  97              	.LBB143:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 4
+  79              		.loc 2 55 20 view .LVU9
+  80 0024 4FF07C57 		mov	r7, #1056964608
+  81              	.LBE80:
+  82              	.LBE88:
+  83              		.loc 1 18 39 view .LVU10
+  84 0028 C0F8E030 		str	r3, [r0, #224]	@ float
+  85              	.LBE139:
+  86              		.loc 1 18 1 view .LVU11
+  87 002c 82B0     		sub	sp, sp, #8
+  88              		.cfi_def_cfa_offset 48
+  89              	.LBB140:
+  90              		.loc 1 18 39 view .LVU12
+  91 002e 594B     		ldr	r3, .L4+12
+  92              	.LBE140:
+  93              		.loc 1 18 1 view .LVU13
+  94 0030 0446     		mov	r4, r0
+  95              	.LVL1:
+  96              	.LBB141:
+  97              	.LBB89:
+  98              	.LBI89:
+  23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 4
 
 
-  98              	.LBB89:
-  99              	.LBI89:
+  99              		.loc 2 23 5 is_stmt 1 view .LVU14
   23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 100              		.loc 2 23 5 is_stmt 1 view .LVU14
-  23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 101              		.loc 2 23 5 is_stmt 0 view .LVU15
- 102              	.LBE89:
- 103              	.LBB90:
- 104              	.LBI90:
- 105              		.file 3 "../../DaisySP//Source/Control/adenv.h"
+ 100              		.loc 2 23 5 is_stmt 0 view .LVU15
+ 101              	.LBE89:
+ 102              	.LBB90:
+ 103              	.LBI90:
+ 104              		.file 3 "../../DaisySP//Source/Control/adenv.h"
    1:../../DaisySP//Source/Control/adenv.h **** /*
    2:../../DaisySP//Source/Control/adenv.h **** Copyright (c) 2020 Electrosmith, Corp
    3:../../DaisySP//Source/Control/adenv.h **** 
@@ -233,62 +230,62 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   40:../../DaisySP//Source/Control/adenv.h **** {
   41:../../DaisySP//Source/Control/adenv.h ****   public:
   42:../../DaisySP//Source/Control/adenv.h ****     AdEnv() {}
- 106              		.loc 3 42 5 is_stmt 1 view .LVU16
- 107              		.loc 3 42 5 is_stmt 0 view .LVU17
- 108              	.LBE90:
- 109              	.LBB91:
- 110              	.LBI91:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 5
+ 105              		.loc 3 42 5 is_stmt 1 view .LVU16
+ 106              		.loc 3 42 5 is_stmt 0 view .LVU17
+ 107              	.LBE90:
+ 108              	.LBB91:
+ 109              	.LBI91:
+ 110              		.loc 3 42 5 is_stmt 1 view .LVU18
+ 111              		.loc 3 42 5 is_stmt 0 view .LVU19
+ 112              	.LBE91:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 5
 
 
- 111              		.loc 3 42 5 is_stmt 1 view .LVU18
- 112              		.loc 3 42 5 is_stmt 0 view .LVU19
- 113              	.LBE91:
- 114              		.loc 1 18 39 view .LVU20
- 115 0030 80F8A060 		strb	r6, [r0, #160]
- 116              	.LBB92:
- 117              	.LBB81:
+ 113              		.loc 1 18 39 view .LVU20
+ 114 0032 C0F8A850 		str	r5, [r0, #168]	@ float
+ 115              	.LBB92:
+ 116              	.LBB81:
   56:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
   60:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
   61:../../DaisySP//Source/Synthesis/oscillator.h ****         eor_       = true;
- 118              		.loc 2 61 20 view .LVU21
- 119 0034 40F20117 		movw	r7, #257
- 120              	.LBE81:
- 121              	.LBE92:
- 122              		.loc 1 18 39 view .LVU22
- 123 0038 C0F88831 		str	r3, [r0, #392]	@ float
- 124              	.LBB93:
- 125              	.LBB82:
+ 117              		.loc 2 61 20 view .LVU21
+ 118 0036 40F20118 		movw	r8, #257
+ 119              	.LBE81:
+ 120              	.LBE92:
+ 121              		.loc 1 18 39 view .LVU22
+ 122 003a C0F88831 		str	r3, [r0, #392]	@ float
+ 123              	.LBB93:
+ 124              	.LBB82:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 126              		.loc 2 58 34 view .LVU23
- 127 003c B0EE490A 		vmov.f32	s0, s18
- 128              	.LVL2:
+ 125              		.loc 2 58 34 view .LVU23
+ 126 003e B0EE680A 		vmov.f32	s0, s17
+ 127              	.LVL2:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 129              		.loc 2 58 34 view .LVU24
- 130              	.LBE82:
- 131              	.LBE93:
- 132              		.loc 1 18 39 view .LVU25
- 133 0040 C0F8A850 		str	r5, [r0, #168]	@ float
- 134 0044 C0F8AC50 		str	r5, [r0, #172]	@ float
- 135              	.LVL3:
- 136              	.LBB94:
- 137              	.LBI94:
+ 128              		.loc 2 58 34 view .LVU24
+ 129              	.LBE82:
+ 130              	.LBE93:
+ 131              		.loc 1 18 39 view .LVU25
+ 132 0042 80F8A060 		strb	r6, [r0, #160]
+ 133 0046 C0F8AC50 		str	r5, [r0, #172]	@ float
+ 134              	.LVL3:
+ 135              	.LBB94:
+ 136              	.LBI94:
   23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 138              		.loc 2 23 5 is_stmt 1 view .LVU26
+ 137              		.loc 2 23 5 is_stmt 1 view .LVU26
   23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 139              		.loc 2 23 5 is_stmt 0 view .LVU27
- 140              	.LBE94:
- 141              		.loc 1 18 39 view .LVU28
- 142 0048 80F8DC60 		strb	r6, [r0, #220]
- 143 004c C0F8E450 		str	r5, [r0, #228]	@ float
- 144 0050 C0F8E850 		str	r5, [r0, #232]	@ float
- 145              	.LVL4:
- 146              	.LBB95:
- 147              	.LBI95:
- 148              		.file 4 "../../DaisySP//Source/Filters/svf.h"
+ 138              		.loc 2 23 5 is_stmt 0 view .LVU27
+ 139              	.LBE94:
+ 140              		.loc 1 18 39 view .LVU28
+ 141 004a 80F8DC60 		strb	r6, [r0, #220]
+ 142 004e C0F8E450 		str	r5, [r0, #228]	@ float
+ 143 0052 C0F8E850 		str	r5, [r0, #232]	@ float
+ 144              	.LVL4:
+ 145              	.LBB95:
+ 146              	.LBI95:
+ 147              		.file 4 "../../DaisySP//Source/Filters/svf.h"
    1:../../DaisySP//Source/Filters/svf.h **** /*
    2:../../DaisySP//Source/Filters/svf.h **** Copyright (c) 2020 Electrosmith, Corp
    3:../../DaisySP//Source/Filters/svf.h **** 
@@ -298,12 +295,12 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
    7:../../DaisySP//Source/Filters/svf.h **** */
    8:../../DaisySP//Source/Filters/svf.h **** 
    9:../../DaisySP//Source/Filters/svf.h **** #pragma once
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 6
-
-
   10:../../DaisySP//Source/Filters/svf.h **** #ifndef DSY_SVF_H
   11:../../DaisySP//Source/Filters/svf.h **** #define DSY_SVF_H
   12:../../DaisySP//Source/Filters/svf.h **** 
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 6
+
+
   13:../../DaisySP//Source/Filters/svf.h **** namespace daisysp
   14:../../DaisySP//Source/Filters/svf.h **** {
   15:../../DaisySP//Source/Filters/svf.h **** /**      Double Sampled, Stable State Variable Filter
@@ -321,85 +318,86 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   27:../../DaisySP//Source/Filters/svf.h **** {
   28:../../DaisySP//Source/Filters/svf.h ****   public:
   29:../../DaisySP//Source/Filters/svf.h ****     Svf() {}
- 149              		.loc 4 29 5 is_stmt 1 view .LVU29
- 150              		.loc 4 29 5 is_stmt 0 view .LVU30
- 151              	.LBE95:
- 152              	.LBB96:
- 153              	.LBI96:
- 154              		.loc 4 29 5 is_stmt 1 view .LVU31
- 155              		.loc 4 29 5 is_stmt 0 view .LVU32
- 156              	.LBE96:
- 157              		.loc 1 18 39 view .LVU33
- 158 0054 80F88461 		strb	r6, [r0, #388]
- 159 0058 C0F88C51 		str	r5, [r0, #396]	@ float
- 160 005c C0F89051 		str	r5, [r0, #400]	@ float
- 161              	.LVL5:
- 162              	.LBB97:
- 163              	.LBI97:
- 164              		.loc 4 29 5 is_stmt 1 view .LVU34
- 165              		.loc 4 29 5 is_stmt 0 view .LVU35
- 166              	.LBE97:
- 167              	.LBB98:
- 168              	.LBI98:
- 169              		.loc 4 29 5 is_stmt 1 view .LVU36
- 170              		.loc 4 29 5 is_stmt 0 view .LVU37
- 171              	.LBE98:
+ 148              		.loc 4 29 5 is_stmt 1 view .LVU29
+ 149              		.loc 4 29 5 is_stmt 0 view .LVU30
+ 150              	.LBE95:
+ 151              	.LBB96:
+ 152              	.LBI96:
+ 153              		.loc 4 29 5 is_stmt 1 view .LVU31
+ 154              		.loc 4 29 5 is_stmt 0 view .LVU32
+ 155              	.LBE96:
+ 156              		.loc 1 18 39 view .LVU33
+ 157 0056 80F88461 		strb	r6, [r0, #388]
+ 158 005a C0F88C51 		str	r5, [r0, #396]	@ float
+ 159 005e C0F89051 		str	r5, [r0, #400]	@ float
+ 160              	.LVL5:
+ 161              	.LBB97:
+ 162              	.LBI97:
+ 163              		.loc 4 29 5 is_stmt 1 view .LVU34
+ 164              		.loc 4 29 5 is_stmt 0 view .LVU35
+ 165              	.LBE97:
+ 166              	.LBB98:
+ 167              	.LBI98:
+ 168              		.loc 4 29 5 is_stmt 1 view .LVU36
+ 169              		.loc 4 29 5 is_stmt 0 view .LVU37
+ 170              	.LBE98:
   19:DrumSynth.cpp ****     this->sample_rate = sample_rate;
- 172              		.loc 1 19 5 is_stmt 1 view .LVU38
- 173              		.loc 1 19 23 is_stmt 0 view .LVU39
- 174 0060 80ED278A 		vstr.32	s16, [r0, #156]
+ 171              		.loc 1 19 5 is_stmt 1 view .LVU38
+ 172              		.loc 1 19 23 is_stmt 0 view .LVU39
+ 173 0062 80ED278A 		vstr.32	s16, [r0, #156]
   20:DrumSynth.cpp **** 
   21:DrumSynth.cpp ****     // Initialize the kick osc
   22:DrumSynth.cpp ****     //===============================================
   23:DrumSynth.cpp ****     kick_osc.Init(sample_rate);
- 175              		.loc 1 23 5 is_stmt 1 view .LVU40
- 176              	.LVL6:
- 177              	.LBB99:
- 178              	.LBI77:
+ 174              		.loc 1 23 5 is_stmt 1 view .LVU40
+ 175              	.LVL6:
+ 176              	.LBB99:
+ 177              	.LBI77:
   50:../../DaisySP//Source/Synthesis/oscillator.h ****     {
- 179              		.loc 2 50 10 view .LVU41
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 7
+ 178              		.loc 2 50 10 view .LVU41
+ 179              	.LBB83:
+  52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
+ 180              		.loc 2 52 9 view .LVU42
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 7
 
 
- 180              	.LBB83:
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 181              		.loc 2 52 9 view .LVU42
-  52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 182              		.loc 2 52 20 is_stmt 0 view .LVU43
- 183 0064 80ED048A 		vstr.32	s16, [r0, #16]
+ 181              		.loc 2 52 20 is_stmt 0 view .LVU43
+ 182 0066 80ED048A 		vstr.32	s16, [r0, #16]
   53:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 184              		.loc 2 53 9 is_stmt 1 view .LVU44
+ 183              		.loc 2 53 9 is_stmt 1 view .LVU44
   54:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 185              		.loc 2 54 20 is_stmt 0 view .LVU45
- 186 0068 80ED029A 		vstr.32	s18, [r0, #8]
+ 184              		.loc 2 54 20 is_stmt 0 view .LVU45
+ 185 006a C0ED028A 		vstr.32	s17, [r0, #8]
   55:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 187              		.loc 2 55 20 view .LVU46
- 188 006c C0ED018A 		vstr.32	s17, [r0, #4]
+ 186              		.loc 2 55 20 view .LVU46
+ 187 006e 4760     		str	r7, [r0, #4]	@ float
   56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 189              		.loc 2 56 20 view .LVU47
- 190 0070 C0ED038A 		vstr.32	s17, [r0, #12]
+ 188              		.loc 2 56 20 view .LVU47
+ 189 0070 C760     		str	r7, [r0, #12]	@ float
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 191              		.loc 2 57 20 view .LVU48
- 192 0074 8561     		str	r5, [r0, #24]	@ float
+ 190              		.loc 2 57 20 view .LVU48
+ 191 0072 8561     		str	r5, [r0, #24]	@ float
   53:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 193              		.loc 2 53 20 view .LVU49
- 194 0076 80ED05AA 		vstr.32	s20, [r0, #20]
+ 192              		.loc 2 53 20 view .LVU49
+ 193 0074 C0ED059A 		vstr.32	s19, [r0, #20]
   54:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 195              		.loc 2 54 9 is_stmt 1 view .LVU50
+ 194              		.loc 2 54 9 is_stmt 1 view .LVU50
   55:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 196              		.loc 2 55 9 view .LVU51
+ 195              		.loc 2 55 9 view .LVU51
   56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 197              		.loc 2 56 9 view .LVU52
+ 196              		.loc 2 56 9 view .LVU52
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 198              		.loc 2 57 9 view .LVU53
+ 197              		.loc 2 57 9 view .LVU53
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 199              		.loc 2 58 9 view .LVU54
+ 198              		.loc 2 58 9 view .LVU54
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 200              		.loc 2 58 34 is_stmt 0 view .LVU55
- 201 007a FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 202              	.LVL7:
+ 199              		.loc 2 58 34 is_stmt 0 view .LVU55
+ 200 0078 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 201              	.LVL7:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 203              		.loc 2 58 34 view .LVU56
+ 202              		.loc 2 58 34 view .LVU56
+ 203 007c F0EE407A 		vmov.f32	s15, s0
  204              	.LBE83:
  205              	.LBE99:
  206              	.LBB100:
@@ -412,35 +410,35 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   67:../../DaisySP//Source/Synthesis/oscillator.h ****     inline void SetFreq(const float f)
   68:../../DaisySP//Source/Synthesis/oscillator.h ****     {
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = f;
- 208              		.loc 2 69 20 view .LVU57
- 209 007e DFED467A 		vldr.32	s15, .L4+16
   70:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 210              		.loc 2 70 34 view .LVU58
- 211 0082 2046     		mov	r0, r4
- 212              	.LBE101:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 8
-
-
- 213              	.LBE100:
- 214              	.LBB106:
- 215              	.LBB84:
+ 208              		.loc 2 70 34 view .LVU57
+ 209 0080 2046     		mov	r0, r4
+ 210              	.LBE101:
+ 211              	.LBE100:
+ 212              	.LBB105:
+ 213              	.LBB84:
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
- 216              		.loc 2 59 20 view .LVU59
- 217 0084 2670     		strb	r6, [r4]
- 218              	.LBE84:
- 219              	.LBE106:
- 220              	.LBB107:
- 221              	.LBB102:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 8
+
+
+ 214              		.loc 2 59 20 view .LVU58
+ 215 0082 2670     		strb	r6, [r4]
+ 216              	.LBE84:
+ 217              	.LBE105:
+ 218              	.LBB106:
+ 219              	.LBB102:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 222              		.loc 2 69 20 view .LVU60
- 223 0086 C4ED027A 		vstr.32	s15, [r4, #8]
+ 220              		.loc 2 69 20 view .LVU59
+ 221 0084 C4ED028A 		vstr.32	s17, [r4, #8]
+ 222              		.loc 2 70 34 view .LVU60
+ 223 0088 B0EE680A 		vmov.f32	s0, s17
  224              	.LBE102:
- 225              	.LBE107:
- 226              	.LBB108:
+ 225              	.LBE106:
+ 226              	.LBB107:
  227              	.LBB85:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
  228              		.loc 2 58 20 view .LVU61
- 229 008a 84ED070A 		vstr.32	s0, [r4, #28]
+ 229 008c C4ED077A 		vstr.32	s15, [r4, #28]
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
  230              		.loc 2 59 9 is_stmt 1 view .LVU62
   60:../../DaisySP//Source/Synthesis/oscillator.h ****         eor_       = true;
@@ -448,99 +446,90 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
  232              		.loc 2 61 9 view .LVU64
  233              	.LBE85:
- 234              	.LBE108:
- 235              	.LBB109:
- 236              	.LBB103:
- 237              		.loc 2 70 34 is_stmt 0 view .LVU65
- 238 008e B0EE670A 		vmov.f32	s0, s15
- 239              	.LBE103:
- 240              	.LBE109:
- 241              	.LBB110:
- 242              	.LBB111:
+ 234              	.LBE107:
+ 235              	.LBB108:
+ 236              	.LBB109:
   71:../../DaisySP//Source/Synthesis/oscillator.h ****     }
   72:../../DaisySP//Source/Synthesis/oscillator.h **** 
   73:../../DaisySP//Source/Synthesis/oscillator.h **** 
   74:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the amplitude of the waveform.
   75:../../DaisySP//Source/Synthesis/oscillator.h ****     */
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     inline void SetAmp(const float a) { amp_ = a; }
- 243              		.loc 2 76 46 view .LVU66
- 244 0092 C4ED019A 		vstr.32	s19, [r4, #4]
- 245              	.LBE111:
- 246              	.LBE110:
- 247              	.LBB113:
- 248              	.LBB86:
+ 237              		.loc 2 76 46 is_stmt 0 view .LVU65
+ 238 0090 84ED019A 		vstr.32	s18, [r4, #4]
+ 239              	.LBE109:
+ 240              	.LBE108:
+ 241              	.LBB111:
+ 242              	.LBB86:
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 249              		.loc 2 61 20 view .LVU67
- 250 0096 2785     		strh	r7, [r4, #40]	@ movhi
- 251              	.LVL8:
+ 243              		.loc 2 61 20 view .LVU66
+ 244 0094 A4F82880 		strh	r8, [r4, #40]	@ movhi
+ 245              	.LVL8:
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 252              		.loc 2 61 20 view .LVU68
- 253              	.LBE86:
- 254              	.LBE113:
+ 246              		.loc 2 61 20 view .LVU67
+ 247              	.LBE86:
+ 248              	.LBE111:
   24:DrumSynth.cpp ****     kick_osc.SetWaveform(Oscillator::WAVE_SIN);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 9
-
-
- 255              		.loc 1 24 5 is_stmt 1 view .LVU69
- 256              	.LBB114:
- 257              	.LBI114:
+ 249              		.loc 1 24 5 is_stmt 1 view .LVU68
+ 250              	.LBB112:
+ 251              	.LBI112:
   77:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
   78:../../DaisySP//Source/Synthesis/oscillator.h ****     */
   79:../../DaisySP//Source/Synthesis/oscillator.h ****     inline void SetWaveform(const uint8_t wf)
- 258              		.loc 2 79 17 view .LVU70
- 259              	.LBE114:
- 260              	.LBE143:
+ 252              		.loc 2 79 17 view .LVU69
+ 253              	.LBE112:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 9
+
+
+ 254              	.LBE141:
   80:../../DaisySP//Source/Synthesis/oscillator.h ****     {
   81:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_ = wf < WAVE_LAST ? wf : WAVE_SIN;
- 261              		.loc 2 81 9 view .LVU71
- 262              	.LBB144:
+ 255              		.loc 2 81 9 view .LVU70
+ 256              	.LBB142:
   25:DrumSynth.cpp ****     kick_osc.SetAmp(1.0f);
- 263              		.loc 1 25 5 view .LVU72
- 264              	.LBB115:
- 265              	.LBI110:
+ 257              		.loc 1 25 5 view .LVU71
+ 258              	.LBB113:
+ 259              	.LBI108:
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 266              		.loc 2 76 17 view .LVU73
- 267              	.LBB112:
+ 260              		.loc 2 76 17 view .LVU72
+ 261              	.LBB110:
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 268              		.loc 2 76 41 view .LVU74
+ 262              		.loc 2 76 41 view .LVU73
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 269              		.loc 2 76 41 is_stmt 0 view .LVU75
- 270              	.LBE112:
- 271              	.LBE115:
-  26:DrumSynth.cpp ****     kick_osc.SetFreq(65.f);
- 272              		.loc 1 26 5 is_stmt 1 view .LVU76
- 273              	.LBB116:
- 274              	.LBI100:
+ 263              		.loc 2 76 41 is_stmt 0 view .LVU74
+ 264              	.LBE110:
+ 265              	.LBE113:
+  26:DrumSynth.cpp ****     kick_osc.SetFreq(100.f);
+ 266              		.loc 1 26 5 is_stmt 1 view .LVU75
+ 267              	.LBB114:
+ 268              	.LBI100:
   67:../../DaisySP//Source/Synthesis/oscillator.h ****     {
- 275              		.loc 2 67 17 view .LVU77
- 276              	.LBB104:
+ 269              		.loc 2 67 17 view .LVU76
+ 270              	.LBB103:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 277              		.loc 2 69 9 view .LVU78
+ 271              		.loc 2 69 9 view .LVU77
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 278              		.loc 2 70 9 view .LVU79
+ 272              		.loc 2 70 9 view .LVU78
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 279              		.loc 2 70 34 is_stmt 0 view .LVU80
- 280 0098 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 281              	.LVL9:
- 282              	.LBE104:
- 283              	.LBE116:
+ 273              		.loc 2 70 34 is_stmt 0 view .LVU79
+ 274 0098 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 275              	.LVL9:
+ 276              	.LBE103:
+ 277              	.LBE114:
   27:DrumSynth.cpp **** 
   28:DrumSynth.cpp ****     // Initialize the snare osc and bandpass filter
   29:DrumSynth.cpp ****     //===============================================
   30:DrumSynth.cpp ****     snare_osc.Init(sample_rate);
- 284              		.loc 1 30 19 view .LVU81
- 285 009c 04F1B000 		add	r0, r4, #176
- 286              	.LBB117:
- 287              	.LBB118:
+ 278              		.loc 1 30 19 view .LVU80
+ 279 009c 04F1B000 		add	r0, r4, #176
+ 280              	.LBB115:
+ 281              	.LBB116:
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 288              		.loc 2 57 20 view .LVU82
- 289 00a0 C4F8C850 		str	r5, [r4, #200]	@ float
- 290              	.LBE118:
- 291              	.LBE117:
+ 282              		.loc 2 57 20 view .LVU81
+ 283 00a0 C4F8C850 		str	r5, [r4, #200]	@ float
+ 284              	.LBE116:
+ 285              	.LBE115:
   31:DrumSynth.cpp ****     snare_osc.SetWaveform(Oscillator::WAVE_SIN);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 10
-
-
   32:DrumSynth.cpp ****     snare_osc.SetAmp(1.f);
   33:DrumSynth.cpp ****     snare_osc.SetFreq(200.f);
   34:DrumSynth.cpp **** 
@@ -549,680 +538,680 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   37:DrumSynth.cpp ****     snare_highpass.SetRes(0.1f);
   38:DrumSynth.cpp **** 
   39:DrumSynth.cpp ****     snare_lowpass.Init(sample_rate);
- 292              		.loc 1 39 23 view .LVU83
- 293 00a4 04F59C75 		add	r5, r4, #312
- 294              	.LBB123:
- 295              	.LBB105:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 10
+
+
+ 286              		.loc 1 39 23 view .LVU82
+ 287 00a4 04F59C75 		add	r5, r4, #312
+ 288              	.LBB121:
+ 289              	.LBB104:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 296              		.loc 2 70 20 view .LVU84
- 297 00a8 84ED070A 		vstr.32	s0, [r4, #28]
- 298              	.LVL10:
+ 290              		.loc 2 70 20 view .LVU83
+ 291 00a8 84ED070A 		vstr.32	s0, [r4, #28]
+ 292              	.LVL10:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 299              		.loc 2 70 20 view .LVU85
- 300              	.LBE105:
- 301              	.LBE123:
+ 293              		.loc 2 70 20 view .LVU84
+ 294              	.LBE104:
+ 295              	.LBE121:
   30:DrumSynth.cpp ****     snare_osc.SetWaveform(Oscillator::WAVE_SIN);
- 302              		.loc 1 30 5 is_stmt 1 view .LVU86
- 303              	.LBB124:
- 304              	.LBI117:
+ 296              		.loc 1 30 5 is_stmt 1 view .LVU85
+ 297              	.LBB122:
+ 298              	.LBI115:
   50:../../DaisySP//Source/Synthesis/oscillator.h ****     {
- 305              		.loc 2 50 10 view .LVU87
- 306              	.LBB119:
+ 299              		.loc 2 50 10 view .LVU86
+ 300              	.LBB117:
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 307              		.loc 2 52 9 view .LVU88
+ 301              		.loc 2 52 9 view .LVU87
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 308              		.loc 2 58 34 is_stmt 0 view .LVU89
- 309 00ac B0EE490A 		vmov.f32	s0, s18
-  55:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 310              		.loc 2 55 20 view .LVU90
- 311 00b0 C4ED2D8A 		vstr.32	s17, [r4, #180]
-  56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 312              		.loc 2 56 20 view .LVU91
- 313 00b4 C4ED2F8A 		vstr.32	s17, [r4, #188]
+ 302              		.loc 2 58 34 is_stmt 0 view .LVU88
+ 303 00ac B0EE680A 		vmov.f32	s0, s17
+  54:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
+ 304              		.loc 2 54 20 view .LVU89
+ 305 00b0 C4ED2E8A 		vstr.32	s17, [r4, #184]
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 314              		.loc 2 52 20 view .LVU92
- 315 00b8 84ED308A 		vstr.32	s16, [r4, #192]
+ 306              		.loc 2 52 20 view .LVU90
+ 307 00b4 84ED308A 		vstr.32	s16, [r4, #192]
   53:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 316              		.loc 2 53 9 is_stmt 1 view .LVU93
+ 308              		.loc 2 53 9 is_stmt 1 view .LVU91
   53:../../DaisySP//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 317              		.loc 2 53 20 is_stmt 0 view .LVU94
- 318 00bc 84ED31AA 		vstr.32	s20, [r4, #196]
+ 309              		.loc 2 53 20 is_stmt 0 view .LVU92
+ 310 00b8 C4ED319A 		vstr.32	s19, [r4, #196]
   54:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 319              		.loc 2 54 9 is_stmt 1 view .LVU95
-  54:../../DaisySP//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 320              		.loc 2 54 20 is_stmt 0 view .LVU96
- 321 00c0 84ED2E9A 		vstr.32	s18, [r4, #184]
+ 311              		.loc 2 54 9 is_stmt 1 view .LVU93
   55:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
- 322              		.loc 2 55 9 is_stmt 1 view .LVU97
+ 312              		.loc 2 55 9 view .LVU94
+  55:../../DaisySP//Source/Synthesis/oscillator.h ****         pw_        = 0.5f;
+ 313              		.loc 2 55 20 is_stmt 0 view .LVU95
+ 314 00bc C4F8B470 		str	r7, [r4, #180]	@ float
   56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 323              		.loc 2 56 9 view .LVU98
+ 315              		.loc 2 56 9 is_stmt 1 view .LVU96
+  56:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
+ 316              		.loc 2 56 20 is_stmt 0 view .LVU97
+ 317 00c0 C4F8BC70 		str	r7, [r4, #188]	@ float
   57:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 324              		.loc 2 57 9 view .LVU99
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 11
+ 318              		.loc 2 57 9 is_stmt 1 view .LVU98
+  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ 319              		.loc 2 58 9 view .LVU99
+  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ 320              		.loc 2 58 34 is_stmt 0 view .LVU100
+ 321 00c4 0190     		str	r0, [sp, #4]
+ 322 00c6 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 323              	.LVL11:
+  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 11
 
 
-  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 325              		.loc 2 58 9 view .LVU100
-  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 326              		.loc 2 58 34 is_stmt 0 view .LVU101
- 327 00c4 0190     		str	r0, [sp, #4]
- 328 00c6 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 329              	.LVL11:
-  58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 330              		.loc 2 58 34 view .LVU102
- 331              	.LBE119:
- 332              	.LBE124:
- 333              	.LBB125:
- 334              	.LBB126:
+ 324              		.loc 2 58 34 view .LVU101
+ 325              	.LBE117:
+ 326              	.LBE122:
+ 327              	.LBB123:
+ 328              	.LBB124:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 335              		.loc 2 69 20 view .LVU103
- 336 00ca DFED347A 		vldr.32	s15, .L4+20
+ 329              		.loc 2 69 20 view .LVU102
+ 330 00ca DFED337A 		vldr.32	s15, .L4+16
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 337              		.loc 2 70 34 view .LVU104
- 338 00ce 0198     		ldr	r0, [sp, #4]
- 339              	.LBE126:
- 340              	.LBE125:
- 341              	.LBB131:
- 342              	.LBB120:
+ 331              		.loc 2 70 34 view .LVU103
+ 332 00ce 0198     		ldr	r0, [sp, #4]
+ 333              	.LBE124:
+ 334              	.LBE123:
+ 335              	.LBB129:
+ 336              	.LBB118:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 343              		.loc 2 58 20 view .LVU105
- 344 00d0 84ED330A 		vstr.32	s0, [r4, #204]
+ 337              		.loc 2 58 20 view .LVU104
+ 338 00d0 84ED330A 		vstr.32	s0, [r4, #204]
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
- 345              		.loc 2 59 9 is_stmt 1 view .LVU106
- 346              	.LBE120:
- 347              	.LBE131:
- 348              	.LBB132:
- 349              	.LBB127:
+ 339              		.loc 2 59 9 is_stmt 1 view .LVU105
+ 340              	.LBE118:
+ 341              	.LBE129:
+ 342              	.LBB130:
+ 343              	.LBB125:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 350              		.loc 2 70 34 is_stmt 0 view .LVU107
- 351 00d4 B0EE670A 		vmov.f32	s0, s15
- 352              	.LBE127:
- 353              	.LBE132:
- 354              	.LBB133:
- 355              	.LBB121:
+ 344              		.loc 2 70 34 is_stmt 0 view .LVU106
+ 345 00d4 B0EE670A 		vmov.f32	s0, s15
+ 346              	.LBE125:
+ 347              	.LBE130:
+ 348              	.LBB131:
+ 349              	.LBB119:
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
- 356              		.loc 2 59 20 view .LVU108
- 357 00d8 84F8B060 		strb	r6, [r4, #176]
+ 350              		.loc 2 59 20 view .LVU107
+ 351 00d8 84F8B060 		strb	r6, [r4, #176]
   60:../../DaisySP//Source/Synthesis/oscillator.h ****         eor_       = true;
- 358              		.loc 2 60 9 is_stmt 1 view .LVU109
+ 352              		.loc 2 60 9 is_stmt 1 view .LVU108
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 359              		.loc 2 61 9 view .LVU110
- 360              	.LBE121:
- 361              	.LBE133:
+ 353              		.loc 2 61 9 view .LVU109
+ 354              	.LBE119:
+ 355              	.LBE131:
   40:DrumSynth.cpp ****     snare_lowpass.SetFreq(4000.f);
   41:DrumSynth.cpp ****     snare_lowpass.SetRes(0.1f);
   42:DrumSynth.cpp **** 
   43:DrumSynth.cpp ****     // Initialize the hat bandpass filter
   44:DrumSynth.cpp ****     //===============================================
   45:DrumSynth.cpp ****     hat_highpass.Init(sample_rate);
- 362              		.loc 1 45 22 is_stmt 0 view .LVU111
- 363 00dc 04F5CA76 		add	r6, r4, #404
- 364              	.LBB134:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 12
-
-
- 365              	.LBB128:
+ 356              		.loc 1 45 22 is_stmt 0 view .LVU110
+ 357 00dc 04F5CA76 		add	r6, r4, #404
+ 358              	.LBB132:
+ 359              	.LBB126:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 366              		.loc 2 69 20 view .LVU112
- 367 00e0 C4ED2E7A 		vstr.32	s15, [r4, #184]
- 368              	.LBE128:
- 369              	.LBE134:
- 370              	.LBB135:
- 371              	.LBB122:
+ 360              		.loc 2 69 20 view .LVU111
+ 361 00e0 C4ED2E7A 		vstr.32	s15, [r4, #184]
+ 362              	.LBE126:
+ 363              	.LBE132:
+ 364              	.LBB133:
+ 365              	.LBB120:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 12
+
+
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 372              		.loc 2 61 20 view .LVU113
- 373 00e4 A4F8D870 		strh	r7, [r4, #216]	@ movhi
- 374              	.LVL12:
+ 366              		.loc 2 61 20 view .LVU112
+ 367 00e4 A4F8D880 		strh	r8, [r4, #216]	@ movhi
+ 368              	.LVL12:
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 375              		.loc 2 61 20 view .LVU114
- 376              	.LBE122:
- 377              	.LBE135:
+ 369              		.loc 2 61 20 view .LVU113
+ 370              	.LBE120:
+ 371              	.LBE133:
   31:DrumSynth.cpp ****     snare_osc.SetAmp(1.f);
- 378              		.loc 1 31 5 is_stmt 1 view .LVU115
- 379              	.LBB136:
- 380              	.LBI136:
+ 372              		.loc 1 31 5 is_stmt 1 view .LVU114
+ 373              	.LBB134:
+ 374              	.LBI134:
   79:../../DaisySP//Source/Synthesis/oscillator.h ****     {
- 381              		.loc 2 79 17 view .LVU116
- 382              	.LBE136:
- 383              	.LBE144:
- 384              		.loc 2 81 9 view .LVU117
- 385              	.LBB145:
+ 375              		.loc 2 79 17 view .LVU115
+ 376              	.LBE134:
+ 377              	.LBE142:
+ 378              		.loc 2 81 9 view .LVU116
+ 379              	.LBB143:
   32:DrumSynth.cpp ****     snare_osc.SetFreq(200.f);
- 386              		.loc 1 32 5 view .LVU118
- 387              	.LBB137:
- 388              	.LBI137:
+ 380              		.loc 1 32 5 view .LVU117
+ 381              	.LBB135:
+ 382              	.LBI135:
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 389              		.loc 2 76 17 view .LVU119
- 390              	.LBB138:
+ 383              		.loc 2 76 17 view .LVU118
+ 384              	.LBB136:
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 391              		.loc 2 76 41 view .LVU120
+ 385              		.loc 2 76 41 view .LVU119
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 392              		.loc 2 76 46 is_stmt 0 view .LVU121
- 393 00e8 C4ED2D9A 		vstr.32	s19, [r4, #180]
- 394              	.LVL13:
+ 386              		.loc 2 76 46 is_stmt 0 view .LVU120
+ 387 00e8 84ED2D9A 		vstr.32	s18, [r4, #180]
+ 388              	.LVL13:
   76:../../DaisySP//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 395              		.loc 2 76 46 view .LVU122
- 396              	.LBE138:
- 397              	.LBE137:
+ 389              		.loc 2 76 46 view .LVU121
+ 390              	.LBE136:
+ 391              	.LBE135:
   33:DrumSynth.cpp **** 
- 398              		.loc 1 33 5 is_stmt 1 view .LVU123
- 399              	.LBB139:
- 400              	.LBI125:
+ 392              		.loc 1 33 5 is_stmt 1 view .LVU122
+ 393              	.LBB137:
+ 394              	.LBI123:
   67:../../DaisySP//Source/Synthesis/oscillator.h ****     {
- 401              		.loc 2 67 17 view .LVU124
- 402              	.LBB129:
+ 395              		.loc 2 67 17 view .LVU123
+ 396              	.LBB127:
   69:../../DaisySP//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 403              		.loc 2 69 9 view .LVU125
+ 397              		.loc 2 69 9 view .LVU124
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 404              		.loc 2 70 9 view .LVU126
+ 398              		.loc 2 70 9 view .LVU125
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 405              		.loc 2 70 34 is_stmt 0 view .LVU127
- 406 00ec FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 13
-
-
- 407              	.LVL14:
+ 399              		.loc 2 70 34 is_stmt 0 view .LVU126
+ 400 00ec FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 401              	.LVL14:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 408              		.loc 2 70 34 view .LVU128
- 409 00f0 F0EE407A 		vmov.f32	s15, s0
- 410              	.LBE129:
- 411              	.LBE139:
+ 402              		.loc 2 70 34 view .LVU127
+ 403 00f0 F0EE407A 		vmov.f32	s15, s0
+ 404              	.LBE127:
+ 405              	.LBE137:
   35:DrumSynth.cpp ****     snare_highpass.SetFreq(220.f);
- 412              		.loc 1 35 24 view .LVU129
- 413 00f4 04F1EC00 		add	r0, r4, #236
+ 406              		.loc 1 35 24 view .LVU128
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 13
+
+
+ 407 00f4 04F1EC00 		add	r0, r4, #236
   37:DrumSynth.cpp **** 
- 414              		.loc 1 37 26 view .LVU130
- 415 00f8 DFED298A 		vldr.32	s17, .L4+24
+ 408              		.loc 1 37 26 view .LVU129
+ 409 00f8 DFED288A 		vldr.32	s17, .L4+20
   35:DrumSynth.cpp ****     snare_highpass.SetFreq(220.f);
- 416              		.loc 1 35 24 view .LVU131
- 417 00fc B0EE480A 		vmov.f32	s0, s16
- 418              	.LBB140:
- 419              	.LBB130:
+ 410              		.loc 1 35 24 view .LVU130
+ 411 00fc B0EE480A 		vmov.f32	s0, s16
+ 412              	.LBB138:
+ 413              	.LBB128:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 420              		.loc 2 70 20 view .LVU132
- 421 0100 C4ED337A 		vstr.32	s15, [r4, #204]
- 422              	.LVL15:
+ 414              		.loc 2 70 20 view .LVU131
+ 415 0100 C4ED337A 		vstr.32	s15, [r4, #204]
+ 416              	.LVL15:
   70:../../DaisySP//Source/Synthesis/oscillator.h ****     }
- 423              		.loc 2 70 20 view .LVU133
- 424              	.LBE130:
- 425              	.LBE140:
+ 417              		.loc 2 70 20 view .LVU132
+ 418              	.LBE128:
+ 419              	.LBE138:
   35:DrumSynth.cpp ****     snare_highpass.SetFreq(220.f);
- 426              		.loc 1 35 5 is_stmt 1 view .LVU134
+ 420              		.loc 1 35 5 is_stmt 1 view .LVU133
   35:DrumSynth.cpp ****     snare_highpass.SetFreq(220.f);
- 427              		.loc 1 35 24 is_stmt 0 view .LVU135
- 428 0104 0190     		str	r0, [sp, #4]
- 429 0106 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
- 430              	.LVL16:
+ 421              		.loc 1 35 24 is_stmt 0 view .LVU134
+ 422 0104 0190     		str	r0, [sp, #4]
+ 423 0106 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
+ 424              	.LVL16:
   36:DrumSynth.cpp ****     snare_highpass.SetRes(0.1f);
- 431              		.loc 1 36 5 is_stmt 1 view .LVU136
+ 425              		.loc 1 36 5 is_stmt 1 view .LVU135
   36:DrumSynth.cpp ****     snare_highpass.SetRes(0.1f);
- 432              		.loc 1 36 27 is_stmt 0 view .LVU137
- 433 010a 0198     		ldr	r0, [sp, #4]
- 434 010c 9FED250A 		vldr.32	s0, .L4+28
- 435 0110 FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
- 436              	.LVL17:
+ 426              		.loc 1 36 27 is_stmt 0 view .LVU136
+ 427 010a 0198     		ldr	r0, [sp, #4]
+ 428 010c 9FED240A 		vldr.32	s0, .L4+24
+ 429 0110 FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
+ 430              	.LVL17:
   37:DrumSynth.cpp **** 
- 437              		.loc 1 37 5 is_stmt 1 view .LVU138
+ 431              		.loc 1 37 5 is_stmt 1 view .LVU137
   37:DrumSynth.cpp **** 
- 438              		.loc 1 37 26 is_stmt 0 view .LVU139
- 439 0114 B0EE680A 		vmov.f32	s0, s17
- 440 0118 0198     		ldr	r0, [sp, #4]
- 441 011a FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
- 442              	.LVL18:
+ 432              		.loc 1 37 26 is_stmt 0 view .LVU138
+ 433 0114 B0EE680A 		vmov.f32	s0, s17
+ 434 0118 0198     		ldr	r0, [sp, #4]
+ 435 011a FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
+ 436              	.LVL18:
   39:DrumSynth.cpp ****     snare_lowpass.SetFreq(4000.f);
- 443              		.loc 1 39 5 is_stmt 1 view .LVU140
+ 437              		.loc 1 39 5 is_stmt 1 view .LVU139
   39:DrumSynth.cpp ****     snare_lowpass.SetFreq(4000.f);
- 444              		.loc 1 39 23 is_stmt 0 view .LVU141
- 445 011e B0EE480A 		vmov.f32	s0, s16
- 446 0122 2846     		mov	r0, r5
- 447 0124 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
- 448              	.LVL19:
+ 438              		.loc 1 39 23 is_stmt 0 view .LVU140
+ 439 011e B0EE480A 		vmov.f32	s0, s16
+ 440 0122 2846     		mov	r0, r5
+ 441 0124 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
+ 442              	.LVL19:
   40:DrumSynth.cpp ****     snare_lowpass.SetRes(0.1f);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 14
+ 443              		.loc 1 40 5 is_stmt 1 view .LVU141
+  40:DrumSynth.cpp ****     snare_lowpass.SetRes(0.1f);
+ 444              		.loc 1 40 26 is_stmt 0 view .LVU142
+ 445 0128 2846     		mov	r0, r5
+ 446 012a 9FED1E0A 		vldr.32	s0, .L4+28
+ 447 012e FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
+ 448              	.LVL20:
+  41:DrumSynth.cpp **** 
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 14
 
 
- 449              		.loc 1 40 5 is_stmt 1 view .LVU142
-  40:DrumSynth.cpp ****     snare_lowpass.SetRes(0.1f);
- 450              		.loc 1 40 26 is_stmt 0 view .LVU143
- 451 0128 2846     		mov	r0, r5
- 452 012a 9FED1F0A 		vldr.32	s0, .L4+32
- 453 012e FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
- 454              	.LVL20:
+ 449              		.loc 1 41 5 is_stmt 1 view .LVU143
   41:DrumSynth.cpp **** 
- 455              		.loc 1 41 5 is_stmt 1 view .LVU144
-  41:DrumSynth.cpp **** 
- 456              		.loc 1 41 25 is_stmt 0 view .LVU145
- 457 0132 B0EE680A 		vmov.f32	s0, s17
- 458 0136 2846     		mov	r0, r5
+ 450              		.loc 1 41 25 is_stmt 0 view .LVU144
+ 451 0132 B0EE680A 		vmov.f32	s0, s17
+ 452 0136 2846     		mov	r0, r5
   46:DrumSynth.cpp ****     hat_highpass.SetFreq(3390.f);
   47:DrumSynth.cpp ****     hat_highpass.SetRes(0.1f); 
   48:DrumSynth.cpp **** 
   49:DrumSynth.cpp ****     hat_lowpass.Init(sample_rate);
- 459              		.loc 1 49 21 view .LVU146
- 460 0138 04F5F075 		add	r5, r4, #480
+ 453              		.loc 1 49 21 view .LVU145
+ 454 0138 04F5F075 		add	r5, r4, #480
   41:DrumSynth.cpp **** 
- 461              		.loc 1 41 25 view .LVU147
- 462 013c FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
- 463              	.LVL21:
+ 455              		.loc 1 41 25 view .LVU146
+ 456 013c FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
+ 457              	.LVL21:
   45:DrumSynth.cpp ****     hat_highpass.SetFreq(3390.f);
- 464              		.loc 1 45 5 is_stmt 1 view .LVU148
+ 458              		.loc 1 45 5 is_stmt 1 view .LVU147
   45:DrumSynth.cpp ****     hat_highpass.SetFreq(3390.f);
- 465              		.loc 1 45 22 is_stmt 0 view .LVU149
- 466 0140 B0EE480A 		vmov.f32	s0, s16
- 467 0144 3046     		mov	r0, r6
- 468 0146 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
- 469              	.LVL22:
+ 459              		.loc 1 45 22 is_stmt 0 view .LVU148
+ 460 0140 B0EE480A 		vmov.f32	s0, s16
+ 461 0144 3046     		mov	r0, r6
+ 462 0146 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
+ 463              	.LVL22:
   46:DrumSynth.cpp ****     hat_highpass.SetFreq(3390.f);
- 470              		.loc 1 46 5 is_stmt 1 view .LVU150
+ 464              		.loc 1 46 5 is_stmt 1 view .LVU149
   46:DrumSynth.cpp ****     hat_highpass.SetFreq(3390.f);
- 471              		.loc 1 46 25 is_stmt 0 view .LVU151
- 472 014a 3046     		mov	r0, r6
- 473 014c 9FED170A 		vldr.32	s0, .L4+36
- 474 0150 FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
- 475              	.LVL23:
+ 465              		.loc 1 46 25 is_stmt 0 view .LVU150
+ 466 014a 3046     		mov	r0, r6
+ 467 014c 9FED160A 		vldr.32	s0, .L4+32
+ 468 0150 FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
+ 469              	.LVL23:
   47:DrumSynth.cpp **** 
- 476              		.loc 1 47 5 is_stmt 1 view .LVU152
+ 470              		.loc 1 47 5 is_stmt 1 view .LVU151
   47:DrumSynth.cpp **** 
- 477              		.loc 1 47 24 is_stmt 0 view .LVU153
- 478 0154 B0EE680A 		vmov.f32	s0, s17
- 479 0158 3046     		mov	r0, r6
- 480 015a FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
- 481              	.LVL24:
- 482              		.loc 1 49 5 is_stmt 1 view .LVU154
- 483              		.loc 1 49 21 is_stmt 0 view .LVU155
- 484 015e B0EE480A 		vmov.f32	s0, s16
- 485 0162 2846     		mov	r0, r5
- 486 0164 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
- 487              	.LVL25:
+ 471              		.loc 1 47 24 is_stmt 0 view .LVU152
+ 472 0154 B0EE680A 		vmov.f32	s0, s17
+ 473 0158 3046     		mov	r0, r6
+ 474 015a FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
+ 475              	.LVL24:
+ 476              		.loc 1 49 5 is_stmt 1 view .LVU153
+ 477              		.loc 1 49 21 is_stmt 0 view .LVU154
+ 478 015e B0EE480A 		vmov.f32	s0, s16
+ 479 0162 2846     		mov	r0, r5
+ 480 0164 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
+ 481              	.LVL25:
   50:DrumSynth.cpp ****     hat_lowpass.SetFreq(8390.f);
- 488              		.loc 1 50 5 is_stmt 1 view .LVU156
- 489              		.loc 1 50 24 is_stmt 0 view .LVU157
- 490 0168 2846     		mov	r0, r5
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 15
-
-
- 491 016a 9FED110A 		vldr.32	s0, .L4+40
- 492 016e FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
- 493              	.LVL26:
+ 482              		.loc 1 50 5 is_stmt 1 view .LVU155
+ 483              		.loc 1 50 24 is_stmt 0 view .LVU156
+ 484 0168 2846     		mov	r0, r5
+ 485 016a 9FED100A 		vldr.32	s0, .L4+36
+ 486 016e FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
+ 487              	.LVL26:
   51:DrumSynth.cpp ****     hat_lowpass.SetRes(0.1f); 
- 494              		.loc 1 51 5 is_stmt 1 view .LVU158
- 495              		.loc 1 51 23 is_stmt 0 view .LVU159
- 496 0172 2846     		mov	r0, r5
- 497 0174 B0EE680A 		vmov.f32	s0, s17
- 498 0178 FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
- 499              	.LVL27:
- 500              	.LBE145:
+ 488              		.loc 1 51 5 is_stmt 1 view .LVU157
+ 489              		.loc 1 51 23 is_stmt 0 view .LVU158
+ 490 0172 2846     		mov	r0, r5
+ 491 0174 B0EE680A 		vmov.f32	s0, s17
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 15
+
+
+ 492 0178 FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
+ 493              	.LVL27:
+ 494              	.LBE143:
   52:DrumSynth.cpp **** }
- 501              		.loc 1 52 1 view .LVU160
- 502 017c 2046     		mov	r0, r4
- 503 017e 03B0     		add	sp, sp, #12
- 504              		.cfi_def_cfa_offset 44
- 505              		@ sp needed
- 506 0180 BDEC068B 		vldm	sp!, {d8-d10}
- 507              		.cfi_restore 84
- 508              		.cfi_restore 85
- 509              		.cfi_restore 82
- 510              		.cfi_restore 83
- 511              		.cfi_restore 80
- 512              		.cfi_restore 81
- 513              		.cfi_def_cfa_offset 20
- 514              	.LVL28:
- 515              		.loc 1 52 1 view .LVU161
- 516 0184 F0BD     		pop	{r4, r5, r6, r7, pc}
- 517              	.LVL29:
- 518              	.L5:
- 519              		.loc 1 52 1 view .LVU162
- 520 0186 00BF     		.align	2
- 521              	.L4:
- 522 0188 9A99993E 		.word	1050253722
- 523 018c 0AD7233E 		.word	1042536202
- 524 0190 0000C842 		.word	1120403456
- 525 0194 EC51B83D 		.word	1035489772
- 526 0198 00008242 		.word	1115815936
- 527 019c 00004843 		.word	1128792064
- 528 01a0 CDCCCC3D 		.word	1036831949
- 529 01a4 00005C43 		.word	1130102784
- 530 01a8 00007A45 		.word	1165623296
- 531 01ac 00E05345 		.word	1163124736
- 532 01b0 00180346 		.word	1174607872
- 533              		.cfi_endproc
- 534              	.LFE3527:
- 536              		.global	_ZN9DrumSynthC1Ef
- 537              		.thumb_set _ZN9DrumSynthC1Ef,_ZN9DrumSynthC2Ef
- 538              		.section	.text._ZN9DrumSynth12trigger_kickEv,"ax",%progbits
- 539              		.align	1
- 540              		.p2align 2,,3
- 541              		.global	_ZN9DrumSynth12trigger_kickEv
- 542              		.syntax unified
- 543              		.thumb
- 544              		.thumb_func
- 545              		.fpu fpv5-d16
- 547              	_ZN9DrumSynth12trigger_kickEv:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 16
-
-
- 548              	.LVL30:
- 549              	.LFB3529:
+ 495              		.loc 1 52 1 view .LVU159
+ 496 017c 2046     		mov	r0, r4
+ 497 017e 02B0     		add	sp, sp, #8
+ 498              		.cfi_def_cfa_offset 40
+ 499              		@ sp needed
+ 500 0180 BDEC048B 		vldm	sp!, {d8-d9}
+ 501              		.cfi_restore 82
+ 502              		.cfi_restore 83
+ 503              		.cfi_restore 80
+ 504              		.cfi_restore 81
+ 505              		.cfi_def_cfa_offset 24
+ 506              	.LVL28:
+ 507              		.loc 1 52 1 view .LVU160
+ 508 0184 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 509              	.LVL29:
+ 510              	.L5:
+ 511              		.loc 1 52 1 view .LVU161
+ 512              		.align	2
+ 513              	.L4:
+ 514 0188 CDCC4C3E 		.word	1045220557
+ 515 018c 0AD7233E 		.word	1042536202
+ 516 0190 0000C842 		.word	1120403456
+ 517 0194 CDCC4C3D 		.word	1028443341
+ 518 0198 00004843 		.word	1128792064
+ 519 019c CDCCCC3D 		.word	1036831949
+ 520 01a0 00005C43 		.word	1130102784
+ 521 01a4 00007A45 		.word	1165623296
+ 522 01a8 00E05345 		.word	1163124736
+ 523 01ac 00180346 		.word	1174607872
+ 524              		.cfi_endproc
+ 525              	.LFE3527:
+ 527              		.global	_ZN9DrumSynthC1Ef
+ 528              		.thumb_set _ZN9DrumSynthC1Ef,_ZN9DrumSynthC2Ef
+ 529              		.section	.text._ZN9DrumSynth12trigger_kickEv,"ax",%progbits
+ 530              		.align	1
+ 531              		.p2align 2,,3
+ 532              		.global	_ZN9DrumSynth12trigger_kickEv
+ 533              		.syntax unified
+ 534              		.thumb
+ 535              		.thumb_func
+ 536              		.fpu fpv5-d16
+ 538              	_ZN9DrumSynth12trigger_kickEv:
+ 539              	.LVL30:
+ 540              	.LFB3529:
   53:DrumSynth.cpp **** 
   54:DrumSynth.cpp **** // Kick
   55:DrumSynth.cpp **** // =====================================================
   56:DrumSynth.cpp **** void DrumSynth::trigger_kick() {
- 550              		.loc 1 56 32 is_stmt 1 view -0
- 551              		.cfi_startproc
- 552              		@ args = 0, pretend = 0, frame = 0
- 553              		@ frame_needed = 0, uses_anonymous_args = 0
- 554              		@ link register save eliminated.
+ 541              		.loc 1 56 32 is_stmt 1 view -0
+ 542              		.cfi_startproc
+ 543              		@ args = 0, pretend = 0, frame = 0
+ 544              		@ frame_needed = 0, uses_anonymous_args = 0
+ 545              		@ link register save eliminated.
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 16
+
+
   57:DrumSynth.cpp ****     kick_timer = sample_rate * kick_duration_s;
- 555              		.loc 1 57 5 view .LVU164
- 556              		.loc 1 57 30 is_stmt 0 view .LVU165
- 557 0000 D0ED277A 		vldr.32	s15, [r0, #156]
+ 546              		.loc 1 57 5 view .LVU163
+ 547              		.loc 1 57 30 is_stmt 0 view .LVU164
+ 548 0000 D0ED277A 		vldr.32	s15, [r0, #156]
   58:DrumSynth.cpp ****     kick_amp = 1.0f;
- 558              		.loc 1 58 14 view .LVU166
- 559 0004 4FF07E53 		mov	r3, #1065353216
+ 549              		.loc 1 58 14 view .LVU165
+ 550 0004 4FF07E53 		mov	r3, #1065353216
   57:DrumSynth.cpp ****     kick_timer = sample_rate * kick_duration_s;
- 560              		.loc 1 57 30 view .LVU167
- 561 0008 90ED297A 		vldr.32	s14, [r0, #164]
- 562              		.loc 1 58 14 view .LVU168
- 563 000c C0F8AC30 		str	r3, [r0, #172]	@ float
+ 551              		.loc 1 57 30 view .LVU166
+ 552 0008 90ED297A 		vldr.32	s14, [r0, #164]
+ 553              		.loc 1 58 14 view .LVU167
+ 554 000c C0F8AC30 		str	r3, [r0, #172]	@ float
   57:DrumSynth.cpp ****     kick_timer = sample_rate * kick_duration_s;
- 564              		.loc 1 57 30 view .LVU169
- 565 0010 67EE877A 		vmul.f32	s15, s15, s14
+ 555              		.loc 1 57 30 view .LVU168
+ 556 0010 67EE877A 		vmul.f32	s15, s15, s14
   57:DrumSynth.cpp ****     kick_timer = sample_rate * kick_duration_s;
- 566              		.loc 1 57 16 view .LVU170
- 567 0014 C0ED2A7A 		vstr.32	s15, [r0, #168]
- 568              		.loc 1 58 5 is_stmt 1 view .LVU171
+ 557              		.loc 1 57 16 view .LVU169
+ 558 0014 C0ED2A7A 		vstr.32	s15, [r0, #168]
+ 559              		.loc 1 58 5 is_stmt 1 view .LVU170
   59:DrumSynth.cpp **** }
- 569              		.loc 1 59 1 is_stmt 0 view .LVU172
- 570 0018 7047     		bx	lr
- 571              		.cfi_endproc
- 572              	.LFE3529:
- 574 001a 00BF     		.section	.text._ZN9DrumSynth12process_kickEv,"ax",%progbits
- 575              		.align	1
- 576              		.p2align 2,,3
- 577              		.global	_ZN9DrumSynth12process_kickEv
- 578              		.syntax unified
- 579              		.thumb
- 580              		.thumb_func
- 581              		.fpu fpv5-d16
- 583              	_ZN9DrumSynth12process_kickEv:
- 584              	.LVL31:
- 585              	.LFB3530:
+ 560              		.loc 1 59 1 is_stmt 0 view .LVU171
+ 561 0018 7047     		bx	lr
+ 562              		.cfi_endproc
+ 563              	.LFE3529:
+ 565 001a 00BF     		.section	.text._ZN9DrumSynth12process_kickEv,"ax",%progbits
+ 566              		.align	1
+ 567              		.p2align 2,,3
+ 568              		.global	_ZN9DrumSynth12process_kickEv
+ 569              		.syntax unified
+ 570              		.thumb
+ 571              		.thumb_func
+ 572              		.fpu fpv5-d16
+ 574              	_ZN9DrumSynth12process_kickEv:
+ 575              	.LVL31:
+ 576              	.LFB3530:
   60:DrumSynth.cpp **** 
   61:DrumSynth.cpp **** float DrumSynth::process_kick() {
- 586              		.loc 1 61 33 is_stmt 1 view -0
- 587              		.cfi_startproc
- 588              		@ args = 0, pretend = 0, frame = 0
- 589              		@ frame_needed = 0, uses_anonymous_args = 0
+ 577              		.loc 1 61 33 is_stmt 1 view -0
+ 578              		.cfi_startproc
+ 579              		@ args = 0, pretend = 0, frame = 0
+ 580              		@ frame_needed = 0, uses_anonymous_args = 0
   62:DrumSynth.cpp ****     if (kick_timer > 0.f) {
- 590              		.loc 1 62 5 view .LVU174
- 591              		.loc 1 62 9 is_stmt 0 view .LVU175
- 592 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
- 593              		.loc 1 62 5 view .LVU176
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 17
-
-
- 594 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 595 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 596 000c 1CDD     		ble	.L12
+ 581              		.loc 1 62 5 view .LVU173
+ 582              		.loc 1 62 9 is_stmt 0 view .LVU174
+ 583 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
+ 584              		.loc 1 62 5 view .LVU175
+ 585 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 586 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 587 000c 1CDD     		ble	.L12
   63:DrumSynth.cpp ****         kick_timer--;
- 597              		.loc 1 63 9 is_stmt 1 view .LVU177
+ 588              		.loc 1 63 9 is_stmt 1 view .LVU176
   64:DrumSynth.cpp ****         kick_amp -= (1.f/(sample_rate * kick_duration_s));
- 598              		.loc 1 64 39 is_stmt 0 view .LVU178
- 599 000e D0ED295A 		vldr.32	s11, [r0, #164]
+ 589              		.loc 1 64 39 is_stmt 0 view .LVU177
+ 590 000e D0ED295A 		vldr.32	s11, [r0, #164]
   63:DrumSynth.cpp ****         kick_timer--;
- 600              		.loc 1 63 19 view .LVU179
- 601 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
- 602              		.loc 1 64 39 view .LVU180
- 603 0016 D0ED276A 		vldr.32	s13, [r0, #156]
- 604              		.loc 1 64 18 view .LVU181
- 605 001a 90ED2B7A 		vldr.32	s14, [r0, #172]
- 606              		.loc 1 64 39 view .LVU182
- 607 001e 66EEA56A 		vmul.f32	s13, s13, s11
+ 591              		.loc 1 63 19 view .LVU178
+ 592 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 17
+
+
+ 593              		.loc 1 64 39 view .LVU179
+ 594 0016 D0ED276A 		vldr.32	s13, [r0, #156]
+ 595              		.loc 1 64 18 view .LVU180
+ 596 001a 90ED2B7A 		vldr.32	s14, [r0, #172]
+ 597              		.loc 1 64 39 view .LVU181
+ 598 001e 66EEA56A 		vmul.f32	s13, s13, s11
   63:DrumSynth.cpp ****         kick_timer--;
- 608              		.loc 1 63 19 view .LVU183
- 609 0022 77EEC67A 		vsub.f32	s15, s15, s12
- 610              		.loc 1 64 25 view .LVU184
- 611 0026 C6EE265A 		vdiv.f32	s11, s12, s13
+ 599              		.loc 1 63 19 view .LVU182
+ 600 0022 77EEC67A 		vsub.f32	s15, s15, s12
+ 601              		.loc 1 64 25 view .LVU183
+ 602 0026 C6EE265A 		vdiv.f32	s11, s12, s13
   63:DrumSynth.cpp ****         kick_timer--;
- 612              		.loc 1 63 19 view .LVU185
- 613 002a C0ED2A7A 		vstr.32	s15, [r0, #168]
- 614              		.loc 1 64 9 is_stmt 1 view .LVU186
+ 603              		.loc 1 63 19 view .LVU184
+ 604 002a C0ED2A7A 		vstr.32	s15, [r0, #168]
+ 605              		.loc 1 64 9 is_stmt 1 view .LVU185
   61:DrumSynth.cpp ****     if (kick_timer > 0.f) {
- 615              		.loc 1 61 33 is_stmt 0 view .LVU187
- 616 002e 10B5     		push	{r4, lr}
- 617              		.cfi_def_cfa_offset 8
- 618              		.cfi_offset 4, -8
- 619              		.cfi_offset 14, -4
- 620 0030 0446     		mov	r4, r0
- 621              		.loc 1 64 18 view .LVU188
- 622 0032 77EE657A 		vsub.f32	s15, s14, s11
- 623 0036 C0ED2B7A 		vstr.32	s15, [r0, #172]
+ 606              		.loc 1 61 33 is_stmt 0 view .LVU186
+ 607 002e 10B5     		push	{r4, lr}
+ 608              		.cfi_def_cfa_offset 8
+ 609              		.cfi_offset 4, -8
+ 610              		.cfi_offset 14, -4
+ 611 0030 0446     		mov	r4, r0
+ 612              		.loc 1 64 18 view .LVU187
+ 613 0032 77EE657A 		vsub.f32	s15, s14, s11
+ 614 0036 C0ED2B7A 		vstr.32	s15, [r0, #172]
   65:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 624              		.loc 1 65 9 is_stmt 1 view .LVU189
- 625              		.loc 1 65 32 is_stmt 0 view .LVU190
- 626 003a FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
- 627              	.LVL32:
- 628              		.loc 1 65 37 view .LVU191
- 629 003e D4ED2B7A 		vldr.32	s15, [r4, #172]
- 630 0042 20EE270A 		vmul.f32	s0, s0, s15
+ 615              		.loc 1 65 9 is_stmt 1 view .LVU188
+ 616              		.loc 1 65 32 is_stmt 0 view .LVU189
+ 617 003a FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 618              	.LVL32:
+ 619              		.loc 1 65 37 view .LVU190
+ 620 003e D4ED2B7A 		vldr.32	s15, [r4, #172]
+ 621 0042 20EE270A 		vmul.f32	s0, s0, s15
   66:DrumSynth.cpp ****     } else {
   67:DrumSynth.cpp ****         return 0.f;
   68:DrumSynth.cpp ****     }
   69:DrumSynth.cpp **** }
- 631              		.loc 1 69 1 view .LVU192
- 632 0046 10BD     		pop	{r4, pc}
- 633              	.LVL33:
- 634              	.L12:
- 635              		.cfi_def_cfa_offset 0
- 636              		.cfi_restore 4
- 637              		.cfi_restore 14
+ 622              		.loc 1 69 1 view .LVU191
+ 623 0046 10BD     		pop	{r4, pc}
+ 624              	.LVL33:
+ 625              	.L12:
+ 626              		.cfi_def_cfa_offset 0
+ 627              		.cfi_restore 4
+ 628              		.cfi_restore 14
   67:DrumSynth.cpp ****     }
- 638              		.loc 1 67 16 view .LVU193
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 18
+ 629              		.loc 1 67 16 view .LVU192
+ 630 0048 9FED010A 		vldr.32	s0, .L17
+ 631              		.loc 1 69 1 view .LVU193
+ 632 004c 7047     		bx	lr
+ 633              	.L18:
+ 634 004e 00BF     		.align	2
+ 635              	.L17:
+ 636 0050 00000000 		.word	0
+ 637              		.cfi_endproc
+ 638              	.LFE3530:
+ 640              		.section	.text._ZNK9DrumSynth11kick_activeEv,"ax",%progbits
+ 641              		.align	1
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 18
 
 
- 639 0048 9FED010A 		vldr.32	s0, .L17
- 640              		.loc 1 69 1 view .LVU194
- 641 004c 7047     		bx	lr
- 642              	.L18:
- 643 004e 00BF     		.align	2
- 644              	.L17:
- 645 0050 00000000 		.word	0
- 646              		.cfi_endproc
- 647              	.LFE3530:
- 649              		.section	.text._ZNK9DrumSynth11kick_activeEv,"ax",%progbits
- 650              		.align	1
- 651              		.p2align 2,,3
- 652              		.global	_ZNK9DrumSynth11kick_activeEv
- 653              		.syntax unified
- 654              		.thumb
- 655              		.thumb_func
- 656              		.fpu fpv5-d16
- 658              	_ZNK9DrumSynth11kick_activeEv:
- 659              	.LVL34:
- 660              	.LFB3531:
+ 642              		.p2align 2,,3
+ 643              		.global	_ZNK9DrumSynth11kick_activeEv
+ 644              		.syntax unified
+ 645              		.thumb
+ 646              		.thumb_func
+ 647              		.fpu fpv5-d16
+ 649              	_ZNK9DrumSynth11kick_activeEv:
+ 650              	.LVL34:
+ 651              	.LFB3531:
   70:DrumSynth.cpp **** 
   71:DrumSynth.cpp **** bool DrumSynth::kick_active() const {
- 661              		.loc 1 71 37 is_stmt 1 view -0
- 662              		.cfi_startproc
- 663              		@ args = 0, pretend = 0, frame = 0
- 664              		@ frame_needed = 0, uses_anonymous_args = 0
- 665              		@ link register save eliminated.
+ 652              		.loc 1 71 37 is_stmt 1 view -0
+ 653              		.cfi_startproc
+ 654              		@ args = 0, pretend = 0, frame = 0
+ 655              		@ frame_needed = 0, uses_anonymous_args = 0
+ 656              		@ link register save eliminated.
   72:DrumSynth.cpp ****     return kick_timer > 0.f;
- 666              		.loc 1 72 5 view .LVU196
- 667              		.loc 1 72 25 is_stmt 0 view .LVU197
- 668 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
- 669 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 670 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 657              		.loc 1 72 5 view .LVU195
+ 658              		.loc 1 72 25 is_stmt 0 view .LVU196
+ 659 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
+ 660 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 661 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
   73:DrumSynth.cpp **** }
- 671              		.loc 1 73 1 view .LVU198
- 672 000c CCBF     		ite	gt
- 673 000e 0120     		movgt	r0, #1
- 674              	.LVL35:
- 675              		.loc 1 73 1 view .LVU199
- 676 0010 0020     		movle	r0, #0
- 677 0012 7047     		bx	lr
- 678              		.cfi_endproc
- 679              	.LFE3531:
- 681              		.section	.text._ZN9DrumSynth13trigger_snareEv,"ax",%progbits
- 682              		.align	1
- 683              		.p2align 2,,3
- 684              		.global	_ZN9DrumSynth13trigger_snareEv
- 685              		.syntax unified
- 686              		.thumb
- 687              		.thumb_func
- 688              		.fpu fpv5-d16
- 690              	_ZN9DrumSynth13trigger_snareEv:
- 691              	.LVL36:
- 692              	.LFB3532:
+ 662              		.loc 1 73 1 view .LVU197
+ 663 000c CCBF     		ite	gt
+ 664 000e 0120     		movgt	r0, #1
+ 665              	.LVL35:
+ 666              		.loc 1 73 1 view .LVU198
+ 667 0010 0020     		movle	r0, #0
+ 668 0012 7047     		bx	lr
+ 669              		.cfi_endproc
+ 670              	.LFE3531:
+ 672              		.section	.text._ZN9DrumSynth13trigger_snareEv,"ax",%progbits
+ 673              		.align	1
+ 674              		.p2align 2,,3
+ 675              		.global	_ZN9DrumSynth13trigger_snareEv
+ 676              		.syntax unified
+ 677              		.thumb
+ 678              		.thumb_func
+ 679              		.fpu fpv5-d16
+ 681              	_ZN9DrumSynth13trigger_snareEv:
+ 682              	.LVL36:
+ 683              	.LFB3532:
   74:DrumSynth.cpp **** 
   75:DrumSynth.cpp **** // Snare
   76:DrumSynth.cpp **** // =====================================================
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 19
-
-
   77:DrumSynth.cpp **** void DrumSynth::trigger_snare() {
- 693              		.loc 1 77 33 is_stmt 1 view -0
- 694              		.cfi_startproc
- 695              		@ args = 0, pretend = 0, frame = 0
- 696              		@ frame_needed = 0, uses_anonymous_args = 0
- 697              		@ link register save eliminated.
+ 684              		.loc 1 77 33 is_stmt 1 view -0
+ 685              		.cfi_startproc
+ 686              		@ args = 0, pretend = 0, frame = 0
+ 687              		@ frame_needed = 0, uses_anonymous_args = 0
+ 688              		@ link register save eliminated.
   78:DrumSynth.cpp ****     snare_timer = sample_rate * snare_duration_s;
- 698              		.loc 1 78 5 view .LVU201
- 699              		.loc 1 78 31 is_stmt 0 view .LVU202
- 700 0000 D0ED277A 		vldr.32	s15, [r0, #156]
+ 689              		.loc 1 78 5 view .LVU200
+ 690              		.loc 1 78 31 is_stmt 0 view .LVU201
+ 691 0000 D0ED277A 		vldr.32	s15, [r0, #156]
   79:DrumSynth.cpp ****     snare_amp = 1.f;
- 701              		.loc 1 79 15 view .LVU203
- 702 0004 4FF07E53 		mov	r3, #1065353216
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 19
+
+
+ 692              		.loc 1 79 15 view .LVU202
+ 693 0004 4FF07E53 		mov	r3, #1065353216
   78:DrumSynth.cpp ****     snare_timer = sample_rate * snare_duration_s;
- 703              		.loc 1 78 31 view .LVU204
- 704 0008 90ED387A 		vldr.32	s14, [r0, #224]
- 705              		.loc 1 79 15 view .LVU205
- 706 000c C0F8E830 		str	r3, [r0, #232]	@ float
+ 694              		.loc 1 78 31 view .LVU203
+ 695 0008 90ED387A 		vldr.32	s14, [r0, #224]
+ 696              		.loc 1 79 15 view .LVU204
+ 697 000c C0F8E830 		str	r3, [r0, #232]	@ float
   78:DrumSynth.cpp ****     snare_timer = sample_rate * snare_duration_s;
- 707              		.loc 1 78 31 view .LVU206
- 708 0010 67EE877A 		vmul.f32	s15, s15, s14
+ 698              		.loc 1 78 31 view .LVU205
+ 699 0010 67EE877A 		vmul.f32	s15, s15, s14
   78:DrumSynth.cpp ****     snare_timer = sample_rate * snare_duration_s;
- 709              		.loc 1 78 17 view .LVU207
- 710 0014 C0ED397A 		vstr.32	s15, [r0, #228]
- 711              		.loc 1 79 5 is_stmt 1 view .LVU208
+ 700              		.loc 1 78 17 view .LVU206
+ 701 0014 C0ED397A 		vstr.32	s15, [r0, #228]
+ 702              		.loc 1 79 5 is_stmt 1 view .LVU207
   80:DrumSynth.cpp **** }
- 712              		.loc 1 80 1 is_stmt 0 view .LVU209
- 713 0018 7047     		bx	lr
- 714              		.cfi_endproc
- 715              	.LFE3532:
- 717 001a 00BF     		.section	.text._ZN9DrumSynth13process_snareEv,"ax",%progbits
- 718              		.align	1
- 719              		.p2align 2,,3
- 720              		.global	_ZN9DrumSynth13process_snareEv
- 721              		.syntax unified
- 722              		.thumb
- 723              		.thumb_func
- 724              		.fpu fpv5-d16
- 726              	_ZN9DrumSynth13process_snareEv:
- 727              	.LVL37:
- 728              	.LFB3533:
+ 703              		.loc 1 80 1 is_stmt 0 view .LVU208
+ 704 0018 7047     		bx	lr
+ 705              		.cfi_endproc
+ 706              	.LFE3532:
+ 708 001a 00BF     		.section	.text._ZN9DrumSynth13process_snareEv,"ax",%progbits
+ 709              		.align	1
+ 710              		.p2align 2,,3
+ 711              		.global	_ZN9DrumSynth13process_snareEv
+ 712              		.syntax unified
+ 713              		.thumb
+ 714              		.thumb_func
+ 715              		.fpu fpv5-d16
+ 717              	_ZN9DrumSynth13process_snareEv:
+ 718              	.LVL37:
+ 719              	.LFB3533:
   81:DrumSynth.cpp **** 
   82:DrumSynth.cpp **** float DrumSynth::process_snare() {
- 729              		.loc 1 82 34 is_stmt 1 view -0
- 730              		.cfi_startproc
- 731              		@ args = 0, pretend = 0, frame = 0
- 732              		@ frame_needed = 0, uses_anonymous_args = 0
+ 720              		.loc 1 82 34 is_stmt 1 view -0
+ 721              		.cfi_startproc
+ 722              		@ args = 0, pretend = 0, frame = 0
+ 723              		@ frame_needed = 0, uses_anonymous_args = 0
   83:DrumSynth.cpp ****     if (snare_timer > 0.f) {
- 733              		.loc 1 83 5 view .LVU211
- 734              	.LBB146:
- 735              		.loc 1 83 9 is_stmt 0 view .LVU212
- 736 0000 D0ED397A 		vldr.32	s15, [r0, #228]
- 737              		.loc 1 83 5 view .LVU213
- 738 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 739 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 740 000c 3EDD     		ble	.L26
- 741              	.LBB147:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 20
-
-
+ 724              		.loc 1 83 5 view .LVU210
+ 725              	.LBB144:
+ 726              		.loc 1 83 9 is_stmt 0 view .LVU211
+ 727 0000 D0ED397A 		vldr.32	s15, [r0, #228]
+ 728              		.loc 1 83 5 view .LVU212
+ 729 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 730 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 731 000c 3EDD     		ble	.L26
+ 732              	.LBB145:
   84:DrumSynth.cpp ****         snare_timer--;
- 742              		.loc 1 84 9 is_stmt 1 view .LVU214
+ 733              		.loc 1 84 9 is_stmt 1 view .LVU213
   85:DrumSynth.cpp ****         // Random sample [-1.f, 1.f] for white noise burst
   86:DrumSynth.cpp ****         snare_amp -= (1.f/(sample_rate * snare_duration_s));
- 743              		.loc 1 86 40 is_stmt 0 view .LVU215
- 744 000e D0ED385A 		vldr.32	s11, [r0, #224]
+ 734              		.loc 1 86 40 is_stmt 0 view .LVU214
+ 735 000e D0ED385A 		vldr.32	s11, [r0, #224]
   84:DrumSynth.cpp ****         snare_timer--;
- 745              		.loc 1 84 20 view .LVU216
- 746 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
- 747              		.loc 1 86 40 view .LVU217
- 748 0016 D0ED276A 		vldr.32	s13, [r0, #156]
- 749              		.loc 1 86 19 view .LVU218
- 750 001a 90ED3A7A 		vldr.32	s14, [r0, #232]
- 751              		.loc 1 86 40 view .LVU219
- 752 001e 66EEA56A 		vmul.f32	s13, s13, s11
+ 736              		.loc 1 84 20 view .LVU215
+ 737 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
+ 738              		.loc 1 86 40 view .LVU216
+ 739 0016 D0ED276A 		vldr.32	s13, [r0, #156]
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 20
+
+
+ 740              		.loc 1 86 19 view .LVU217
+ 741 001a 90ED3A7A 		vldr.32	s14, [r0, #232]
+ 742              		.loc 1 86 40 view .LVU218
+ 743 001e 66EEA56A 		vmul.f32	s13, s13, s11
   84:DrumSynth.cpp ****         snare_timer--;
- 753              		.loc 1 84 20 view .LVU220
- 754 0022 77EEC67A 		vsub.f32	s15, s15, s12
- 755              		.loc 1 86 26 view .LVU221
- 756 0026 C6EE265A 		vdiv.f32	s11, s12, s13
- 757              	.LBE147:
- 758              	.LBE146:
+ 744              		.loc 1 84 20 view .LVU219
+ 745 0022 77EEC67A 		vsub.f32	s15, s15, s12
+ 746              		.loc 1 86 26 view .LVU220
+ 747 0026 C6EE265A 		vdiv.f32	s11, s12, s13
+ 748              	.LBE145:
+ 749              	.LBE144:
   82:DrumSynth.cpp ****     if (snare_timer > 0.f) {
- 759              		.loc 1 82 34 view .LVU222
- 760 002a 10B5     		push	{r4, lr}
- 761              		.cfi_def_cfa_offset 8
- 762              		.cfi_offset 4, -8
- 763              		.cfi_offset 14, -4
- 764 002c 2DED028B 		vpush.64	{d8}
- 765              		.cfi_def_cfa_offset 16
- 766              		.cfi_offset 80, -16
- 767              		.cfi_offset 81, -12
- 768              	.LBB154:
- 769              	.LBB152:
+ 750              		.loc 1 82 34 view .LVU221
+ 751 002a 10B5     		push	{r4, lr}
+ 752              		.cfi_def_cfa_offset 8
+ 753              		.cfi_offset 4, -8
+ 754              		.cfi_offset 14, -4
+ 755 002c 2DED028B 		vpush.64	{d8}
+ 756              		.cfi_def_cfa_offset 16
+ 757              		.cfi_offset 80, -16
+ 758              		.cfi_offset 81, -12
+ 759              	.LBB152:
+ 760              	.LBB150:
   84:DrumSynth.cpp ****         snare_timer--;
- 770              		.loc 1 84 20 view .LVU223
- 771 0030 C0ED397A 		vstr.32	s15, [r0, #228]
- 772              		.loc 1 86 9 is_stmt 1 view .LVU224
- 773 0034 0446     		mov	r4, r0
+ 761              		.loc 1 84 20 view .LVU222
+ 762 0030 C0ED397A 		vstr.32	s15, [r0, #228]
+ 763              		.loc 1 86 9 is_stmt 1 view .LVU223
+ 764 0034 0446     		mov	r4, r0
   87:DrumSynth.cpp ****         float snare_sample = (2.f * static_cast<float>(rand()) / RAND_MAX - 1.f) + snare_osc.Proces
- 774              		.loc 1 87 75 is_stmt 0 view .LVU225
- 775 0036 BFEE008A 		vmov.f32	s16, #-1.0e+0
+ 765              		.loc 1 87 75 is_stmt 0 view .LVU224
+ 766 0036 BFEE008A 		vmov.f32	s16, #-1.0e+0
   86:DrumSynth.cpp ****         float snare_sample = (2.f * static_cast<float>(rand()) / RAND_MAX - 1.f) + snare_osc.Proces
- 776              		.loc 1 86 19 view .LVU226
- 777 003a 77EE657A 		vsub.f32	s15, s14, s11
- 778 003e C0ED3A7A 		vstr.32	s15, [r0, #232]
- 779              		.loc 1 87 9 is_stmt 1 view .LVU227
- 780              		.loc 1 87 60 is_stmt 0 view .LVU228
- 781 0042 FFF7FEFF 		bl	rand
- 782              	.LVL38:
- 783              		.loc 1 87 37 view .LVU229
- 784 0046 07EE900A 		vmov	s15, r0	@ int
- 785              		.loc 1 87 75 view .LVU230
- 786 004a 9FED127A 		vldr.32	s14, .L31
- 787              		.loc 1 87 101 view .LVU231
- 788 004e 04F1B000 		add	r0, r4, #176
- 789              		.loc 1 87 37 view .LVU232
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 21
-
-
- 790 0052 F8EEE77A 		vcvt.f32.s32	s15, s15
- 791              		.loc 1 87 35 view .LVU233
- 792 0056 77EEA77A 		vadd.f32	s15, s15, s15
- 793              		.loc 1 87 75 view .LVU234
- 794 005a A7EE878A 		vfma.f32	s16, s15, s14
- 795              		.loc 1 87 101 view .LVU235
- 796 005e FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
- 797              	.LVL39:
+ 767              		.loc 1 86 19 view .LVU225
+ 768 003a 77EE657A 		vsub.f32	s15, s14, s11
+ 769 003e C0ED3A7A 		vstr.32	s15, [r0, #232]
+ 770              		.loc 1 87 9 is_stmt 1 view .LVU226
+ 771              		.loc 1 87 60 is_stmt 0 view .LVU227
+ 772 0042 FFF7FEFF 		bl	rand
+ 773              	.LVL38:
+ 774              		.loc 1 87 37 view .LVU228
+ 775 0046 07EE900A 		vmov	s15, r0	@ int
+ 776              		.loc 1 87 75 view .LVU229
+ 777 004a 9FED127A 		vldr.32	s14, .L31
+ 778              		.loc 1 87 101 view .LVU230
+ 779 004e 04F1B000 		add	r0, r4, #176
+ 780              		.loc 1 87 37 view .LVU231
+ 781 0052 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 782              		.loc 1 87 35 view .LVU232
+ 783 0056 77EEA77A 		vadd.f32	s15, s15, s15
+ 784              		.loc 1 87 75 view .LVU233
+ 785 005a A7EE878A 		vfma.f32	s16, s15, s14
+ 786              		.loc 1 87 101 view .LVU234
+ 787 005e FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 788              	.LVL39:
   88:DrumSynth.cpp **** 
   89:DrumSynth.cpp ****         snare_highpass.Process(snare_sample);
- 798              		.loc 1 89 9 is_stmt 1 view .LVU236
- 799              		.loc 1 89 31 is_stmt 0 view .LVU237
- 800 0062 04F1EC00 		add	r0, r4, #236
- 801 0066 38EE000A 		vadd.f32	s0, s16, s0
- 802              	.LVL40:
- 803              		.loc 1 89 31 view .LVU238
- 804 006a FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
- 805              	.LVL41:
+ 789              		.loc 1 89 9 is_stmt 1 view .LVU235
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 21
+
+
+ 790              		.loc 1 89 31 is_stmt 0 view .LVU236
+ 791 0062 04F1EC00 		add	r0, r4, #236
+ 792 0066 38EE000A 		vadd.f32	s0, s16, s0
+ 793              	.LVL40:
+ 794              		.loc 1 89 31 view .LVU237
+ 795 006a FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
+ 796              	.LVL41:
   90:DrumSynth.cpp ****         float hp = snare_highpass.High();
- 806              		.loc 1 90 9 is_stmt 1 view .LVU239
- 807              	.LBB148:
- 808              	.LBI148:
+ 797              		.loc 1 90 9 is_stmt 1 view .LVU238
+ 798              	.LBB146:
+ 799              	.LBI146:
   30:../../DaisySP//Source/Filters/svf.h ****     ~Svf() {}
   31:../../DaisySP//Source/Filters/svf.h ****     /** Initializes the filter
   32:../../DaisySP//Source/Filters/svf.h ****         float sample_rate - sample rate of the audio engine being run, and the frequency that the P
@@ -1258,590 +1247,561 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 1
   62:../../DaisySP//Source/Filters/svf.h ****         \return high pass output of the filter
   63:../../DaisySP//Source/Filters/svf.h ****     */
   64:../../DaisySP//Source/Filters/svf.h ****     inline float High() { return out_high_; }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 22
-
-
- 809              		.loc 4 64 18 view .LVU240
- 810              	.LBB149:
- 811              		.loc 4 64 27 view .LVU241
- 812              		.loc 4 64 27 is_stmt 0 view .LVU242
- 813              	.LBE149:
- 814              	.LBE148:
+ 800              		.loc 4 64 18 view .LVU239
+ 801              	.LBB147:
+ 802              		.loc 4 64 27 view .LVU240
+ 803              		.loc 4 64 27 is_stmt 0 view .LVU241
+ 804              	.LBE147:
+ 805              	.LBE146:
   91:DrumSynth.cpp ****         snare_lowpass.Process(hp);
- 815              		.loc 1 91 9 is_stmt 1 view .LVU243
- 816              		.loc 1 91 30 is_stmt 0 view .LVU244
- 817 006e 94ED480A 		vldr.32	s0, [r4, #288]
- 818 0072 04F59C70 		add	r0, r4, #312
- 819 0076 FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
- 820              	.LVL42:
+ 806              		.loc 1 91 9 is_stmt 1 view .LVU242
+ 807              		.loc 1 91 30 is_stmt 0 view .LVU243
+ 808 006e 94ED480A 		vldr.32	s0, [r4, #288]
+ 809 0072 04F59C70 		add	r0, r4, #312
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 22
+
+
+ 810 0076 FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
+ 811              	.LVL42:
   92:DrumSynth.cpp **** 
   93:DrumSynth.cpp ****         return snare_lowpass.Low() * snare_amp;
- 821              		.loc 1 93 9 is_stmt 1 view .LVU245
- 822              	.LBB150:
- 823              	.LBI150:
+ 812              		.loc 1 93 9 is_stmt 1 view .LVU244
+ 813              	.LBB148:
+ 814              	.LBI148:
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 824              		.loc 4 60 18 view .LVU246
- 825              	.LBB151:
+ 815              		.loc 4 60 18 view .LVU245
+ 816              	.LBB149:
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 826              		.loc 4 60 26 view .LVU247
+ 817              		.loc 4 60 26 view .LVU246
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 827              		.loc 4 60 26 is_stmt 0 view .LVU248
- 828              	.LBE151:
- 829              	.LBE150:
- 830              		.loc 1 93 38 view .LVU249
- 831 007a 94ED3A0A 		vldr.32	s0, [r4, #232]
- 832 007e D4ED5A7A 		vldr.32	s15, [r4, #360]
- 833              	.LBE152:
- 834              	.LBE154:
+ 818              		.loc 4 60 26 is_stmt 0 view .LVU247
+ 819              	.LBE149:
+ 820              	.LBE148:
+ 821              		.loc 1 93 38 view .LVU248
+ 822 007a 94ED3A0A 		vldr.32	s0, [r4, #232]
+ 823 007e D4ED5A7A 		vldr.32	s15, [r4, #360]
+ 824              	.LBE150:
+ 825              	.LBE152:
   94:DrumSynth.cpp ****     } else {
   95:DrumSynth.cpp ****         return 0.f;
   96:DrumSynth.cpp ****     }
   97:DrumSynth.cpp **** }
- 835              		.loc 1 97 1 view .LVU250
- 836 0082 BDEC028B 		vldm	sp!, {d8}
- 837              		.cfi_restore 80
- 838              		.cfi_restore 81
- 839              		.cfi_def_cfa_offset 8
- 840              	.LBB155:
- 841              	.LBB153:
+ 826              		.loc 1 97 1 view .LVU249
+ 827 0082 BDEC028B 		vldm	sp!, {d8}
+ 828              		.cfi_restore 80
+ 829              		.cfi_restore 81
+ 830              		.cfi_def_cfa_offset 8
+ 831              	.LBB153:
+ 832              	.LBB151:
   93:DrumSynth.cpp ****     } else {
- 842              		.loc 1 93 38 view .LVU251
- 843 0086 20EE270A 		vmul.f32	s0, s0, s15
- 844              	.LBE153:
- 845              	.LBE155:
- 846              		.loc 1 97 1 view .LVU252
- 847 008a 10BD     		pop	{r4, pc}
- 848              	.LVL43:
- 849              	.L26:
- 850              		.cfi_def_cfa_offset 0
- 851              		.cfi_restore 4
- 852              		.cfi_restore 14
- 853              	.LBB156:
+ 833              		.loc 1 93 38 view .LVU250
+ 834 0086 20EE270A 		vmul.f32	s0, s0, s15
+ 835              	.LBE151:
+ 836              	.LBE153:
+ 837              		.loc 1 97 1 view .LVU251
+ 838 008a 10BD     		pop	{r4, pc}
+ 839              	.LVL43:
+ 840              	.L26:
+ 841              		.cfi_def_cfa_offset 0
+ 842              		.cfi_restore 4
+ 843              		.cfi_restore 14
+ 844              	.LBB154:
   95:DrumSynth.cpp ****     }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 23
+ 845              		.loc 1 95 16 view .LVU252
+ 846 008c 9FED020A 		vldr.32	s0, .L31+4
+ 847              	.LBE154:
+ 848              		.loc 1 97 1 view .LVU253
+ 849 0090 7047     		bx	lr
+ 850              	.L32:
+ 851 0092 00BF     		.align	2
+ 852              	.L31:
+ 853 0094 00000030 		.word	805306368
+ 854 0098 00000000 		.word	0
+ 855              		.cfi_endproc
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 23
 
 
- 854              		.loc 1 95 16 view .LVU253
- 855 008c 9FED020A 		vldr.32	s0, .L31+4
- 856              	.LBE156:
- 857              		.loc 1 97 1 view .LVU254
- 858 0090 7047     		bx	lr
- 859              	.L32:
- 860 0092 00BF     		.align	2
- 861              	.L31:
- 862 0094 00000030 		.word	805306368
- 863 0098 00000000 		.word	0
- 864              		.cfi_endproc
- 865              	.LFE3533:
- 867              		.section	.text._ZNK9DrumSynth12snare_activeEv,"ax",%progbits
- 868              		.align	1
- 869              		.p2align 2,,3
- 870              		.global	_ZNK9DrumSynth12snare_activeEv
- 871              		.syntax unified
- 872              		.thumb
- 873              		.thumb_func
- 874              		.fpu fpv5-d16
- 876              	_ZNK9DrumSynth12snare_activeEv:
- 877              	.LVL44:
- 878              	.LFB3534:
+ 856              	.LFE3533:
+ 858              		.section	.text._ZNK9DrumSynth12snare_activeEv,"ax",%progbits
+ 859              		.align	1
+ 860              		.p2align 2,,3
+ 861              		.global	_ZNK9DrumSynth12snare_activeEv
+ 862              		.syntax unified
+ 863              		.thumb
+ 864              		.thumb_func
+ 865              		.fpu fpv5-d16
+ 867              	_ZNK9DrumSynth12snare_activeEv:
+ 868              	.LVL44:
+ 869              	.LFB3534:
   98:DrumSynth.cpp **** 
   99:DrumSynth.cpp **** bool DrumSynth::snare_active() const {
- 879              		.loc 1 99 38 is_stmt 1 view -0
- 880              		.cfi_startproc
- 881              		@ args = 0, pretend = 0, frame = 0
- 882              		@ frame_needed = 0, uses_anonymous_args = 0
- 883              		@ link register save eliminated.
+ 870              		.loc 1 99 38 is_stmt 1 view -0
+ 871              		.cfi_startproc
+ 872              		@ args = 0, pretend = 0, frame = 0
+ 873              		@ frame_needed = 0, uses_anonymous_args = 0
+ 874              		@ link register save eliminated.
  100:DrumSynth.cpp ****     return snare_timer > 0.f;
- 884              		.loc 1 100 5 view .LVU256
- 885              		.loc 1 100 26 is_stmt 0 view .LVU257
- 886 0000 D0ED397A 		vldr.32	s15, [r0, #228]
- 887 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 888 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 875              		.loc 1 100 5 view .LVU255
+ 876              		.loc 1 100 26 is_stmt 0 view .LVU256
+ 877 0000 D0ED397A 		vldr.32	s15, [r0, #228]
+ 878 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 879 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
  101:DrumSynth.cpp **** }
- 889              		.loc 1 101 1 view .LVU258
- 890 000c CCBF     		ite	gt
- 891 000e 0120     		movgt	r0, #1
- 892              	.LVL45:
- 893              		.loc 1 101 1 view .LVU259
- 894 0010 0020     		movle	r0, #0
- 895 0012 7047     		bx	lr
- 896              		.cfi_endproc
- 897              	.LFE3534:
- 899              		.section	.text._ZN9DrumSynth11trigger_hatEv,"ax",%progbits
- 900              		.align	1
- 901              		.p2align 2,,3
- 902              		.global	_ZN9DrumSynth11trigger_hatEv
- 903              		.syntax unified
- 904              		.thumb
- 905              		.thumb_func
- 906              		.fpu fpv5-d16
- 908              	_ZN9DrumSynth11trigger_hatEv:
- 909              	.LVL46:
- 910              	.LFB3535:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 24
-
-
+ 880              		.loc 1 101 1 view .LVU257
+ 881 000c CCBF     		ite	gt
+ 882 000e 0120     		movgt	r0, #1
+ 883              	.LVL45:
+ 884              		.loc 1 101 1 view .LVU258
+ 885 0010 0020     		movle	r0, #0
+ 886 0012 7047     		bx	lr
+ 887              		.cfi_endproc
+ 888              	.LFE3534:
+ 890              		.section	.text._ZN9DrumSynth11trigger_hatEv,"ax",%progbits
+ 891              		.align	1
+ 892              		.p2align 2,,3
+ 893              		.global	_ZN9DrumSynth11trigger_hatEv
+ 894              		.syntax unified
+ 895              		.thumb
+ 896              		.thumb_func
+ 897              		.fpu fpv5-d16
+ 899              	_ZN9DrumSynth11trigger_hatEv:
+ 900              	.LVL46:
+ 901              	.LFB3535:
  102:DrumSynth.cpp **** 
  103:DrumSynth.cpp **** // Hat
  104:DrumSynth.cpp **** // =====================================================
  105:DrumSynth.cpp **** void DrumSynth::trigger_hat() {
- 911              		.loc 1 105 31 is_stmt 1 view -0
- 912              		.cfi_startproc
- 913              		@ args = 0, pretend = 0, frame = 0
- 914              		@ frame_needed = 0, uses_anonymous_args = 0
- 915              		@ link register save eliminated.
+ 902              		.loc 1 105 31 is_stmt 1 view -0
+ 903              		.cfi_startproc
+ 904              		@ args = 0, pretend = 0, frame = 0
+ 905              		@ frame_needed = 0, uses_anonymous_args = 0
+ 906              		@ link register save eliminated.
  106:DrumSynth.cpp ****     hat_timer = sample_rate * hat_duration_s;
- 916              		.loc 1 106 5 view .LVU261
- 917              		.loc 1 106 29 is_stmt 0 view .LVU262
- 918 0000 D0ED277A 		vldr.32	s15, [r0, #156]
+ 907              		.loc 1 106 5 view .LVU260
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 24
+
+
+ 908              		.loc 1 106 29 is_stmt 0 view .LVU261
+ 909 0000 D0ED277A 		vldr.32	s15, [r0, #156]
  107:DrumSynth.cpp ****     hat_amp = 1.0f;
- 919              		.loc 1 107 13 view .LVU263
- 920 0004 4FF07E53 		mov	r3, #1065353216
+ 910              		.loc 1 107 13 view .LVU262
+ 911 0004 4FF07E53 		mov	r3, #1065353216
  106:DrumSynth.cpp ****     hat_timer = sample_rate * hat_duration_s;
- 921              		.loc 1 106 29 view .LVU264
- 922 0008 90ED627A 		vldr.32	s14, [r0, #392]
- 923              		.loc 1 107 13 view .LVU265
- 924 000c C0F89031 		str	r3, [r0, #400]	@ float
+ 912              		.loc 1 106 29 view .LVU263
+ 913 0008 90ED627A 		vldr.32	s14, [r0, #392]
+ 914              		.loc 1 107 13 view .LVU264
+ 915 000c C0F89031 		str	r3, [r0, #400]	@ float
  106:DrumSynth.cpp ****     hat_timer = sample_rate * hat_duration_s;
- 925              		.loc 1 106 29 view .LVU266
- 926 0010 67EE877A 		vmul.f32	s15, s15, s14
+ 916              		.loc 1 106 29 view .LVU265
+ 917 0010 67EE877A 		vmul.f32	s15, s15, s14
  106:DrumSynth.cpp ****     hat_timer = sample_rate * hat_duration_s;
- 927              		.loc 1 106 15 view .LVU267
- 928 0014 C0ED637A 		vstr.32	s15, [r0, #396]
- 929              		.loc 1 107 5 is_stmt 1 view .LVU268
+ 918              		.loc 1 106 15 view .LVU266
+ 919 0014 C0ED637A 		vstr.32	s15, [r0, #396]
+ 920              		.loc 1 107 5 is_stmt 1 view .LVU267
  108:DrumSynth.cpp **** }
- 930              		.loc 1 108 1 is_stmt 0 view .LVU269
- 931 0018 7047     		bx	lr
- 932              		.cfi_endproc
- 933              	.LFE3535:
- 935 001a 00BF     		.section	.text._ZN9DrumSynth11process_hatEv,"ax",%progbits
- 936              		.align	1
- 937              		.p2align 2,,3
- 938              		.global	_ZN9DrumSynth11process_hatEv
- 939              		.syntax unified
- 940              		.thumb
- 941              		.thumb_func
- 942              		.fpu fpv5-d16
- 944              	_ZN9DrumSynth11process_hatEv:
- 945              	.LVL47:
- 946              	.LFB3536:
+ 921              		.loc 1 108 1 is_stmt 0 view .LVU268
+ 922 0018 7047     		bx	lr
+ 923              		.cfi_endproc
+ 924              	.LFE3535:
+ 926 001a 00BF     		.section	.text._ZN9DrumSynth11process_hatEv,"ax",%progbits
+ 927              		.align	1
+ 928              		.p2align 2,,3
+ 929              		.global	_ZN9DrumSynth11process_hatEv
+ 930              		.syntax unified
+ 931              		.thumb
+ 932              		.thumb_func
+ 933              		.fpu fpv5-d16
+ 935              	_ZN9DrumSynth11process_hatEv:
+ 936              	.LVL47:
+ 937              	.LFB3536:
  109:DrumSynth.cpp **** 
  110:DrumSynth.cpp **** float DrumSynth::process_hat() {
- 947              		.loc 1 110 32 is_stmt 1 view -0
- 948              		.cfi_startproc
- 949              		@ args = 0, pretend = 0, frame = 0
- 950              		@ frame_needed = 0, uses_anonymous_args = 0
+ 938              		.loc 1 110 32 is_stmt 1 view -0
+ 939              		.cfi_startproc
+ 940              		@ args = 0, pretend = 0, frame = 0
+ 941              		@ frame_needed = 0, uses_anonymous_args = 0
  111:DrumSynth.cpp ****     if (hat_timer > 0.f) {
- 951              		.loc 1 111 5 view .LVU271
- 952              	.LBB157:
- 953              		.loc 1 111 9 is_stmt 0 view .LVU272
- 954 0000 D0ED637A 		vldr.32	s15, [r0, #396]
- 955              		.loc 1 111 5 view .LVU273
- 956 0004 F5EEC07A 		vcmpe.f32	s15, #0
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 25
-
-
- 957 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 958 000c 2ADD     		ble	.L40
- 959              	.LBB158:
+ 942              		.loc 1 111 5 view .LVU270
+ 943              	.LBB155:
+ 944              		.loc 1 111 9 is_stmt 0 view .LVU271
+ 945 0000 D0ED637A 		vldr.32	s15, [r0, #396]
+ 946              		.loc 1 111 5 view .LVU272
+ 947 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 948 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 949 000c 2ADD     		ble	.L40
+ 950              	.LBB156:
  112:DrumSynth.cpp ****         hat_timer--;
- 960              		.loc 1 112 9 is_stmt 1 view .LVU274
- 961              		.loc 1 112 18 is_stmt 0 view .LVU275
- 962 000e B7EE007A 		vmov.f32	s14, #1.0e+0
- 963              	.LBE158:
- 964              	.LBE157:
+ 951              		.loc 1 112 9 is_stmt 1 view .LVU273
+ 952              		.loc 1 112 18 is_stmt 0 view .LVU274
+ 953 000e B7EE007A 		vmov.f32	s14, #1.0e+0
+ 954              	.LBE156:
+ 955              	.LBE155:
  110:DrumSynth.cpp ****     if (hat_timer > 0.f) {
- 965              		.loc 1 110 32 view .LVU276
- 966 0012 10B5     		push	{r4, lr}
- 967              		.cfi_def_cfa_offset 8
- 968              		.cfi_offset 4, -8
- 969              		.cfi_offset 14, -4
- 970              	.LBB164:
- 971              	.LBB163:
- 972              		.loc 1 112 18 view .LVU277
- 973 0014 77EEC77A 		vsub.f32	s15, s15, s14
- 974 0018 0446     		mov	r4, r0
- 975 001a C0ED637A 		vstr.32	s15, [r0, #396]
+ 956              		.loc 1 110 32 view .LVU275
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 25
+
+
+ 957 0012 10B5     		push	{r4, lr}
+ 958              		.cfi_def_cfa_offset 8
+ 959              		.cfi_offset 4, -8
+ 960              		.cfi_offset 14, -4
+ 961              	.LBB162:
+ 962              	.LBB161:
+ 963              		.loc 1 112 18 view .LVU276
+ 964 0014 77EEC77A 		vsub.f32	s15, s15, s14
+ 965 0018 0446     		mov	r4, r0
+ 966 001a C0ED637A 		vstr.32	s15, [r0, #396]
  113:DrumSynth.cpp ****         // Random sample [-1.f, 1.f] for white noise burst
  114:DrumSynth.cpp ****          float hat_sample = (2.f * static_cast<float>(rand()) / RAND_MAX - 1.f);
- 976              		.loc 1 114 10 is_stmt 1 view .LVU278
- 977              		.loc 1 114 59 is_stmt 0 view .LVU279
- 978 001e FFF7FEFF 		bl	rand
- 979              	.LVL48:
- 980              		.loc 1 114 36 view .LVU280
- 981 0022 07EE900A 		vmov	s15, r0	@ int
- 982              		.loc 1 114 79 view .LVU281
- 983 0026 BFEE000A 		vmov.f32	s0, #-1.0e+0
- 984 002a 9FED107A 		vldr.32	s14, .L45
- 985              		.loc 1 114 36 view .LVU282
- 986 002e F8EEE77A 		vcvt.f32.s32	s15, s15
+ 967              		.loc 1 114 10 is_stmt 1 view .LVU277
+ 968              		.loc 1 114 59 is_stmt 0 view .LVU278
+ 969 001e FFF7FEFF 		bl	rand
+ 970              	.LVL48:
+ 971              		.loc 1 114 36 view .LVU279
+ 972 0022 07EE900A 		vmov	s15, r0	@ int
+ 973              		.loc 1 114 79 view .LVU280
+ 974 0026 BFEE000A 		vmov.f32	s0, #-1.0e+0
+ 975 002a 9FED107A 		vldr.32	s14, .L45
+ 976              		.loc 1 114 36 view .LVU281
+ 977 002e F8EEE77A 		vcvt.f32.s32	s15, s15
  115:DrumSynth.cpp **** 
  116:DrumSynth.cpp ****         hat_highpass.Process(hat_sample);
- 987              		.loc 1 116 29 view .LVU283
- 988 0032 04F5CA70 		add	r0, r4, #404
+ 978              		.loc 1 116 29 view .LVU282
+ 979 0032 04F5CA70 		add	r0, r4, #404
  114:DrumSynth.cpp **** 
- 989              		.loc 1 114 34 view .LVU284
- 990 0036 77EEA77A 		vadd.f32	s15, s15, s15
- 991              	.LVL49:
- 992              		.loc 1 116 9 is_stmt 1 view .LVU285
- 993              		.loc 1 116 29 is_stmt 0 view .LVU286
- 994 003a A7EE870A 		vfma.f32	s0, s15, s14
- 995              	.LVL50:
- 996              		.loc 1 116 29 view .LVU287
- 997 003e FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
- 998              	.LVL51:
+ 980              		.loc 1 114 34 view .LVU283
+ 981 0036 77EEA77A 		vadd.f32	s15, s15, s15
+ 982              	.LVL49:
+ 983              		.loc 1 116 9 is_stmt 1 view .LVU284
+ 984              		.loc 1 116 29 is_stmt 0 view .LVU285
+ 985 003a A7EE870A 		vfma.f32	s0, s15, s14
+ 986              	.LVL50:
+ 987              		.loc 1 116 29 view .LVU286
+ 988 003e FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
+ 989              	.LVL51:
  117:DrumSynth.cpp ****         float hp = hat_highpass.High();
- 999              		.loc 1 117 9 is_stmt 1 view .LVU288
- 1000              	.LBB159:
- 1001              	.LBI159:
- 1002              		.loc 4 64 18 view .LVU289
- 1003              	.LBB160:
- 1004              		.loc 4 64 27 view .LVU290
- 1005              		.loc 4 64 27 is_stmt 0 view .LVU291
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 26
-
-
- 1006              	.LBE160:
- 1007              	.LBE159:
+ 990              		.loc 1 117 9 is_stmt 1 view .LVU287
+ 991              	.LBB157:
+ 992              	.LBI157:
+ 993              		.loc 4 64 18 view .LVU288
+ 994              	.LBB158:
+ 995              		.loc 4 64 27 view .LVU289
+ 996              		.loc 4 64 27 is_stmt 0 view .LVU290
+ 997              	.LBE158:
+ 998              	.LBE157:
  118:DrumSynth.cpp ****         hat_lowpass.Process(hp);
- 1008              		.loc 1 118 9 is_stmt 1 view .LVU292
- 1009              		.loc 1 118 28 is_stmt 0 view .LVU293
- 1010 0042 94ED720A 		vldr.32	s0, [r4, #456]
- 1011 0046 04F5F070 		add	r0, r4, #480
- 1012 004a FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
- 1013              	.LVL52:
+ 999              		.loc 1 118 9 is_stmt 1 view .LVU291
+ 1000              		.loc 1 118 28 is_stmt 0 view .LVU292
+ 1001 0042 94ED720A 		vldr.32	s0, [r4, #456]
+ 1002 0046 04F5F070 		add	r0, r4, #480
+ 1003 004a FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
+ 1004              	.LVL52:
  119:DrumSynth.cpp **** 
  120:DrumSynth.cpp ****         return hat_lowpass.Low() * hat_amp * 0.4f;
- 1014              		.loc 1 120 9 is_stmt 1 view .LVU294
- 1015              	.LBB161:
- 1016              	.LBI161:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 26
+
+
+ 1005              		.loc 1 120 9 is_stmt 1 view .LVU293
+ 1006              	.LBB159:
+ 1007              	.LBI159:
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 1017              		.loc 4 60 18 view .LVU295
- 1018              	.LBB162:
+ 1008              		.loc 4 60 18 view .LVU294
+ 1009              	.LBB160:
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 1019              		.loc 4 60 26 view .LVU296
+ 1010              		.loc 4 60 26 view .LVU295
   60:../../DaisySP//Source/Filters/svf.h ****     /** highpass output
- 1020              		.loc 4 60 26 is_stmt 0 view .LVU297
- 1021              	.LBE162:
- 1022              	.LBE161:
- 1023              		.loc 1 120 34 view .LVU298
- 1024 004e 94ED640A 		vldr.32	s0, [r4, #400]
- 1025 0052 94ED847A 		vldr.32	s14, [r4, #528]
- 1026              		.loc 1 120 46 view .LVU299
- 1027 0056 DFED067A 		vldr.32	s15, .L45+4
- 1028              		.loc 1 120 34 view .LVU300
- 1029 005a 20EE070A 		vmul.f32	s0, s0, s14
- 1030              		.loc 1 120 46 view .LVU301
- 1031 005e 20EE270A 		vmul.f32	s0, s0, s15
- 1032              	.LBE163:
- 1033              	.LBE164:
+ 1011              		.loc 4 60 26 is_stmt 0 view .LVU296
+ 1012              	.LBE160:
+ 1013              	.LBE159:
+ 1014              		.loc 1 120 34 view .LVU297
+ 1015 004e 94ED640A 		vldr.32	s0, [r4, #400]
+ 1016 0052 94ED847A 		vldr.32	s14, [r4, #528]
+ 1017              		.loc 1 120 46 view .LVU298
+ 1018 0056 DFED067A 		vldr.32	s15, .L45+4
+ 1019              		.loc 1 120 34 view .LVU299
+ 1020 005a 20EE070A 		vmul.f32	s0, s0, s14
+ 1021              		.loc 1 120 46 view .LVU300
+ 1022 005e 20EE270A 		vmul.f32	s0, s0, s15
+ 1023              	.LBE161:
+ 1024              	.LBE162:
  121:DrumSynth.cpp ****     } else {
  122:DrumSynth.cpp ****         return 0.f;
  123:DrumSynth.cpp ****     }
  124:DrumSynth.cpp **** }
- 1034              		.loc 1 124 1 view .LVU302
- 1035 0062 10BD     		pop	{r4, pc}
- 1036              	.LVL53:
- 1037              	.L40:
- 1038              		.cfi_def_cfa_offset 0
- 1039              		.cfi_restore 4
- 1040              		.cfi_restore 14
- 1041              	.LBB165:
+ 1025              		.loc 1 124 1 view .LVU301
+ 1026 0062 10BD     		pop	{r4, pc}
+ 1027              	.LVL53:
+ 1028              	.L40:
+ 1029              		.cfi_def_cfa_offset 0
+ 1030              		.cfi_restore 4
+ 1031              		.cfi_restore 14
+ 1032              	.LBB163:
  122:DrumSynth.cpp ****     }
- 1042              		.loc 1 122 16 view .LVU303
- 1043 0064 9FED030A 		vldr.32	s0, .L45+8
- 1044              	.LBE165:
- 1045              		.loc 1 124 1 view .LVU304
- 1046 0068 7047     		bx	lr
- 1047              	.L46:
- 1048 006a 00BF     		.align	2
- 1049              	.L45:
- 1050 006c 00000030 		.word	805306368
- 1051 0070 CDCCCC3E 		.word	1053609165
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 27
+ 1033              		.loc 1 122 16 view .LVU302
+ 1034 0064 9FED030A 		vldr.32	s0, .L45+8
+ 1035              	.LBE163:
+ 1036              		.loc 1 124 1 view .LVU303
+ 1037 0068 7047     		bx	lr
+ 1038              	.L46:
+ 1039 006a 00BF     		.align	2
+ 1040              	.L45:
+ 1041 006c 00000030 		.word	805306368
+ 1042 0070 CDCCCC3E 		.word	1053609165
+ 1043 0074 00000000 		.word	0
+ 1044              		.cfi_endproc
+ 1045              	.LFE3536:
+ 1047              		.section	.text._ZN9DrumSynth7processEv,"ax",%progbits
+ 1048              		.align	1
+ 1049              		.p2align 2,,3
+ 1050              		.global	_ZN9DrumSynth7processEv
+ 1051              		.syntax unified
+ 1052              		.thumb
+ 1053              		.thumb_func
+ 1054              		.fpu fpv5-d16
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 27
 
 
- 1052 0074 00000000 		.word	0
- 1053              		.cfi_endproc
- 1054              	.LFE3536:
- 1056              		.section	.text._ZNK9DrumSynth10hat_activeEv,"ax",%progbits
- 1057              		.align	1
- 1058              		.p2align 2,,3
- 1059              		.global	_ZNK9DrumSynth10hat_activeEv
- 1060              		.syntax unified
- 1061              		.thumb
- 1062              		.thumb_func
- 1063              		.fpu fpv5-d16
- 1065              	_ZNK9DrumSynth10hat_activeEv:
- 1066              	.LVL54:
- 1067              	.LFB3537:
+ 1056              	_ZN9DrumSynth7processEv:
+ 1057              	.LVL54:
+ 1058              	.LFB3537:
  125:DrumSynth.cpp **** 
- 126:DrumSynth.cpp **** bool DrumSynth::hat_active() const {
- 1068              		.loc 1 126 36 is_stmt 1 view -0
- 1069              		.cfi_startproc
- 1070              		@ args = 0, pretend = 0, frame = 0
- 1071              		@ frame_needed = 0, uses_anonymous_args = 0
- 1072              		@ link register save eliminated.
- 127:DrumSynth.cpp ****     return hat_timer > 0.f;
- 1073              		.loc 1 127 5 view .LVU306
- 1074              		.loc 1 127 24 is_stmt 0 view .LVU307
- 1075 0000 D0ED637A 		vldr.32	s15, [r0, #396]
- 1076 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 1077 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 128:DrumSynth.cpp **** }
- 1078              		.loc 1 128 1 view .LVU308
- 1079 000c CCBF     		ite	gt
- 1080 000e 0120     		movgt	r0, #1
- 1081              	.LVL55:
- 1082              		.loc 1 128 1 view .LVU309
- 1083 0010 0020     		movle	r0, #0
- 1084 0012 7047     		bx	lr
- 1085              		.cfi_endproc
- 1086              	.LFE3537:
- 1088              		.section	.text._ZN9DrumSynth7processEv,"ax",%progbits
- 1089              		.align	1
- 1090              		.p2align 2,,3
- 1091              		.global	_ZN9DrumSynth7processEv
- 1092              		.syntax unified
- 1093              		.thumb
- 1094              		.thumb_func
- 1095              		.fpu fpv5-d16
- 1097              	_ZN9DrumSynth7processEv:
- 1098              	.LVL56:
- 1099              	.LFB3538:
- 129:DrumSynth.cpp **** 
- 130:DrumSynth.cpp **** float DrumSynth::process() {
- 1100              		.loc 1 130 28 is_stmt 1 view -0
- 1101              		.cfi_startproc
- 1102              		@ args = 0, pretend = 0, frame = 0
- 1103              		@ frame_needed = 0, uses_anonymous_args = 0
- 131:DrumSynth.cpp ****     float kick_sample = process_kick();
- 1104              		.loc 1 131 5 view .LVU311
- 1105              	.LBB168:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 28
-
-
- 1106              	.LBB169:
+ 126:DrumSynth.cpp **** float DrumSynth::process() {
+ 1059              		.loc 1 126 28 is_stmt 1 view -0
+ 1060              		.cfi_startproc
+ 1061              		@ args = 0, pretend = 0, frame = 0
+ 1062              		@ frame_needed = 0, uses_anonymous_args = 0
+ 127:DrumSynth.cpp ****     float kick_sample = process_kick() * 1.5f;
+ 1063              		.loc 1 127 5 view .LVU305
+ 1064              	.LBB166:
+ 1065              	.LBB167:
   62:DrumSynth.cpp ****         kick_timer--;
- 1107              		.loc 1 62 9 is_stmt 0 view .LVU312
- 1108 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
+ 1066              		.loc 1 62 9 is_stmt 0 view .LVU306
+ 1067 0000 D0ED2A7A 		vldr.32	s15, [r0, #168]
   62:DrumSynth.cpp ****         kick_timer--;
- 1109              		.loc 1 62 5 view .LVU313
- 1110 0004 F5EEC07A 		vcmpe.f32	s15, #0
- 1111              	.LBE169:
- 1112              	.LBE168:
- 130:DrumSynth.cpp ****     float kick_sample = process_kick();
- 1113              		.loc 1 130 28 view .LVU314
- 1114 0008 10B5     		push	{r4, lr}
- 1115              		.cfi_def_cfa_offset 8
- 1116              		.cfi_offset 4, -8
- 1117              		.cfi_offset 14, -4
- 1118              	.LBB174:
- 1119              	.LBB170:
+ 1068              		.loc 1 62 5 view .LVU307
+ 1069 0004 F5EEC07A 		vcmpe.f32	s15, #0
+ 1070              	.LBE167:
+ 1071              	.LBE166:
+ 126:DrumSynth.cpp ****     float kick_sample = process_kick() * 1.5f;
+ 1072              		.loc 1 126 28 view .LVU308
+ 1073 0008 10B5     		push	{r4, lr}
+ 1074              		.cfi_def_cfa_offset 8
+ 1075              		.cfi_offset 4, -8
+ 1076              		.cfi_offset 14, -4
+ 1077              	.LBB173:
+ 1078              	.LBB168:
   62:DrumSynth.cpp ****         kick_timer--;
- 1120              		.loc 1 62 5 view .LVU315
- 1121 000a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 1122              	.LBE170:
- 1123              	.LBE174:
- 130:DrumSynth.cpp ****     float kick_sample = process_kick();
- 1124              		.loc 1 130 28 view .LVU316
- 1125 000e 0446     		mov	r4, r0
- 1126              	.LVL57:
- 1127              	.LBB175:
- 1128              	.LBI168:
+ 1079              		.loc 1 62 5 view .LVU309
+ 1080 000a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 1081              	.LBE168:
+ 1082              	.LBE173:
+ 126:DrumSynth.cpp ****     float kick_sample = process_kick() * 1.5f;
+ 1083              		.loc 1 126 28 view .LVU310
+ 1084 000e 0446     		mov	r4, r0
+ 1085              	.LVL55:
+ 1086              	.LBB174:
+ 1087              	.LBI166:
   61:DrumSynth.cpp ****     if (kick_timer > 0.f) {
- 1129              		.loc 1 61 7 is_stmt 1 view .LVU317
- 1130              	.LBB171:
+ 1088              		.loc 1 61 7 is_stmt 1 view .LVU311
+ 1089              	.LBB169:
   62:DrumSynth.cpp ****         kick_timer--;
- 1131              		.loc 1 62 5 view .LVU318
- 1132              	.LBE171:
- 1133              	.LBE175:
- 130:DrumSynth.cpp ****     float kick_sample = process_kick();
- 1134              		.loc 1 130 28 is_stmt 0 view .LVU319
- 1135 0010 2DED028B 		vpush.64	{d8}
- 1136              		.cfi_def_cfa_offset 16
- 1137              		.cfi_offset 80, -16
- 1138              		.cfi_offset 81, -12
- 1139              	.LBB176:
- 1140              	.LBB172:
+ 1090              		.loc 1 62 5 view .LVU312
+ 1091              	.LBE169:
+ 1092              	.LBE174:
+ 126:DrumSynth.cpp ****     float kick_sample = process_kick() * 1.5f;
+ 1093              		.loc 1 126 28 is_stmt 0 view .LVU313
+ 1094 0010 2DED028B 		vpush.64	{d8}
+ 1095              		.cfi_def_cfa_offset 16
+ 1096              		.cfi_offset 80, -16
+ 1097              		.cfi_offset 81, -12
+ 1098              	.LBB175:
+ 1099              	.LBB170:
   62:DrumSynth.cpp ****         kick_timer--;
- 1141              		.loc 1 62 5 view .LVU320
- 1142 0014 28DD     		ble	.L53
+ 1100              		.loc 1 62 5 view .LVU314
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 28
+
+
+ 1101 0014 30DD     		ble	.L52
   63:DrumSynth.cpp ****         kick_amp -= (1.f/(sample_rate * kick_duration_s));
- 1143              		.loc 1 63 9 is_stmt 1 view .LVU321
+ 1102              		.loc 1 63 9 is_stmt 1 view .LVU315
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1144              		.loc 1 64 39 is_stmt 0 view .LVU322
- 1145 0016 D0ED295A 		vldr.32	s11, [r0, #164]
+ 1103              		.loc 1 64 39 is_stmt 0 view .LVU316
+ 1104 0016 D0ED295A 		vldr.32	s11, [r0, #164]
   63:DrumSynth.cpp ****         kick_amp -= (1.f/(sample_rate * kick_duration_s));
- 1146              		.loc 1 63 19 view .LVU323
- 1147 001a B7EE006A 		vmov.f32	s12, #1.0e+0
+ 1105              		.loc 1 63 19 view .LVU317
+ 1106 001a B7EE006A 		vmov.f32	s12, #1.0e+0
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1148              		.loc 1 64 39 view .LVU324
- 1149 001e D0ED276A 		vldr.32	s13, [r0, #156]
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 29
-
-
+ 1107              		.loc 1 64 39 view .LVU318
+ 1108 001e D0ED276A 		vldr.32	s13, [r0, #156]
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1150              		.loc 1 64 18 view .LVU325
- 1151 0022 90ED2B7A 		vldr.32	s14, [r0, #172]
+ 1109              		.loc 1 64 18 view .LVU319
+ 1110 0022 90ED2B7A 		vldr.32	s14, [r0, #172]
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1152              		.loc 1 64 39 view .LVU326
- 1153 0026 66EEA56A 		vmul.f32	s13, s13, s11
+ 1111              		.loc 1 64 39 view .LVU320
+ 1112 0026 66EEA56A 		vmul.f32	s13, s13, s11
   63:DrumSynth.cpp ****         kick_amp -= (1.f/(sample_rate * kick_duration_s));
- 1154              		.loc 1 63 19 view .LVU327
- 1155 002a 77EEC67A 		vsub.f32	s15, s15, s12
+ 1113              		.loc 1 63 19 view .LVU321
+ 1114 002a 77EEC67A 		vsub.f32	s15, s15, s12
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1156              		.loc 1 64 25 view .LVU328
- 1157 002e C6EE265A 		vdiv.f32	s11, s12, s13
+ 1115              		.loc 1 64 25 view .LVU322
+ 1116 002e C6EE265A 		vdiv.f32	s11, s12, s13
   63:DrumSynth.cpp ****         kick_amp -= (1.f/(sample_rate * kick_duration_s));
- 1158              		.loc 1 63 19 view .LVU329
- 1159 0032 C0ED2A7A 		vstr.32	s15, [r0, #168]
+ 1117              		.loc 1 63 19 view .LVU323
+ 1118 0032 C0ED2A7A 		vstr.32	s15, [r0, #168]
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1160              		.loc 1 64 9 is_stmt 1 view .LVU330
+ 1119              		.loc 1 64 9 is_stmt 1 view .LVU324
   64:DrumSynth.cpp ****         return kick_osc.Process() * kick_amp;
- 1161              		.loc 1 64 18 is_stmt 0 view .LVU331
- 1162 0036 77EE657A 		vsub.f32	s15, s14, s11
- 1163 003a C0ED2B7A 		vstr.32	s15, [r0, #172]
+ 1120              		.loc 1 64 18 is_stmt 0 view .LVU325
+ 1121 0036 77EE657A 		vsub.f32	s15, s14, s11
+ 1122 003a C0ED2B7A 		vstr.32	s15, [r0, #172]
   65:DrumSynth.cpp ****     } else {
- 1164              		.loc 1 65 9 is_stmt 1 view .LVU332
+ 1123              		.loc 1 65 9 is_stmt 1 view .LVU326
   65:DrumSynth.cpp ****     } else {
- 1165              		.loc 1 65 32 is_stmt 0 view .LVU333
- 1166 003e FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
- 1167              	.LVL58:
+ 1124              		.loc 1 65 32 is_stmt 0 view .LVU327
+ 1125 003e FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 1126              	.LVL56:
   65:DrumSynth.cpp ****     } else {
- 1168              		.loc 1 65 37 view .LVU334
- 1169 0042 94ED2B8A 		vldr.32	s16, [r4, #172]
- 1170 0046 60EE088A 		vmul.f32	s17, s0, s16
- 1171              	.L49:
- 1172              	.LVL59:
+ 1127              		.loc 1 65 37 view .LVU328
+ 1128 0042 94ED2B8A 		vldr.32	s16, [r4, #172]
+ 1129              	.LBE170:
+ 1130              	.LBE175:
+ 1131              		.loc 1 127 42 view .LVU329
+ 1132 0046 F7EE087A 		vmov.f32	s15, #1.5e+0
+ 1133              	.LBB176:
+ 1134              	.LBB171:
   65:DrumSynth.cpp ****     } else {
- 1173              		.loc 1 65 37 view .LVU335
- 1174              	.LBE172:
- 1175              	.LBE176:
- 132:DrumSynth.cpp ****     float snare_sample = process_snare();
- 1176              		.loc 1 132 5 is_stmt 1 view .LVU336
- 1177              		.loc 1 132 39 is_stmt 0 view .LVU337
- 1178 004a 2046     		mov	r0, r4
- 1179 004c FFF7FEFF 		bl	_ZN9DrumSynth13process_snareEv
- 1180              	.LVL60:
- 1181 0050 B0EE408A 		vmov.f32	s16, s0
- 1182              	.LVL61:
- 133:DrumSynth.cpp ****     float hat_sample = process_hat();
- 1183              		.loc 1 133 5 is_stmt 1 view .LVU338
- 1184              		.loc 1 133 35 is_stmt 0 view .LVU339
- 1185 0054 2046     		mov	r0, r4
- 1186 0056 FFF7FEFF 		bl	_ZN9DrumSynth11process_hatEv
- 1187              	.LVL62:
- 134:DrumSynth.cpp ****     return (kick_sample + snare_sample + hat_sample);
- 1188              		.loc 1 134 5 is_stmt 1 view .LVU340
- 1189              		.loc 1 134 25 is_stmt 0 view .LVU341
- 1190 005a 38EE288A 		vadd.f32	s16, s16, s17
- 1191              	.LVL63:
- 135:DrumSynth.cpp **** }
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 30
+ 1135              		.loc 1 65 37 view .LVU330
+ 1136 004a 20EE080A 		vmul.f32	s0, s0, s16
+ 1137              	.LBE171:
+ 1138              	.LBE176:
+ 1139              		.loc 1 127 42 view .LVU331
+ 1140 004e 20EE278A 		vmul.f32	s16, s0, s15
+ 1141              	.L48:
+ 1142              	.LVL57:
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 29
 
 
- 1192              		.loc 1 135 1 view .LVU342
- 1193 005e 38EE000A 		vadd.f32	s0, s16, s0
- 1194              	.LVL64:
- 1195              		.loc 1 135 1 view .LVU343
- 1196 0062 BDEC028B 		vldm	sp!, {d8}
- 1197              		.cfi_remember_state
- 1198              		.cfi_restore 80
- 1199              		.cfi_restore 81
- 1200              		.cfi_def_cfa_offset 8
- 1201 0066 10BD     		pop	{r4, pc}
- 1202              	.LVL65:
- 1203              	.L53:
- 1204              		.cfi_restore_state
- 1205              	.LBB177:
- 1206              	.LBB173:
-  67:DrumSynth.cpp ****     }
- 1207              		.loc 1 67 16 view .LVU344
- 1208 0068 DFED018A 		vldr.32	s17, .L55
- 1209 006c EDE7     		b	.L49
- 1210              	.L56:
- 1211 006e 00BF     		.align	2
- 1212              	.L55:
- 1213 0070 00000000 		.word	0
- 1214              	.LBE173:
- 1215              	.LBE177:
- 1216              		.cfi_endproc
- 1217              	.LFE3538:
- 1219              		.text
- 1220              	.Letext0:
- 1221              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 1222              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 1223              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 1224              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 1225              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 1226              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 1227              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 1228              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 1229              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 1230              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 1231              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 1232              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 1233              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 1234              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 1235              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 1236              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 1237              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 1238              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
- 1239              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 1240              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 1241              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 1242              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 1243              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 1244              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 1245              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 1246              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 1247              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 1248              		.file 32 "../../DaisySP//Source/Utility/dsp.h"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 31
+ 128:DrumSynth.cpp ****     float snare_sample = process_snare();
+ 1143              		.loc 1 128 5 is_stmt 1 view .LVU332
+ 1144              		.loc 1 128 39 is_stmt 0 view .LVU333
+ 1145 0052 2046     		mov	r0, r4
+ 1146 0054 FFF7FEFF 		bl	_ZN9DrumSynth13process_snareEv
+ 1147              	.LVL58:
+ 1148 0058 F0EE408A 		vmov.f32	s17, s0
+ 1149              	.LVL59:
+ 129:DrumSynth.cpp ****     float hat_sample = process_hat() * 0.4f;
+ 1150              		.loc 1 129 5 is_stmt 1 view .LVU334
+ 1151              		.loc 1 129 35 is_stmt 0 view .LVU335
+ 1152 005c 2046     		mov	r0, r4
+ 1153 005e FFF7FEFF 		bl	_ZN9DrumSynth11process_hatEv
+ 1154              	.LVL60:
+ 130:DrumSynth.cpp ****     return (kick_sample + snare_sample + hat_sample);
+ 1155              		.loc 1 130 5 is_stmt 1 view .LVU336
+ 1156              		.loc 1 130 52 is_stmt 0 view .LVU337
+ 1157 0062 9FED077A 		vldr.32	s14, .L54
+ 1158              		.loc 1 130 25 view .LVU338
+ 1159 0066 38EE288A 		vadd.f32	s16, s16, s17
+ 131:DrumSynth.cpp **** }
+ 1160              		.loc 1 131 1 view .LVU339
+ 1161 006a A0EE078A 		vfma.f32	s16, s0, s14
+ 1162 006e B0EE480A 		vmov.f32	s0, s16
+ 1163              	.LVL61:
+ 1164              		.loc 1 131 1 view .LVU340
+ 1165 0072 BDEC028B 		vldm	sp!, {d8}
+ 1166              		.cfi_remember_state
+ 1167              		.cfi_restore 80
+ 1168              		.cfi_restore 81
+ 1169              		.cfi_def_cfa_offset 8
+ 1170 0076 10BD     		pop	{r4, pc}
+ 1171              	.LVL62:
+ 1172              	.L52:
+ 1173              		.cfi_restore_state
+ 1174              	.LBB177:
+ 1175              	.LBB172:
+ 1176              		.loc 1 131 1 view .LVU341
+ 1177 0078 9FED028A 		vldr.32	s16, .L54+4
+ 1178 007c E9E7     		b	.L48
+ 1179              	.L55:
+ 1180 007e 00BF     		.align	2
+ 1181              	.L54:
+ 1182 0080 CDCCCC3E 		.word	1053609165
+ 1183 0084 00000000 		.word	0
+ 1184              	.LBE172:
+ 1185              	.LBE177:
+ 1186              		.cfi_endproc
+ 1187              	.LFE3537:
+ 1189              		.text
+ 1190              	.Letext0:
+ 1191              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1192              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1193              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1194              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1195              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1196              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 30
 
 
- 1249              		.file 33 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 1250              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 1251              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 1252              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 1253              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 1254              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 1255              		.file 39 "DrumSynth.h"
- 1256              		.file 40 "<built-in>"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s 			page 32
+ 1197              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1198              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1199              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1200              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1201              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 1202              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 1203              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1204              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1205              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 1206              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1207              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 1208              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 1209              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1210              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1211              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1212              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 1213              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1214              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1215              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1216              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1217              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1218              		.file 32 "../../DaisySP//Source/Utility/dsp.h"
+ 1219              		.file 33 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1220              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 1221              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 1222              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1223              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1224              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1225              		.file 39 "DrumSynth.h"
+ 1226              		.file 40 "<built-in>"
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 DrumSynth.cpp
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:17     .text._ZN9DrumSynthC2Ef:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC2Ef
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:522    .text._ZN9DrumSynthC2Ef:00000188 $d
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC1Ef
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:539    .text._ZN9DrumSynth12trigger_kickEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:547    .text._ZN9DrumSynth12trigger_kickEv:00000000 _ZN9DrumSynth12trigger_kickEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:575    .text._ZN9DrumSynth12process_kickEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:583    .text._ZN9DrumSynth12process_kickEv:00000000 _ZN9DrumSynth12process_kickEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:645    .text._ZN9DrumSynth12process_kickEv:00000050 $d
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:650    .text._ZNK9DrumSynth11kick_activeEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:658    .text._ZNK9DrumSynth11kick_activeEv:00000000 _ZNK9DrumSynth11kick_activeEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:682    .text._ZN9DrumSynth13trigger_snareEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:690    .text._ZN9DrumSynth13trigger_snareEv:00000000 _ZN9DrumSynth13trigger_snareEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:718    .text._ZN9DrumSynth13process_snareEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:726    .text._ZN9DrumSynth13process_snareEv:00000000 _ZN9DrumSynth13process_snareEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:862    .text._ZN9DrumSynth13process_snareEv:00000094 $d
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:868    .text._ZNK9DrumSynth12snare_activeEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:876    .text._ZNK9DrumSynth12snare_activeEv:00000000 _ZNK9DrumSynth12snare_activeEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:900    .text._ZN9DrumSynth11trigger_hatEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:908    .text._ZN9DrumSynth11trigger_hatEv:00000000 _ZN9DrumSynth11trigger_hatEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:936    .text._ZN9DrumSynth11process_hatEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:944    .text._ZN9DrumSynth11process_hatEv:00000000 _ZN9DrumSynth11process_hatEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1050   .text._ZN9DrumSynth11process_hatEv:0000006c $d
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1057   .text._ZNK9DrumSynth10hat_activeEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1065   .text._ZNK9DrumSynth10hat_activeEv:00000000 _ZNK9DrumSynth10hat_activeEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1089   .text._ZN9DrumSynth7processEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1097   .text._ZN9DrumSynth7processEv:00000000 _ZN9DrumSynth7processEv
-C:\Users\theja\AppData\Local\Temp\cc3D03Sa.s:1213   .text._ZN9DrumSynth7processEv:00000070 $d
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:17     .text._ZN9DrumSynthC2Ef:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC2Ef
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:514    .text._ZN9DrumSynthC2Ef:00000188 $d
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC1Ef
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:530    .text._ZN9DrumSynth12trigger_kickEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:538    .text._ZN9DrumSynth12trigger_kickEv:00000000 _ZN9DrumSynth12trigger_kickEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:566    .text._ZN9DrumSynth12process_kickEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:574    .text._ZN9DrumSynth12process_kickEv:00000000 _ZN9DrumSynth12process_kickEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:636    .text._ZN9DrumSynth12process_kickEv:00000050 $d
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:641    .text._ZNK9DrumSynth11kick_activeEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:649    .text._ZNK9DrumSynth11kick_activeEv:00000000 _ZNK9DrumSynth11kick_activeEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:673    .text._ZN9DrumSynth13trigger_snareEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:681    .text._ZN9DrumSynth13trigger_snareEv:00000000 _ZN9DrumSynth13trigger_snareEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:709    .text._ZN9DrumSynth13process_snareEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:717    .text._ZN9DrumSynth13process_snareEv:00000000 _ZN9DrumSynth13process_snareEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:853    .text._ZN9DrumSynth13process_snareEv:00000094 $d
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:859    .text._ZNK9DrumSynth12snare_activeEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:867    .text._ZNK9DrumSynth12snare_activeEv:00000000 _ZNK9DrumSynth12snare_activeEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:891    .text._ZN9DrumSynth11trigger_hatEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:899    .text._ZN9DrumSynth11trigger_hatEv:00000000 _ZN9DrumSynth11trigger_hatEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:927    .text._ZN9DrumSynth11process_hatEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:935    .text._ZN9DrumSynth11process_hatEv:00000000 _ZN9DrumSynth11process_hatEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1041   .text._ZN9DrumSynth11process_hatEv:0000006c $d
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1048   .text._ZN9DrumSynth7processEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1056   .text._ZN9DrumSynth7processEv:00000000 _ZN9DrumSynth7processEv
+C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1182   .text._ZN9DrumSynth7processEv:00000080 $d
 
 UNDEFINED SYMBOLS
 _ZN7daisysp10Oscillator12CalcPhaseIncEf

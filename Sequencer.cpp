@@ -32,7 +32,7 @@ void Sequencer::tick() {
         if (sequences[sequence_idx].drum_sequence.hat_steps[current_step])     drum_synth.trigger_hat();
 
         chord_synth.enable();
-        if (!groove && sequences[sequence_idx].chord_sequence[current_step])
+        if (groove && !sequences[sequence_idx].chord_sequence[current_step])
             chord_synth.disable();
     }
 
