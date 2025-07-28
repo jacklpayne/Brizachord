@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   38              		.cfi_offset 5, -20
   39              		.cfi_offset 6, -16
   40              		.cfi_offset 7, -12
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 2
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 2
 
 
   41              		.cfi_offset 8, -8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   43:../../DaisySP//Source/Synthesis/oscillator.h ****         \param sample_rate - sample rate of the audio engine being run, and the frequency that the 
   44:../../DaisySP//Source/Synthesis/oscillator.h **** 
   45:../../DaisySP//Source/Synthesis/oscillator.h ****         Defaults:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 3
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 3
 
 
   46:../../DaisySP//Source/Synthesis/oscillator.h ****         - freq_ = 100 Hz
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   97              	.LBB89:
   98              	.LBI89:
   23:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 4
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 4
 
 
   99              		.loc 2 23 5 is_stmt 1 view .LVU14
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  110              		.loc 3 42 5 is_stmt 1 view .LVU18
  111              		.loc 3 42 5 is_stmt 0 view .LVU19
  112              	.LBE91:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 5
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 5
 
 
  113              		.loc 1 18 39 view .LVU20
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   10:../../DaisySP//Source/Filters/svf.h **** #ifndef DSY_SVF_H
   11:../../DaisySP//Source/Filters/svf.h **** #define DSY_SVF_H
   12:../../DaisySP//Source/Filters/svf.h **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 6
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 6
 
 
   13:../../DaisySP//Source/Filters/svf.h **** namespace daisysp
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  179              	.LBB83:
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
  180              		.loc 2 52 9 view .LVU42
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 7
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 7
 
 
   52:../../DaisySP//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  212              	.LBB105:
  213              	.LBB84:
   59:../../DaisySP//Source/Synthesis/oscillator.h ****         eoc_       = true;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 8
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 8
 
 
  214              		.loc 2 59 20 view .LVU58
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   79:../../DaisySP//Source/Synthesis/oscillator.h ****     inline void SetWaveform(const uint8_t wf)
  252              		.loc 2 79 17 view .LVU69
  253              	.LBE112:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 9
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 9
 
 
  254              	.LBE141:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   37:DrumSynth.cpp ****     snare_highpass.SetRes(0.1f);
   38:DrumSynth.cpp **** 
   39:DrumSynth.cpp ****     snare_lowpass.Init(sample_rate);
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 10
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 10
 
 
  286              		.loc 1 39 23 view .LVU82
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  322 00c6 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
  323              	.LVL11:
   58:../../DaisySP//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 11
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 11
 
 
  324              		.loc 2 58 34 view .LVU101
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  363              	.LBE132:
  364              	.LBB133:
  365              	.LBB120:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 12
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 12
 
 
   61:../../DaisySP//Source/Synthesis/oscillator.h ****     }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  405              	.LBE137:
   35:DrumSynth.cpp ****     snare_highpass.SetFreq(220.f);
  406              		.loc 1 35 24 view .LVU128
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 13
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 13
 
 
  407 00f4 04F1EC00 		add	r0, r4, #236
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  447 012e FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
  448              	.LVL20:
   41:DrumSynth.cpp **** 
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 14
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 14
 
 
  449              		.loc 1 41 5 is_stmt 1 view .LVU143
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  489              		.loc 1 51 23 is_stmt 0 view .LVU158
  490 0172 2846     		mov	r0, r5
  491 0174 B0EE680A 		vmov.f32	s0, s17
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 15
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 15
 
 
  492 0178 FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  543              		@ args = 0, pretend = 0, frame = 0
  544              		@ frame_needed = 0, uses_anonymous_args = 0
  545              		@ link register save eliminated.
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 16
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 16
 
 
   57:DrumSynth.cpp ****     kick_timer = sample_rate * kick_duration_s;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   63:DrumSynth.cpp ****         kick_timer--;
  591              		.loc 1 63 19 view .LVU178
  592 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 17
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 17
 
 
  593              		.loc 1 64 39 view .LVU179
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  638              	.LFE3530:
  640              		.section	.text._ZNK9DrumSynth11kick_activeEv,"ax",%progbits
  641              		.align	1
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 18
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 18
 
 
  642              		.p2align 2,,3
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  690              		.loc 1 78 31 is_stmt 0 view .LVU201
  691 0000 D0ED277A 		vldr.32	s15, [r0, #156]
   79:DrumSynth.cpp ****     snare_amp = 1.f;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 19
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 19
 
 
  692              		.loc 1 79 15 view .LVU202
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  737 0012 B7EE006A 		vmov.f32	s12, #1.0e+0
  738              		.loc 1 86 40 view .LVU216
  739 0016 D0ED276A 		vldr.32	s13, [r0, #156]
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 20
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 20
 
 
  740              		.loc 1 86 19 view .LVU217
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
   88:DrumSynth.cpp **** 
   89:DrumSynth.cpp ****         snare_highpass.Process(snare_sample);
  789              		.loc 1 89 9 is_stmt 1 view .LVU235
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 21
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 21
 
 
  790              		.loc 1 89 31 is_stmt 0 view .LVU236
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  807              		.loc 1 91 30 is_stmt 0 view .LVU243
  808 006e 94ED480A 		vldr.32	s0, [r4, #288]
  809 0072 04F59C70 		add	r0, r4, #312
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 22
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 22
 
 
  810 0076 FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  853 0094 00000030 		.word	805306368
  854 0098 00000000 		.word	0
  855              		.cfi_endproc
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 23
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 23
 
 
  856              	.LFE3533:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  906              		@ link register save eliminated.
  106:DrumSynth.cpp ****     hat_timer = sample_rate * hat_duration_s;
  907              		.loc 1 106 5 view .LVU260
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 24
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 24
 
 
  908              		.loc 1 106 29 is_stmt 0 view .LVU261
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  955              	.LBE155:
  110:DrumSynth.cpp ****     if (hat_timer > 0.f) {
  956              		.loc 1 110 32 view .LVU275
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 25
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 25
 
 
  957 0012 10B5     		push	{r4, lr}
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1004              	.LVL52:
  119:DrumSynth.cpp **** 
  120:DrumSynth.cpp ****         return hat_lowpass.Low() * hat_amp * 0.4f;
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 26
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 26
 
 
  1005              		.loc 1 120 9 is_stmt 1 view .LVU293
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1052              		.thumb
  1053              		.thumb_func
  1054              		.fpu fpv5-d16
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 27
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 27
 
 
  1056              	_ZN9DrumSynth7processEv:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1099              	.LBB170:
   62:DrumSynth.cpp ****         kick_timer--;
  1100              		.loc 1 62 5 view .LVU314
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 28
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 28
 
 
  1101 0014 30DD     		ble	.L52
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1140 004e 20EE278A 		vmul.f32	s16, s0, s15
  1141              	.L48:
  1142              	.LVL57:
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 29
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 29
 
 
  128:DrumSynth.cpp ****     float snare_sample = process_snare();
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1194              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
  1195              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
  1196              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 30
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 30
 
 
  1197              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
@@ -1771,37 +1771,37 @@ ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 1
  1224              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
  1225              		.file 39 "DrumSynth.h"
  1226              		.file 40 "<built-in>"
-ARM GAS  C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s 			page 31
+ARM GAS  C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 DrumSynth.cpp
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:17     .text._ZN9DrumSynthC2Ef:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC2Ef
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:514    .text._ZN9DrumSynthC2Ef:00000188 $d
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC1Ef
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:530    .text._ZN9DrumSynth12trigger_kickEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:538    .text._ZN9DrumSynth12trigger_kickEv:00000000 _ZN9DrumSynth12trigger_kickEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:566    .text._ZN9DrumSynth12process_kickEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:574    .text._ZN9DrumSynth12process_kickEv:00000000 _ZN9DrumSynth12process_kickEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:636    .text._ZN9DrumSynth12process_kickEv:00000050 $d
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:641    .text._ZNK9DrumSynth11kick_activeEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:649    .text._ZNK9DrumSynth11kick_activeEv:00000000 _ZNK9DrumSynth11kick_activeEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:673    .text._ZN9DrumSynth13trigger_snareEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:681    .text._ZN9DrumSynth13trigger_snareEv:00000000 _ZN9DrumSynth13trigger_snareEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:709    .text._ZN9DrumSynth13process_snareEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:717    .text._ZN9DrumSynth13process_snareEv:00000000 _ZN9DrumSynth13process_snareEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:853    .text._ZN9DrumSynth13process_snareEv:00000094 $d
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:859    .text._ZNK9DrumSynth12snare_activeEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:867    .text._ZNK9DrumSynth12snare_activeEv:00000000 _ZNK9DrumSynth12snare_activeEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:891    .text._ZN9DrumSynth11trigger_hatEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:899    .text._ZN9DrumSynth11trigger_hatEv:00000000 _ZN9DrumSynth11trigger_hatEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:927    .text._ZN9DrumSynth11process_hatEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:935    .text._ZN9DrumSynth11process_hatEv:00000000 _ZN9DrumSynth11process_hatEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1041   .text._ZN9DrumSynth11process_hatEv:0000006c $d
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1048   .text._ZN9DrumSynth7processEv:00000000 $t
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1056   .text._ZN9DrumSynth7processEv:00000000 _ZN9DrumSynth7processEv
-C:\Users\theja\AppData\Local\Temp\ccrOjyMQ.s:1182   .text._ZN9DrumSynth7processEv:00000080 $d
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:17     .text._ZN9DrumSynthC2Ef:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC2Ef
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:514    .text._ZN9DrumSynthC2Ef:00000188 $d
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:26     .text._ZN9DrumSynthC2Ef:00000000 _ZN9DrumSynthC1Ef
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:530    .text._ZN9DrumSynth12trigger_kickEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:538    .text._ZN9DrumSynth12trigger_kickEv:00000000 _ZN9DrumSynth12trigger_kickEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:566    .text._ZN9DrumSynth12process_kickEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:574    .text._ZN9DrumSynth12process_kickEv:00000000 _ZN9DrumSynth12process_kickEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:636    .text._ZN9DrumSynth12process_kickEv:00000050 $d
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:641    .text._ZNK9DrumSynth11kick_activeEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:649    .text._ZNK9DrumSynth11kick_activeEv:00000000 _ZNK9DrumSynth11kick_activeEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:673    .text._ZN9DrumSynth13trigger_snareEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:681    .text._ZN9DrumSynth13trigger_snareEv:00000000 _ZN9DrumSynth13trigger_snareEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:709    .text._ZN9DrumSynth13process_snareEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:717    .text._ZN9DrumSynth13process_snareEv:00000000 _ZN9DrumSynth13process_snareEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:853    .text._ZN9DrumSynth13process_snareEv:00000094 $d
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:859    .text._ZNK9DrumSynth12snare_activeEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:867    .text._ZNK9DrumSynth12snare_activeEv:00000000 _ZNK9DrumSynth12snare_activeEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:891    .text._ZN9DrumSynth11trigger_hatEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:899    .text._ZN9DrumSynth11trigger_hatEv:00000000 _ZN9DrumSynth11trigger_hatEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:927    .text._ZN9DrumSynth11process_hatEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:935    .text._ZN9DrumSynth11process_hatEv:00000000 _ZN9DrumSynth11process_hatEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:1041   .text._ZN9DrumSynth11process_hatEv:0000006c $d
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:1048   .text._ZN9DrumSynth7processEv:00000000 $t
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:1056   .text._ZN9DrumSynth7processEv:00000000 _ZN9DrumSynth7processEv
+C:\Users\theja\AppData\Local\Temp\ccDGynJ9.s:1182   .text._ZN9DrumSynth7processEv:00000080 $d
 
 UNDEFINED SYMBOLS
 _ZN7daisysp10Oscillator12CalcPhaseIncEf

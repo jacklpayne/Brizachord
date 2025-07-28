@@ -63,13 +63,12 @@ void Sequencer::init_sequences() {
 
     // ROCK 1 
     drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, };
-    drum_seq.snare_steps = {false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, };
+    drum_seq.snare_steps = {false, false, false, false, true, false, true, false, false, false, false, false, true, false, false, false, };
     drum_seq.hat_steps   = {true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, };
 
     seq.drum_sequence = drum_seq;
     seq.chord_sequence = {true, true, true, false, true, false, true, false, true, true, true, false, true, false, true, false};
     sequences.push_back(seq);
-
 
     
     // LATIN
@@ -80,5 +79,32 @@ void Sequencer::init_sequences() {
     seq.drum_sequence = drum_seq;
     //seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
     seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
+    sequences.push_back(seq);
+
+    // DISCO
+    drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, true, false, false, true, false, false, false};
+    drum_seq.snare_steps = {false, false, false, false, true, false, true, false, false, false, false, false, true, false, false, false};
+    drum_seq.hat_steps   = {true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true};
+
+    seq.drum_sequence = drum_seq;
+    seq.chord_sequence = {false, false, true, false, true, false, false, false, true, false, false, true, false, false, true, false};
+    sequences.push_back(seq);
+
+    // TANGO
+    drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, true, false};
+    drum_seq.snare_steps = {false, false, false, false, true, false, false, false, false, false, false, false, true, false, true, false};
+    drum_seq.hat_steps   = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, true, false};
+
+    seq.drum_sequence = drum_seq;
+    seq.chord_sequence = {false, false, false, false, true, false, false, false, false, false, false, false, true, false, true, false};
+    sequences.push_back(seq);
+
+    // BLUES
+    drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, true, false};
+    drum_seq.snare_steps = {false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false};
+    drum_seq.hat_steps   = {true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false};
+
+    seq.drum_sequence = drum_seq;
+    seq.chord_sequence = {true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false};
     sequences.push_back(seq);
 }
