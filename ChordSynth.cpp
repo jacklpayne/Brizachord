@@ -28,16 +28,16 @@ void ChordSynth::set_chord(std::vector<int> midi_notes) {
 	}
 
 	bass_osc.Init(sample_rate);
-	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SAW);
+	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_TRI);
 	bass_osc.SetFreq(mtof(midi_notes[0])/4.f);
 	bass_osc.SetAmp(1.f / (midi_notes.size() + 1));
 
 	high_pass.Init(sample_rate);
-	high_pass.SetFreq(400.f);
+	high_pass.SetFreq(250.f);
 	high_pass.SetRes(0.1f);
 
 	low_pass.Init(sample_rate);
-	low_pass.SetFreq(2000.f);
+	low_pass.SetFreq(2800.f);
 	low_pass.SetRes(0.1f);
 }
 

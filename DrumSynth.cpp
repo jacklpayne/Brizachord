@@ -37,7 +37,7 @@ DrumSynth::DrumSynth(float sample_rate) {
     snare_highpass.SetRes(0.1f);
 
     snare_lowpass.Init(sample_rate);
-    snare_lowpass.SetFreq(4000.f);
+    snare_lowpass.SetFreq(2000.f);
     snare_lowpass.SetRes(0.1f);
 
     // Initialize the hat bandpass filter
