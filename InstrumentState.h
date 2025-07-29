@@ -8,7 +8,7 @@ enum ChordQuality {
 
 enum ChordExtension {
 	TRIAD, SIXTH, SEVENTH,
-	NINTH, ELEVENTH, THIRTEENTH,
+	NINTH, ELEVENTH,
 };
 
 enum Beat {

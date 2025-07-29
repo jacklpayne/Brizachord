@@ -66,14 +66,6 @@ inline std::vector<int> chord_to_midi(Chord chord) {
             midi_notes.push_back(midi_notes[0] + 14); // major 9th
             midi_notes.push_back(midi_notes[0] + 18); // #11th
             break;
-
-        case THIRTEENTH:
-            major ? midi_notes.push_back(midi_notes[0] + 11) // maj7
-                : midi_notes.push_back(midi_notes[0] + 10); // b7
-            midi_notes.push_back(midi_notes[0] + 14); // major 9th
-            midi_notes.push_back(midi_notes[0] + 18); // #11th
-            midi_notes.push_back(midi_notes[0] + 21); // major 13th 
-            break;
     }
     return midi_notes;
 }

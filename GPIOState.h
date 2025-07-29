@@ -5,10 +5,10 @@ using namespace daisy::seed;
 struct GPIOState {
     // Chord extension
     Switch button_triad;
+    Switch button_6th;
     Switch button_7th;
     Switch button_9th;
     Switch button_11th;
-    Switch button_13th;
 
     // Chord quality
     Switch button_maj;
@@ -57,10 +57,10 @@ struct GPIOState {
             button_dim.Init(D19, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
 
             button_triad.Init   (D26, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            button_7th.Init     (D27, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            button_9th.Init     (D28, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            button_11th.Init    (D29, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
-            button_13th.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            button_6th.Init     (D27, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            button_7th.Init     (D28, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            button_9th.Init    (D29, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
+            button_11th.Init    (D30, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
 
             groove.Init         (D23, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
             drum_left.Init      (D24, 1.f, Switch::Type::TYPE_MOMENTARY, Switch::Polarity::POLARITY_NORMAL, GPIO::Pull::PULLUP);
@@ -84,10 +84,10 @@ struct GPIOState {
         button_B.Debounce();
 
         button_triad.Debounce();
+        button_6th.Debounce();
         button_7th.Debounce();
         button_9th.Debounce();
         button_11th.Debounce();
-        button_13th.Debounce();
 
         button_maj.Debounce();
         button_min.Debounce();

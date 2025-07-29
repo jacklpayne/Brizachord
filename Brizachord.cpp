@@ -190,12 +190,14 @@ the new chord quality/extension to prevent them from applying briefly to the pre
 void Brizachord::poll_chord_ext() {
 	// ---------------- Update queue ----------------------------------------------
 	if (gpio_state.button_triad.FallingEdge())      instrument_state.queued_extension = TRIAD;
+	else if (gpio_state.button_6th.FallingEdge())   instrument_state.queued_extension = SIXTH;
 	else if (gpio_state.button_7th.FallingEdge())   instrument_state.queued_extension = SEVENTH;
 	else if (gpio_state.button_9th.FallingEdge())   instrument_state.queued_extension = NINTH;
 	else if (gpio_state.button_11th.FallingEdge())  instrument_state.queued_extension = ELEVENTH;
 
 	// ---------------- Update chord ----------------------------------------------
-		if (!(gpio_state.button_triad.RisingEdge() 
+		if (!(gpio_state.button_triad.RisingEdge()
+			|| gpio_state.button_6th.RisingEdge() 
 			|| gpio_state.button_7th.RisingEdge()
 			||gpio_state.button_9th.RisingEdge() 
 			|| gpio_state.button_11th.RisingEdge())) {
