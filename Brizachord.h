@@ -39,8 +39,9 @@ private:
     Trill trill_bar;
     DrumSynth drum_synth{48000.f};
     ChordSynth chord_synth{48000.f};
-    StrumSynth* strum_synth;
-    Sequencer* sequencer;
+
+    StrumSynth strum_synth;
+    Sequencer sequencer;
 
     static void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size);
 

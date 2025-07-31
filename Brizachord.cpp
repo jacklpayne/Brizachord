@@ -16,7 +16,9 @@ BBBBBBB/  BB/       BB/ BBBBBBBB/  BBBBBBB/  BBBBBBB/ BB/   BB/  BBBBBB/  BB/   
 #include "Brizachord.h"
 Brizachord* Brizachord::instance = nullptr;
 
-Brizachord::Brizachord() {
+Brizachord::Brizachord() 
+	: strum_synth(48000.f, instrument_state), sequencer(48000.f, drum_synth, chord_synth)
+{
     Brizachord::instance = this;
 
 	// Hardware init
@@ -34,27 +36,35 @@ Brizachord::Brizachord() {
 	hw.adc.Init(adc_config, 4);
 	hw.adc.Start();
 
+
+	gpio_state.init();
+
 	// Instrument state and oscillators init
-	instrument_state.chord = Chord{"C", ChordQuality::MAJOR, ChordExtension::TRIAD};
+	instrument_state.chord.root = "Bb";
+	instrument_state.chord.quality = ChordQuality::MAJOR;
+	instrument_state.chord.extension = ChordExtension::TRIAD;
 	instrument_state.queued_extension = ChordExtension::TRIAD;
 	instrument_state.queued_quality = ChordQuality::MAJOR;
 	instrument_state.bpm = 80;
 
 	auto midi_notes = chord_to_midi(instrument_state.chord);
 	chord_synth.set_chord(midi_notes);
-
-	gpio_state.init();
-
-	static Sequencer seq{48000.f, drum_synth, chord_synth};
-	sequencer = &seq;
-
-	static StrumSynth str{48000.f, instrument_state};
-	strum_synth = &str;
-    strum_synth->set_arpeggio(midi_notes);
+	//strum_synth.set_arpeggio(midi_notes);
 
 	// Trill sensor setup
     int i2cBus = 1;
     trill_bar.setup(i2cBus, Trill::BAR);
+
+
+	poll_trill_bar();
+	gpio_state.debounce_all();
+	poll_chord_qual();
+	poll_chord_ext();
+	poll_chord_root();
+	poll_pots();
+	poll_pattern_controls();
+
+	sequencer.set_bpm(instrument_state.bpm);
 
 	hw.StartAudio(audio_callback);
 }
@@ -73,7 +83,7 @@ void Brizachord::main_loop() {
 		poll_pots();
 		poll_pattern_controls();
 
-		sequencer->set_bpm(instrument_state.bpm);
+		sequencer.set_bpm(instrument_state.bpm);
 	}    
 }
 
@@ -93,12 +103,12 @@ void Brizachord::audio_callback(AudioHandle::InputBuffer  in,
 	
 	for (size_t i = 0; i < size; i++)
 	{	
-		instance->sequencer->tick();
+		instance->sequencer.tick();
 		float sample = 0.f;
 		
 		float chord_sample = instance->chord_synth.process();
 		float drums_sample = instance->drum_synth.process();
-		float strum_sample = instance->strum_synth->process();
+		float strum_sample = instance->strum_synth.process();
 
 
 		sample += drums_sample * 0.2f * instance->drum_vol;
@@ -141,7 +151,7 @@ void Brizachord::poll_chord_root() {
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
 		chord_synth.set_chord(midi_notes);
-		strum_synth->set_arpeggio(midi_notes);
+		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}
 }
@@ -174,7 +184,7 @@ void Brizachord::poll_chord_qual() {
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
 		chord_synth.set_chord(midi_notes);
-		strum_synth->set_arpeggio(midi_notes);
+		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}
 }
@@ -210,7 +220,7 @@ void Brizachord::poll_chord_ext() {
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
 		chord_synth.set_chord(midi_notes);
-		strum_synth->set_arpeggio(midi_notes);
+		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}
 }
@@ -219,13 +229,13 @@ void Brizachord::poll_chord_ext() {
 
 void Brizachord::poll_pattern_controls() {
     if (gpio_state.groove.FallingEdge()) {
-		sequencer->toggle_groove();
+		sequencer.toggle_groove();
 	}
 	if (gpio_state.drum_left.FallingEdge()) {
-		sequencer->scroll_pattern(false); // Scroll left
+		sequencer.scroll_pattern(false); // Scroll left
 	}
 	if (gpio_state.drum_right.FallingEdge()) {
-		sequencer->scroll_pattern(true); // Scroll right
+		sequencer.scroll_pattern(true); // Scroll right
 	}
 }
 
@@ -243,9 +253,9 @@ void Brizachord::poll_trill_bar() {
 
             // Divide and modulo the raw sensor value by the number of notes in
             // the strum synth arpeggio to get corresponding index of the note in the arpeggio
-            uint8_t arpeggio_size = strum_synth->arpeggio_size();
+            uint8_t arpeggio_size = strum_synth.arpeggio_size();
             int arpeggio_idx = int(sensor_value * arpeggio_size) % (arpeggio_size);
-            strum_synth->trigger_note(arpeggio_idx);
+            strum_synth.trigger_note(arpeggio_idx);
         }
         hw.SetLed(true);
     }
