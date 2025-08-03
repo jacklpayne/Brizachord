@@ -6,10 +6,11 @@
 #include "InstrumentState.h"
 
 /*
+NO BASS FLAG = 255
 Used by the Sequencer to signal to the ChordSynth
 Not to play a bass note on a given 16th
 */
-constexpr uint8_t NO_BASS_FLAG = 255;
+constexpr uint8_t NBF = 255;
 
 inline int note_name_to_midi(const std::string& note) {
     static const std::unordered_map<std::string, int> fourth_octave = {

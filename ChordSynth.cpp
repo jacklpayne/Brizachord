@@ -46,7 +46,7 @@ void ChordSynth::set_chord(Chord chord) {
 
 void ChordSynth::set_bass_note(uint8_t scale_idx) {
 	bass_osc.SetFreq(
-		(scale_idx == NO_BASS_FLAG ? 0.f 
+		(scale_idx == NBF ? 0.f 
 		: mtof(bass_scale[scale_idx])));
 }
 
