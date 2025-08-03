@@ -16,7 +16,7 @@ BBBBBBB/  BB/       BB/ BBBBBBBB/  BBBBBBB/  BBBBBBB/ BB/   BB/  BBBBBB/  BB/   
 #include "Sequencer.h"
 
 Sequencer::Sequencer(float sample_rate, DrumSynth& drum_synth, ChordSynth& chord_synth) 
-    : sample_rate(sample_rate), drum_synth(drum_synth), chord_synth(chord_synth), bpm(105) {
+    :  bpm(105), sample_rate(sample_rate), drum_synth(drum_synth), chord_synth(chord_synth) {
         init_sequences();
     }
 
@@ -27,13 +27,18 @@ void Sequencer::tick() {
 
     // If at a 16th note
     if (current_tick % step_duration == 0 && current_step < 16) {
-        if (sequences[sequence_idx].drum_sequence.kick_steps[current_step])    drum_synth.trigger_kick();
-        if (sequences[sequence_idx].drum_sequence.snare_steps[current_step])   drum_synth.trigger_snare();
-        if (sequences[sequence_idx].drum_sequence.hat_steps[current_step])     drum_synth.trigger_hat();
+        auto seq = sequences[sequence_idx];
+        if (seq.drum_sequence.kick_steps[current_step])    drum_synth.trigger_kick();
+        if (seq.drum_sequence.snare_steps[current_step])   drum_synth.trigger_snare();
+        if (seq.drum_sequence.hat_steps[current_step])     drum_synth.trigger_hat();
 
-        chord_synth.enable();
-        if (groove && !sequences[sequence_idx].chord_sequence[current_step])
-            chord_synth.disable();
+        chord_synth.enable(); 
+        if (groove) {
+            chord_synth.set_bass_note(seq.bass_sequence[current_step]);
+            if (!seq.chord_sequence[current_step]) {
+                chord_synth.disable();
+            }
+        }    
     }
 
     current_tick++;
@@ -58,8 +63,8 @@ void Sequencer::scroll_pattern(bool direction) {
 }
 
 void Sequencer::init_sequences() {
-    Sequence seq;
-    DrumSequence drum_seq;
+    Sequence seq{};
+    DrumSequence drum_seq{};
 
     // ROCK 1 
     drum_seq.kick_steps  = {true, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, };
@@ -67,7 +72,11 @@ void Sequencer::init_sequences() {
     drum_seq.hat_steps   = {true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, };
 
     seq.drum_sequence = drum_seq;
-    seq.chord_sequence = {true, true, true, false, true, false, true, false, true, true, true, false, true, false, true, false};
+    seq.chord_sequence = {false, false, false, false, true, false, true, false, false, false, false, false, true, true, true, false};
+    seq.bass_sequence = {0,0,0,0, 
+        NO_BASS_FLAG, NO_BASS_FLAG, NO_BASS_FLAG, NO_BASS_FLAG,
+        4, 4, 4, 4,
+        NO_BASS_FLAG, NO_BASS_FLAG, 2, 2};
     sequences.push_back(seq);
 
     
@@ -78,7 +87,11 @@ void Sequencer::init_sequences() {
 
     seq.drum_sequence = drum_seq;
     //seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
-    seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
+    //seq.chord_sequence = {false, false, false, true, false, false, true, true, false, false, false, true, false, false, true, true};
+    seq.bass_sequence = {12,12, NO_BASS_FLAG, NO_BASS_FLAG, 
+        12,12, NO_BASS_FLAG, NO_BASS_FLAG,
+        4,4, NO_BASS_FLAG, NO_BASS_FLAG,
+        5,5, NO_BASS_FLAG, NO_BASS_FLAG,};
     sequences.push_back(seq);
 
     // DISCO

@@ -4,7 +4,7 @@
 #include <array>
 #include "DrumSynth.h"
 #include "ChordSynth.h"
-
+#include "utils.h"
 
 class Sequencer
 {
@@ -19,28 +19,39 @@ public:
     inline void toggle_groove() { groove = !groove; }
 
 private:
-    uint8_t bpm{80};
-    float sample_rate{};
-    int current_tick;
+    void init_sequences();
 
     struct DrumSequence {
-        std::vector<bool> kick_steps;
-        std::vector<bool> hat_steps;
-        std::vector<bool> snare_steps;
+    std::array<bool, 16> kick_steps{};
+    std::array<bool, 16> hat_steps{};
+    std::array<bool, 16> snare_steps{};
     };
 
+    /*
+    Fun fact (6.2.25 6:50pm): this struct just corrupted the entire firmware
+    for thirty minutes because a static container (array) was declared after
+    a dynamic container (vector), destroying the memory layout and producing
+    screaming feedback. Embedded is so much fun!
+    */
     struct Sequence {
-        DrumSequence drum_sequence;
-        std::array<bool, 16> chord_sequence;
+    DrumSequence drum_sequence{};
+    std::array<bool, 16> chord_sequence{};
+
+    //Represents scale indices from two octaves below chord synth
+    std::array<uint8_t, 18> bass_sequence{};
     };
 
-    std::vector<Sequence> sequences;
     uint8_t sequence_idx{};
 
-    void init_sequences();
+    uint8_t bpm{80};
+    float sample_rate{};
+    int current_tick{};
+
+
 
     DrumSynth& drum_synth;
     ChordSynth& chord_synth;
 
     bool groove{};
+    std::vector<Sequence> sequences{};
 };

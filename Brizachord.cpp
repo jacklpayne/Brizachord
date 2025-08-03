@@ -48,7 +48,7 @@ Brizachord::Brizachord()
 	instrument_state.bpm = 80;
 
 	auto midi_notes = chord_to_midi(instrument_state.chord);
-	chord_synth.set_chord(midi_notes);
+	chord_synth.set_chord(instrument_state.chord);
 	//strum_synth.set_arpeggio(midi_notes);
 
 	// Trill sensor setup
@@ -150,7 +150,7 @@ void Brizachord::poll_chord_root() {
 		// Prevent audio ISR from being called while rebuilding the osc vectors
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
-		chord_synth.set_chord(midi_notes);
+		chord_synth.set_chord(instrument_state.chord);
 		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}
@@ -183,7 +183,7 @@ void Brizachord::poll_chord_qual() {
 		// Prevent audio ISR from being called while rebuilding the osc vectors
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
-		chord_synth.set_chord(midi_notes);
+		chord_synth.set_chord(instrument_state.chord);
 		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}
@@ -219,7 +219,7 @@ void Brizachord::poll_chord_ext() {
 		// Prevent audio ISR from being called while rebuilding the osc vectors
 		__disable_irq();
 		auto midi_notes = chord_to_midi(instrument_state.chord);
-		chord_synth.set_chord(midi_notes);
+		chord_synth.set_chord(instrument_state.chord);
 		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
 	}

@@ -52,7 +52,7 @@ StrumSynth::StrumSynth(float sample_rate, const InstrumentState& instrument_stat
     
 float StrumSynth::process() {
     filter_LFO.SetFreq(instrument_state.bpm / 15.f); // Call every sample in case bpm changes
-    float filter_freq = (filter_LFO.Process() * 1500.f) + 2000.f; // Vary cutoff from 2000 to 3500 Hz
+    float filter_freq = (filter_LFO.Process() * 1500.f) + 2500.f; // Vary cutoff from 2500 to 4000 Hz
     low_pass.SetFreq(filter_freq);
     
     float sum = 0.f;
@@ -71,7 +71,8 @@ float StrumSynth::process() {
     float sample = sum * scale;
 
     low_pass.Process(sample);
-    high_pass.Process(low_pass.Low());
+    float mixed_sample = (low_pass.Low() * 0.5f) + (sample * 0.5f);
+    high_pass.Process(mixed_sample);
     return high_pass.High() * 0.85f;
 }
 
@@ -84,14 +85,14 @@ void StrumSynth::set_arpeggio(std::vector<int> chord_notes) {
     // Convert chord to ordered 4 octave arpeggio
     std::vector<int> ordered_arpeggio;
     for (int i = 0; i <= 3; i++) {
-        for (int j = 0; j < chord_notes.size(); j++) {
+        for (uint j = 0; j < chord_notes.size(); j++) {
             ordered_arpeggio.push_back(chord_notes[j] + (i*12));
         }
     }
 
     // Stagger the arpeggio
     std::vector<int> staggered_arpeggio;
-    for (int i = 0; i <= (ordered_arpeggio.size() - 3); i++) {
+    for (uint i = 0; i <= (ordered_arpeggio.size() - 3); i++) {
         staggered_arpeggio.push_back(ordered_arpeggio[i+1]);
         staggered_arpeggio.push_back(ordered_arpeggio[i+2]);
         staggered_arpeggio.push_back(ordered_arpeggio[i]);

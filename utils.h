@@ -5,6 +5,12 @@
 #include <string>
 #include "InstrumentState.h"
 
+/*
+Used by the Sequencer to signal to the ChordSynth
+Not to play a bass note on a given 16th
+*/
+constexpr uint8_t NO_BASS_FLAG = 255;
+
 inline int note_name_to_midi(const std::string& note) {
     static const std::unordered_map<std::string, int> fourth_octave = {
     {"C", 60}, {"Db", 61}, {"D", 62}, {"Eb", 63},
@@ -140,4 +146,45 @@ inline std::vector<float> chord_to_freqs(Chord chord) {
         freqs.push_back(note_to_freq(note));
     }
     return freqs;
+}
+
+inline std::array<int, 24> chord_to_scale_midi(Chord chord) {
+    constexpr uint8_t OCTAVE_OFFSET = 12;
+    std::array<int, 24> scale_midi;
+
+    // 1st
+    scale_midi[0] = note_name_to_midi(chord.root);
+    // 2nd
+    scale_midi[1] = scale_midi[0] + 2;
+
+    // 3rd
+    scale_midi[2] = scale_midi[0]
+        + (chord.quality == MAJOR || chord.quality == AUGMENTED ? 4 : 3); // Maj or min 3rd
+
+    // 4th
+    scale_midi[3] = scale_midi[0]
+        + (chord.extension == ELEVENTH ? 6 : 5); // 4th or #4th if (sharp) eleventh chord
+
+    // 5th
+    if (chord.quality == AUGMENTED ) {
+        scale_midi[4] = scale_midi[0] + 8; // Aug 5th
+    } else if (chord.quality == DIMINISHED) {
+        scale_midi[4] = scale_midi[0] + 6; // Dim 5th
+    } else {
+        scale_midi[4] = scale_midi[0] + 7; // Perf 5th
+    }
+
+    // 6th
+    scale_midi[5] = scale_midi[0] + 9; // Always maj 6th
+
+    // 7th
+    scale_midi[6] = scale_midi[0]
+        + (chord.quality == MAJOR || chord.quality == AUGMENTED ? 11 : 10); // maj7 or b7
+
+    // Double the scale and drop the whole thing an octave
+    for (size_t i = 0; i < 7; ++i) {
+        scale_midi[7 + i] = scale_midi[i] - OCTAVE_OFFSET;
+        scale_midi[i] -= (2 * OCTAVE_OFFSET);
+    }
+    return scale_midi;
 }

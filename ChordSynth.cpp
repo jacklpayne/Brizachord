@@ -15,7 +15,8 @@ BBBBBBB/  BB/       BB/ BBBBBBBB/  BBBBBBB/  BBBBBBB/ BB/   BB/  BBBBBB/  BB/   
 
 #include "ChordSynth.h"
 
-void ChordSynth::set_chord(std::vector<int> midi_notes) {
+void ChordSynth::set_chord(Chord chord) {
+	std::vector<int> midi_notes = chord_to_midi(chord);
 	chord_oscs.clear();
 	for (int i = 0; i < midi_notes.size(); i++) {
 		daisysp::Oscillator osc;
@@ -27,8 +28,10 @@ void ChordSynth::set_chord(std::vector<int> midi_notes) {
 		chord_oscs.push_back(osc);
 	}
 
+	bass_scale = chord_to_scale_midi(chord);
+
 	bass_osc.Init(sample_rate);
-	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_TRI);
+	bass_osc.SetWaveform(Oscillator::WAVE_POLYBLEP_SAW);
 	bass_osc.SetFreq(mtof(midi_notes[0])/4.f);
 	bass_osc.SetAmp(1.f / (midi_notes.size() + 1));
 
@@ -41,16 +44,23 @@ void ChordSynth::set_chord(std::vector<int> midi_notes) {
 	low_pass.SetRes(0.1f);
 }
 
+void ChordSynth::set_bass_note(uint8_t scale_idx) {
+	bass_osc.SetFreq(
+		(scale_idx == NO_BASS_FLAG ? 0.f 
+		: mtof(bass_scale[scale_idx])));
+}
+
 float ChordSynth::process() {
-    if (!enabled) {return 0.f;}
     float chord_sample{};
 	for (auto& osc : chord_oscs) {
 		chord_sample += osc.Process();
 	}
 	
 	float bass_sample = bass_osc.Process();
+
 	high_pass.Process(chord_sample);
-	float hp = high_pass.High();
-	low_pass.Process(hp + (bass_sample * 0.8f));
+	// Silence chord if not enabled
+	float hp = enabled ? high_pass.High() : 0.f;
+	low_pass.Process(hp + bass_sample);
 	return low_pass.Low();
 }

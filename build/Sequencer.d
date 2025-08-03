@@ -156,7 +156,8 @@ build/Sequencer.o: Sequencer.cpp \
  ../../DaisySP//Source/Utility/maytrig.h \
  ../../DaisySP//Source/Utility/metro.h \
  ../../DaisySP//Source/Utility/samplehold.h \
- ../../DaisySP//Source/Utility/smooth_random.h ChordSynth.h
+ ../../DaisySP//Source/Utility/smooth_random.h ChordSynth.h \
+ InstrumentState.h utils.h
 ../../libDaisy//Drivers/CMSIS-Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libDaisy//Drivers/CMSIS-Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libDaisy//Drivers/CMSIS_5/CMSIS/Core/Include/core_cm7.h:
@@ -320,3 +321,5 @@ DrumSynth.h:
 ../../DaisySP//Source/Utility/samplehold.h:
 ../../DaisySP//Source/Utility/smooth_random.h:
 ChordSynth.h:
+InstrumentState.h:
+utils.h:
