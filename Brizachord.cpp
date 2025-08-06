@@ -36,7 +36,6 @@ Brizachord::Brizachord()
 	hw.adc.Init(adc_config, 4);
 	hw.adc.Start();
 
-
 	gpio_state.init();
 
 	// Instrument state and oscillators init
@@ -45,16 +44,54 @@ Brizachord::Brizachord()
 	instrument_state.chord.extension = ChordExtension::TRIAD;
 	instrument_state.queued_extension = ChordExtension::TRIAD;
 	instrument_state.queued_quality = ChordQuality::MAJOR;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	instrument_state.bpm = 80;
 
 	auto midi_notes = chord_to_midi(instrument_state.chord);
 	chord_synth.set_chord(instrument_state.chord);
 	//strum_synth.set_arpeggio(midi_notes);
-
-	// Trill sensor setup
-    int i2cBus = 1;
-    trill_bar.setup(i2cBus, Trill::BAR);
-
 
 	poll_trill_bar();
 	gpio_state.debounce_all();
@@ -67,6 +104,10 @@ Brizachord::Brizachord()
 	sequencer.set_bpm(instrument_state.bpm);
 
 	hw.StartAudio(audio_callback);
+
+	// Trill sensor setup
+    int i2cBus = 1;
+    trill_bar.setup(i2cBus, Trill::BAR);
 }
 
 Brizachord::~Brizachord(){

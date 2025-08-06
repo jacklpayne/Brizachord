@@ -1,3 +1,5 @@
+[![Demo](https://img.youtube.com/vi/z-tGAeBtxNY/0.jpg)](https://www.youtube.com/watch?v=z-tGAeBtxNY)
+
 # Overview
 The Brizachord is an open-source instrument and chord machine inspired by the Suzuki Omnichord. It features:
 * 240 possible chords from 12 root select switches, 4 quality select switches, and 5 extension select switches
