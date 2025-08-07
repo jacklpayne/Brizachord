@@ -2,7 +2,7 @@
 TARGET = Brizachord
 
 # Sources
-CPP_SOURCES = main.cpp DrumSynth.cpp Sequencer.cpp ChordSynth.cpp StrumSynth.cpp Brizachord.cpp
+CPP_SOURCES = src/main.cpp src/DrumSynth.cpp src/Sequencer.cpp src/ChordSynth.cpp src/StrumSynth.cpp src/Brizachord.cpp
 
 
 # Library Locations

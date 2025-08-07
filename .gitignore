@@ -1,0 +1,22 @@
+# build artifacts
+/build/
+/*.out
+*.o
+
+# editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# binaries
+*.exe
+*.elf
+*.bin
+
+# logs
+*.log
