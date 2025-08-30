@@ -77,6 +77,7 @@ float StrumSynth::process() {
 }
 
 void StrumSynth::trigger_note(int arpeggio_idx) {
+    voices[arpeggio_idx].osc.SetFreq(mtof(voices[arpeggio_idx].queued_midi_note));
     voices[arpeggio_idx].env.Retrigger(0);
     voices[arpeggio_idx].gate = true;
 }
@@ -100,6 +101,6 @@ void StrumSynth::set_arpeggio(std::vector<int> chord_notes) {
 
     // Populate the voices with first 16 arpeggio notes
     for (int i = 0; i <= 16; i++) {
-        voices[i].osc.SetFreq(mtof(staggered_arpeggio[i]));
+        voices[i].queued_midi_note = staggered_arpeggio[i];
     }
 }

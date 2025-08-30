@@ -20,6 +20,9 @@ private:
 
     struct StrumVoice {
         Oscillator osc;
+        // On a chord change, we update the queued midi notes and
+        // only laod it into the oscillator when the note is retriggered by a strum
+        int queued_midi_note;
         Adsr env;
         bool gate;
     };
