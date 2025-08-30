@@ -51,5 +51,4 @@ private:
     void poll_pattern_controls();
     void poll_trill_bar();
     void poll_pots();
-
 };

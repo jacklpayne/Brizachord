@@ -22,7 +22,7 @@ inline int note_name_to_midi(const std::string& note) {
 }
 
 inline std::vector<int> chord_to_midi(Chord chord) {
-    std::vector<int> midi_notes;
+    std::vector<int> midi_notes{};
     // Push root
     midi_notes.push_back(note_name_to_midi(chord.root));
 
@@ -73,6 +73,12 @@ inline std::vector<int> chord_to_midi(Chord chord) {
             midi_notes.push_back(midi_notes[0] + 14); // major 9th
             midi_notes.push_back(midi_notes[0] + 18); // #11th
             break;
+    }
+
+    // If chord >= A, lower it an octave
+    if (chord.root == "A" || chord.root == "Bb" || chord.root == "B") {
+        for (auto& note : midi_notes)
+            note -= 12;
     }
     return midi_notes;
 }

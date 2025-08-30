@@ -42,4 +42,5 @@ struct InstrumentState {
 
 	uint8_t bpm;
 	bool groove{};
+	bool no_chord{};
 };

@@ -45,48 +45,6 @@ Brizachord::Brizachord()
 	instrument_state.queued_extension = ChordExtension::TRIAD;
 	instrument_state.queued_quality = ChordQuality::MAJOR;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 	instrument_state.bpm = 80;
 
 	auto midi_notes = chord_to_midi(instrument_state.chord);
@@ -106,6 +64,7 @@ Brizachord::Brizachord()
 	hw.StartAudio(audio_callback);
 
 	// Trill sensor setup
+	// Reset I2C
     int i2cBus = 1;
     trill_bar.setup(i2cBus, Trill::BAR);
 }
@@ -194,6 +153,9 @@ void Brizachord::poll_chord_root() {
 		chord_synth.set_chord(instrument_state.chord);
 		strum_synth.set_arpeggio(midi_notes);
 		__enable_irq();
+	}
+	else {
+		instrument_state.no_chord = !instrument_state.no_chord;
 	}
 }
 
